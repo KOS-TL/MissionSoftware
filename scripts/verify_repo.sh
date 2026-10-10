@@ -21,7 +21,7 @@ fi
 echo "files checked: ${#FILES[@]}"
 
 # 1 必需文件
-REQ=(README.md README.en.md LICENSE-PENDING.md CONTRIBUTING.md CITATION.cff CHANGELOG.md .gitignore .gitattributes
+REQ=(README.md README.en.md LICENSE LICENSE-docs LICENSES.md CONTRIBUTING.md CITATION.cff CHANGELOG.md .gitignore .gitattributes
      docs/INDEX.md docs/ARCHITECTURE.md docs/REPRODUCE.md docs/EXTENDING.md docs/STATUS-AND-LIMITATIONS.md docs/figs/fig-arch-detail.png
      scripts/common.sh scripts/setup_sdk.sh scripts/run_demo.sh scripts/run_experiment.sh scripts/analyze.sh scripts/check_host.sh
      scripts/check_demo_log.py scripts/check_links.py

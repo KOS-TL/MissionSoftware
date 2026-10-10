@@ -13,7 +13,7 @@
 
 ### 新增
 - `scripts/`：与位置无关的 `setup_sdk`、`run_demo`、`run_experiment`、`analyze`、`check_host`、`compare_runs`、`verify_repo`、`check_links`、`check_demo_log`；`scripts/windows/` 下对应的 `.bat`。
-- 入门与工程文档：`README.md`、`README.en.md`、`docs/INDEX.md`、`ARCHITECTURE.md`、`REPRODUCE.md`、`EXTENDING.md`（附示例补丁）、`STATUS-AND-LIMITATIONS.md`、`docs/verification/box-verification-2026-10-10.md`、`CONTRIBUTING.md`、`CITATION.cff`、`LICENSE-PENDING.md`。
+- 入门与工程文档：`README.md`、`README.en.md`、`docs/INDEX.md`、`ARCHITECTURE.md`、`REPRODUCE.md`、`EXTENDING.md`（附示例补丁）、`STATUS-AND-LIMITATIONS.md`、`docs/verification/box-verification-2026-10-10.md`、`CONTRIBUTING.md`、`CITATION.cff`、`LICENSE`（MIT）、`LICENSE-docs`（CC BY 4.0）、`LICENSES.md`。
 - `.gitattributes`、`.gitignore`、`.github/workflows/host-checks.yml`、`.github/workflows/docker-demo.yml`（手动触发、实验性）。
 
 ### 修改（行为不变）

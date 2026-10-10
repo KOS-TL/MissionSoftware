@@ -204,7 +204,7 @@ scripts\windows\check_host.bat
 
 ## 许可证
 
-**尚未选定许可证**，见 [LICENSE-PENDING.md](LICENSE-PENDING.md)。在作者选定之前，除法律允许的合理使用外，请勿再分发本仓库内容。第三方组件（Microkit SDK、seL4、Docker 镜像）不随本仓库分发，各自遵循其原许可证。
+代码采用 **MIT** 许可证（[LICENSE](LICENSE)）；文档、插图与实验数据采用 **CC BY 4.0**（[LICENSE-docs](LICENSE-docs)），详见 [LICENSES.md](LICENSES.md)。第三方组件（Microkit SDK、seL4、Docker 镜像）不随本仓库分发，各自遵循其原许可证。
 
 ## 引用
 

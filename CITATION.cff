@@ -8,6 +8,9 @@ authors:
     alias: "Chen Peng"
 version: "0.1.0"
 date-released: "2026-10-10"
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/KOS-TL/MissionSoftware"
 url: "https://github.com/KOS-TL/MissionSoftware"
 abstract: >-

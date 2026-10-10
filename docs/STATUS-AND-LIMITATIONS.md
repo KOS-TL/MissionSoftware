@@ -22,7 +22,7 @@
 3. **人工审查研究**（RQ3b/E1/X-6）：已推迟，未实施。
 4. **预注册 git 标签**：综合报告记载「预注册 git 标签未打」；本仓库首次提交时也未打标签，由作者决定是否以及何时补打。
 5. 本仓库的 **Windows `.bat` 封装、Docker 模式脚本、GitHub Actions 工作流、macOS** 均未实际运行过（详见验证记录）。
-6. **许可证**未选定（[LICENSE-PENDING.md](../LICENSE-PENDING.md)）。
+6. **许可证**：代码 MIT，文档与数据 CC BY 4.0（[LICENSES.md](../LICENSES.md)）。
 
 ## 3. 硬边界（设计上不做的事）
 

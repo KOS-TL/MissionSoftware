@@ -33,4 +33,4 @@ Scripts use Docker when available, otherwise a native `aarch64-linux-gnu-gcc` + 
 
 **Docs:** [docs/INDEX.md](docs/INDEX.md) · [ARCHITECTURE](docs/ARCHITECTURE.md) · [REPRODUCE](docs/REPRODUCE.md) · [EXTENDING](docs/EXTENDING.md) · [STATUS-AND-LIMITATIONS](docs/STATUS-AND-LIMITATIONS.md) · [CONTRIBUTING](CONTRIBUTING.md) (pre-registration discipline) · [CITATION.cff](CITATION.cff).
 
-**License:** not yet chosen — see [LICENSE-PENDING.md](LICENSE-PENDING.md). The Microkit SDK, seL4 and the Docker image are not redistributed here.
+**License:** code under MIT ([LICENSE](LICENSE)); documents, figures and experiment data under CC BY 4.0 ([LICENSE-docs](LICENSE-docs)); see [LICENSES.md](LICENSES.md). The Microkit SDK, seL4 and the Docker image are not redistributed here.
