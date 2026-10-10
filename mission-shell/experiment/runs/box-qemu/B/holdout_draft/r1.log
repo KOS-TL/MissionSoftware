@@ -1,0 +1,374 @@
+RUN|profile=baseline_corpus|condition=B|corpus_set=holdout_draft|seed=n/a|ablate=none|shard=all|image=unknown|git=nogit|corpus_sha256=7bf427a3eddaa90890fedda7da0f36ec5ec9bc46b8bd0121037c285a24cd0fed|regen=skipped|qemu_timeout=120
+RUN|build_ok|gatekeeper_elf=text=6411,data=48,bss=264|client_elf=text=11679,data=64,bss=120|image_sha256=3edb52c9836a32c595ec2343042f5b9277a9c74f1bbfcefdc3affb950eba55fc
+LDR|INFO: Setting all interrupts to Group 1
+LDR|INFO: GICv2 ITLinesNumber: 0x00000008
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO: disabling MMU (if it was enabled)
+LDR|INFO: PSCI version is 1.1
+LDR|INFO: loader for seL4 starting
+LDR|INFO: flags:
+             seL4 configured as hypervisor
+LDR|INFO: kernel:      entry:   0x0000008060000000
+LDR|INFO: root server: physmem: 0x0000000060258000 -- 0x00000000602ba000
+LDR|INFO:              virtmem: 0x0000000000200000 -- 0x0000000000262000
+LDR|INFO:              entry  : 0x0000000000222fe8
+LDR|INFO: region: 0x00000000   addr: 0x0000000060000000   size: 0x0000000000258000   offset: 0x0000000000000000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000001   addr: 0x0000000060258000   size: 0x000000000000b2b8   offset: 0x0000000000258000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000002   addr: 0x00000000602732b8   size: 0x000000000001475c   offset: 0x00000000002632b8   type: 0x0000000000000001
+LDR|INFO: region: 0x00000003   addr: 0x0000000060297a18   size: 0x0000000000010088   offset: 0x0000000000277a14   type: 0x0000000000000001
+LDR|INFO: region: 0x00000004   addr: 0x00000000602a8000   size: 0x0000000000002048   offset: 0x0000000000287a9c   type: 0x0000000000000001
+LDR|INFO: region: 0x00000005   addr: 0x00000000602ab000   size: 0x000000000000d000   offset: 0x0000000000289ae4   type: 0x0000000000000001
+LDR|INFO: region: 0x00000006   addr: 0x00000000602b9000   size: 0x00000000000001f8   offset: 0x0000000000296ae4   type: 0x0000000000000001
+LDR|INFO: copying region 0x00000000
+LDR|INFO: copying region 0x00000001
+LDR|INFO: copying region 0x00000002
+LDR|INFO: copying region 0x00000003
+LDR|INFO: copying region 0x00000004
+LDR|INFO: copying region 0x00000005
+LDR|INFO: copying region 0x00000006
+LDR|INFO|CPU0: active CPUs to start: 0x00000001
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: jumping to kernel
+Bootstrapping kernel
+Warning: Could not infer GIC interrupt target ID, assuming 0.
+Available phys memory regions: 1
+  [60000000..c0000000)
+Reserved virt address space regions: 2
+  [8060000000..8060258000)
+  [8060258000..80602ba000)
+Booting all finished, dropped to user space
+INFO  [sel4_capdl_initializer::initialize] Starting CapDL initializer
+INFO  [sel4_capdl_initializer::initialize] Starting threads
+MON|INFO: Microkit Monitor started!
+GATE|INFO|field gatekeeper variant=B|ablate=none
+GATE|INFO|non-clinical; sim only; no write-enable; delivery!=achievement
+GATE|INFO|evidence=sequential audit log (no hash)
+AUDIT|seq=1|gate_init
+MON|INFO: PD 'gatekeeper' is now passive!
+CLIENT|INFO|profile=corpus|corpus=holdout_draft|json_sha256=7bf427a3eddaa90890fedda7da0f36ec5ec9bc46b8bd0121037c285a24cd0fed|shard=0/1|steps=215
+AUDIT|seq=2|harness_reset
+AUDIT|seq=3|clock_set:1001
+AUDIT|seq=4|cosign_msg_ignored
+CASE|id=9001|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=5|c9001:target:ALLOW:ok
+CLIENT|REP|case=9001|label=ALLOW
+AUDIT|seq=6|harness_reset
+AUDIT|seq=7|clock_set:150
+AUDIT|seq=8|cosign_msg_ignored
+CASE|id=9002|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=9|c9002:target:ALLOW:ok
+CLIENT|REP|case=9002|label=ALLOW
+AUDIT|seq=10|harness_reset
+AUDIT|seq=11|clock_set:150
+AUDIT|seq=12|cosign_msg_ignored
+AUDIT|seq=13|cosign_msg_ignored
+AUDIT|seq=14|cosign_msg_ignored
+CASE|id=9003|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=15|c9003:target:ALLOW:ok
+CLIENT|REP|case=9003|label=ALLOW
+AUDIT|seq=16|harness_reset
+AUDIT|seq=17|clock_set:300
+AUDIT|seq=18|cosign_msg_ignored
+CASE|id=9004|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=19|c9004:target:ALLOW:ok
+CLIENT|REP|case=9004|label=ALLOW
+AUDIT|seq=20|harness_reset
+AUDIT|seq=21|clock_set:300
+AUDIT|seq=22|cosign_msg_ignored
+CASE|id=9005|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=23|c9005:target:ALLOW:ok
+CLIENT|REP|case=9005|label=ALLOW
+AUDIT|seq=24|harness_reset
+AUDIT|seq=25|clock_set:499
+AUDIT|seq=26|cosign_msg_ignored
+CASE|id=9006|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=27|c9006:target:ALLOW:ok
+CLIENT|REP|case=9006|label=ALLOW
+AUDIT|seq=28|harness_reset
+AUDIT|seq=29|clock_set:150
+AUDIT|seq=30|cosign_msg_ignored
+CASE|id=9007|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=31|c9007:target:ALLOW:ok
+CLIENT|REP|case=9007|label=ALLOW
+AUDIT|seq=32|harness_reset
+AUDIT|seq=33|clock_set:150
+AUDIT|seq=34|cosign_msg_ignored
+CASE|id=9008|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=35|c9008:target:ALLOW:ok
+CLIENT|REP|case=9008|label=ALLOW
+AUDIT|seq=36|harness_reset
+AUDIT|seq=37|clock_set:150
+AUDIT|seq=38|cosign_msg_ignored
+AUDIT|seq=39|clock_set:40
+CASE|id=9009|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=40|c9009:target:ALLOW:ok
+CLIENT|REP|case=9009|label=ALLOW
+AUDIT|seq=41|harness_reset
+AUDIT|seq=42|clock_set:150
+AUDIT|seq=43|cosign_msg_ignored
+AUDIT|seq=44|cosign_msg_ignored
+CASE|id=9010|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=45|c9010:target:ALLOW:ok
+CLIENT|REP|case=9010|label=ALLOW
+AUDIT|seq=46|harness_reset
+AUDIT|seq=47|clock_set:150
+AUDIT|seq=48|cosign_msg_ignored
+AUDIT|seq=49|cosign_msg_ignored
+CASE|id=9011|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=50|c9011:target:ALLOW:ok
+CLIENT|REP|case=9011|label=ALLOW
+AUDIT|seq=51|harness_reset
+AUDIT|seq=52|clock_set:200
+AUDIT|seq=53|cosign_msg_ignored
+AUDIT|seq=54|cosign_msg_ignored
+CASE|id=9012|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=55|c9012:target:ALLOW:ok
+CLIENT|REP|case=9012|label=ALLOW
+AUDIT|seq=56|harness_reset
+AUDIT|seq=57|clock_set:150
+AUDIT|seq=58|cosign_msg_ignored
+CASE|id=9013|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=59|c9013:target:ALLOW:ok
+CLIENT|REP|case=9013|label=ALLOW
+AUDIT|seq=60|harness_reset
+AUDIT|seq=61|clock_set:150
+AUDIT|seq=62|cosign_msg_ignored
+SETUP|id=9014|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=63|c9014:setup:ALLOW:ok
+CASE|id=9014|kind=target|verdict=DENY|reason=duplicate_nonce
+AUDIT|seq=64|c9014:target:DENY:duplicate_nonce
+CLIENT|REP|case=9014|label=DENY
+AUDIT|seq=65|harness_reset
+AUDIT|seq=66|clock_set:150
+AUDIT|seq=67|cosign_msg_ignored
+SETUP|id=9015|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=68|c9015:setup:ALLOW:ok
+AUDIT|seq=69|cosign_msg_ignored
+AUDIT|seq=70|cosign_msg_ignored
+CASE|id=9015|kind=target|verdict=DENY|reason=duplicate_nonce
+AUDIT|seq=71|c9015:target:DENY:duplicate_nonce
+CLIENT|REP|case=9015|label=DENY
+AUDIT|seq=72|harness_reset
+AUDIT|seq=73|clock_set:150
+AUDIT|seq=74|cosign_msg_ignored
+SETUP|id=9016|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=75|c9016:setup:ALLOW:ok
+CASE|id=9016|kind=target|verdict=DENY|reason=duplicate_nonce
+AUDIT|seq=76|c9016:target:DENY:duplicate_nonce
+CLIENT|REP|case=9016|label=DENY
+AUDIT|seq=77|harness_reset
+AUDIT|seq=78|clock_set:150
+AUDIT|seq=79|cosign_msg_ignored
+CASE|id=9017|kind=target|verdict=DENY|reason=role_forbidden
+AUDIT|seq=80|c9017:target:DENY:role_forbidden
+CLIENT|REP|case=9017|label=DENY
+AUDIT|seq=81|harness_reset
+AUDIT|seq=82|clock_set:150
+AUDIT|seq=83|cosign_msg_ignored
+CASE|id=9018|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=84|c9018:target:ALLOW:ok
+CLIENT|REP|case=9018|label=ALLOW
+AUDIT|seq=85|harness_reset
+AUDIT|seq=86|clock_set:2001
+AUDIT|seq=87|cosign_msg_ignored
+CASE|id=9019|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=88|c9019:target:ALLOW:ok
+CLIENT|REP|case=9019|label=ALLOW
+AUDIT|seq=89|harness_reset
+AUDIT|seq=90|clock_set:1500
+AUDIT|seq=91|cosign_msg_ignored
+CASE|id=9020|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=92|c9020:target:ALLOW:ok
+CLIENT|REP|case=9020|label=ALLOW
+AUDIT|seq=93|harness_reset
+AUDIT|seq=94|clock_set:600
+AUDIT|seq=95|cosign_msg_ignored
+CASE|id=9021|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=96|c9021:target:ALLOW:ok
+CLIENT|REP|case=9021|label=ALLOW
+AUDIT|seq=97|harness_reset
+AUDIT|seq=98|clock_set:300
+AUDIT|seq=99|cosign_msg_ignored
+CASE|id=9022|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=100|c9022:target:ALLOW:ok
+CLIENT|REP|case=9022|label=ALLOW
+AUDIT|seq=101|harness_reset
+AUDIT|seq=102|clock_set:300
+CASE|id=9023|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=103|c9023:target:ALLOW:ok
+CLIENT|REP|case=9023|label=ALLOW
+AUDIT|seq=104|harness_reset
+AUDIT|seq=105|clock_set:150
+AUDIT|seq=106|cosign_msg_ignored
+AUDIT|seq=107|cosign_msg_ignored
+AUDIT|seq=108|cosign_msg_ignored
+CASE|id=9024|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=109|c9024:target:ALLOW:ok
+CLIENT|REP|case=9024|label=ALLOW
+AUDIT|seq=110|harness_reset
+AUDIT|seq=111|clock_set:150
+AUDIT|seq=112|cosign_msg_ignored
+CASE|id=9025|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=113|c9025:target:ALLOW:ok
+CLIENT|REP|case=9025|label=ALLOW
+AUDIT|seq=114|harness_reset
+AUDIT|seq=115|clock_set:300
+AUDIT|seq=116|cosign_msg_ignored
+CASE|id=9026|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=117|c9026:target:ALLOW:ok
+CLIENT|REP|case=9026|label=ALLOW
+AUDIT|seq=118|harness_reset
+AUDIT|seq=119|clock_set:150
+AUDIT|seq=120|cosign_msg_ignored
+CASE|id=9027|kind=target|verdict=DENY|reason=role_forbidden
+AUDIT|seq=121|c9027:target:DENY:role_forbidden
+CLIENT|REP|case=9027|label=DENY
+AUDIT|seq=122|harness_reset
+AUDIT|seq=123|clock_set:300
+AUDIT|seq=124|cosign_msg_ignored
+CASE|id=9028|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=125|c9028:target:ALLOW:ok
+CLIENT|REP|case=9028|label=ALLOW
+AUDIT|seq=126|harness_reset
+AUDIT|seq=127|clock_set:300
+AUDIT|seq=128|cosign_msg_ignored
+CASE|id=9029|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=129|c9029:target:ALLOW:ok
+CLIENT|REP|case=9029|label=ALLOW
+AUDIT|seq=130|harness_reset
+AUDIT|seq=131|clock_set:300
+AUDIT|seq=132|cosign_msg_ignored
+CASE|id=9030|kind=target|verdict=DENY|reason=invalid_range
+AUDIT|seq=133|c9030:target:DENY:invalid_range
+CLIENT|REP|case=9030|label=DENY
+AUDIT|seq=134|harness_reset
+AUDIT|seq=135|clock_set:150
+AUDIT|seq=136|cosign_msg_ignored
+SETUP|id=9031|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=137|c9031:setup:ALLOW:ok
+AUDIT|seq=138|clock_set:201
+CASE|id=9031|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=139|c9031:target:ALLOW:ok
+CLIENT|REP|case=9031|label=ALLOW
+AUDIT|seq=140|harness_reset
+AUDIT|seq=141|clock_set:150
+AUDIT|seq=142|cosign_msg_ignored
+AUDIT|seq=143|cosign_msg_ignored
+CASE|id=9032|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=144|c9032:target:ALLOW:ok
+CLIENT|REP|case=9032|label=ALLOW
+AUDIT|seq=145|harness_reset
+AUDIT|seq=146|clock_set:150
+AUDIT|seq=147|cosign_msg_ignored
+CASE|id=9033|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=148|c9033:target:ALLOW:ok
+CLIENT|REP|case=9033|label=ALLOW
+AUDIT|seq=149|harness_reset
+AUDIT|seq=150|clock_set:150
+AUDIT|seq=151|cosign_msg_ignored
+CASE|id=9034|kind=target|verdict=DENY|reason=unknown_ticket
+AUDIT|seq=152|c9034:target:DENY:unknown_ticket
+CLIENT|REP|case=9034|label=DENY
+AUDIT|seq=153|harness_reset
+AUDIT|seq=154|clock_set:150
+AUDIT|seq=155|cosign_msg_ignored
+SETUP|id=9035|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=156|c9035:setup:ALLOW:ok
+CASE|id=9035|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=157|c9035:target:ALLOW:ok
+CLIENT|REP|case=9035|label=ALLOW
+AUDIT|seq=158|harness_reset
+AUDIT|seq=159|clock_set:200
+AUDIT|seq=160|cosign_msg_ignored
+SETUP|id=9036|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=161|c9036:setup:ALLOW:ok
+SETUP|id=9036|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=162|c9036:setup:ALLOW:ok
+CASE|id=9036|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=163|c9036:target:ALLOW:ok
+CLIENT|REP|case=9036|label=ALLOW
+AUDIT|seq=164|harness_reset
+AUDIT|seq=165|clock_set:150
+AUDIT|seq=166|cosign_msg_ignored
+AUDIT|seq=167|cosign_msg_ignored
+CASE|id=9037|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=168|c9037:target:ALLOW:ok
+CLIENT|REP|case=9037|label=ALLOW
+AUDIT|seq=169|harness_reset
+AUDIT|seq=170|clock_set:150
+AUDIT|seq=171|cosign_msg_ignored
+CASE|id=9038|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=172|c9038:target:ALLOW:ok
+CLIENT|REP|case=9038|label=ALLOW
+AUDIT|seq=173|harness_reset
+AUDIT|seq=174|clock_set:150
+AUDIT|seq=175|cosign_msg_ignored
+CASE|id=9039|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=176|c9039:target:ALLOW:ok
+CLIENT|REP|case=9039|label=ALLOW
+AUDIT|seq=177|harness_reset
+AUDIT|seq=178|clock_set:150
+AUDIT|seq=179|cosign_msg_ignored
+CASE|id=9040|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=180|c9040:target:ALLOW:ok
+CLIENT|REP|case=9040|label=ALLOW
+AUDIT|seq=181|harness_reset
+AUDIT|seq=182|clock_set:300
+AUDIT|seq=183|cosign_msg_ignored
+AUDIT|seq=184|cosign_msg_ignored
+AUDIT|seq=185|cosign_msg_ignored
+AUDIT|seq=186|cosign_msg_ignored
+AUDIT|seq=187|cosign_msg_ignored
+CASE|id=9041|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=188|c9041:target:ALLOW:ok
+CLIENT|REP|case=9041|label=ALLOW
+AUDIT|seq=189|harness_reset
+AUDIT|seq=190|clock_set:50
+AUDIT|seq=191|cosign_msg_ignored
+CASE|id=9042|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=192|c9042:target:ALLOW:ok
+CLIENT|REP|case=9042|label=ALLOW
+AUDIT|seq=193|harness_reset
+AUDIT|seq=194|clock_set:2000
+AUDIT|seq=195|cosign_msg_ignored
+CASE|id=9043|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=196|c9043:target:ALLOW:ok
+CLIENT|REP|case=9043|label=ALLOW
+AUDIT|seq=197|harness_reset
+AUDIT|seq=198|clock_set:150
+AUDIT|seq=199|cosign_msg_ignored
+AUDIT|seq=200|cosign_msg_ignored
+CASE|id=9044|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=201|c9044:target:ALLOW:ok
+CLIENT|REP|case=9044|label=ALLOW
+AUDIT|seq=202|harness_reset
+AUDIT|seq=203|clock_set:10
+AUDIT|seq=204|cosign_msg_ignored
+AUDIT|seq=205|clock_set:950
+AUDIT|seq=206|clock_set:700
+CASE|id=9045|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=207|c9045:target:ALLOW:ok
+CLIENT|REP|case=9045|label=ALLOW
+AUDIT|seq=208|harness_reset
+AUDIT|seq=209|clock_set:600
+AUDIT|seq=210|cosign_msg_ignored
+CASE|id=9046|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=211|c9046:target:ALLOW:ok
+CLIENT|REP|case=9046|label=ALLOW
+AUDIT|seq=212|harness_reset
+AUDIT|seq=213|clock_set:150
+AUDIT|seq=214|cosign_msg_ignored
+SETUP|id=9047|kind=setup|verdict=ALLOW|reason=ok
+AUDIT|seq=215|c9047:setup:ALLOW:ok
+CASE|id=9047|kind=target|verdict=ALLOW|reason=ok
+AUDIT|seq=216|c9047:target:ALLOW:ok
+CLIENT|REP|case=9047|label=ALLOW
+GATE|AUDIT_END|len=216
+GATE|INFO|corpus_done
+CLIENT|INFO|CORPUS_DONE|n=47
+qemu-system-aarch64: terminating on signal 15 from pid 337256 (bash)
+RUN|END|status=done|elapsed_s=2

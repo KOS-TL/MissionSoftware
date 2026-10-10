@@ -1,0 +1,37 @@
+# --- Third-party SDK (downloaded by scripts/setup_sdk.sh; never committed) ---
+/microkit-sdk-*/
+/.cache/
+
+# --- Build outputs ---
+mission-shell/build/
+mission-shell/build_exp/
+mission-shell/build_logs/
+*.o
+*.elf
+*.img
+*.a
+Makefile.bak-*
+
+# --- Locally generated experiment runs/reports: everything except the committed reference sets ---
+mission-shell/experiment/runs/*
+!mission-shell/experiment/runs/box-qemu/
+!mission-shell/experiment/runs/hostsim/
+mission-shell/experiment/reports/*
+!mission-shell/experiment/reports/box-qemu/
+!mission-shell/experiment/reports/hostsim/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.venv-*/
+
+# --- Archives / OS / editor noise ---
+*.tgz
+*.tar.gz
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

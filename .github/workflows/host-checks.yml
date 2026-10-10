@@ -1,0 +1,38 @@
+# Host-only checks: no Docker, no QEMU, no Microkit SDK needed.
+# Runs: corpus determinism (gen_corpus.py --check), gatekeeper unit tests via hostsim (84 = 28 x 3),
+# hostsim logs vs committed reference (18 logs), repository hygiene.
+# NOTE: these commands were verified on the author's sandbox in a clean copy of the repository;
+#       this workflow file itself has not yet been run on GitHub Actions.
+name: host-checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  host-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Toolchain versions
+        run: |
+          python3 --version
+          gcc --version | head -n1
+      - name: Corpus determinism (gen_corpus.py --check)
+        run: python3 mission-shell/experiment/corpus/gen_corpus.py --check
+      - name: Unit tests (hostsim; host simulation, not QEMU)
+        run: python3 mission-shell/experiment/tests/run_unit_tests.py
+      - name: All host checks incl. hostsim reference comparison
+        run: bash scripts/check_host.sh
+      - name: Repository hygiene
+        run: bash scripts/verify_repo.sh

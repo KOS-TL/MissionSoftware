@@ -1,0 +1,2310 @@
+RUN|profile=mission_corpus|condition=M-align|corpus_set=seed|seed=20261007|ablate=align|shard=all|image=unknown|git=nogit|corpus_sha256=7cf3a6807a0e29aee5dc480ff929531348086e32d72393ec410a45ad40696555|regen=verified|qemu_timeout=120
+RUN|build_ok|gatekeeper_elf=text=8367,data=48,bss=296|client_elf=text=48959,data=64,bss=120|image_sha256=fa643deb83583d313a0c567c66e79c342e69d65e4c780484cb92ba1a9d0e718f
+LDR|INFO: Setting all interrupts to Group 1
+LDR|INFO: GICv2 ITLinesNumber: 0x00000008
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO: disabling MMU (if it was enabled)
+LDR|INFO: PSCI version is 1.1
+LDR|INFO: loader for seL4 starting
+LDR|INFO: flags:
+             seL4 configured as hypervisor
+LDR|INFO: kernel:      entry:   0x0000008060000000
+LDR|INFO: root server: physmem: 0x0000000060258000 -- 0x00000000602c4000
+LDR|INFO:              virtmem: 0x0000000000200000 -- 0x000000000026c000
+LDR|INFO:              entry  : 0x0000000000222fe8
+LDR|INFO: region: 0x00000000   addr: 0x0000000060000000   size: 0x0000000000258000   offset: 0x0000000000000000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000001   addr: 0x0000000060258000   size: 0x000000000000b2b8   offset: 0x0000000000258000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000002   addr: 0x00000000602732b8   size: 0x000000000001475c   offset: 0x00000000002632b8   type: 0x0000000000000001
+LDR|INFO: region: 0x00000003   addr: 0x0000000060297a18   size: 0x0000000000010088   offset: 0x0000000000277a14   type: 0x0000000000000001
+LDR|INFO: region: 0x00000004   addr: 0x00000000602a8000   size: 0x00000000000025b0   offset: 0x0000000000287a9c   type: 0x0000000000000001
+LDR|INFO: region: 0x00000005   addr: 0x00000000602ab000   size: 0x0000000000017000   offset: 0x000000000028a04c   type: 0x0000000000000001
+LDR|INFO: region: 0x00000006   addr: 0x00000000602c3000   size: 0x00000000000001f8   offset: 0x00000000002a104c   type: 0x0000000000000001
+LDR|INFO: copying region 0x00000000
+LDR|INFO: copying region 0x00000001
+LDR|INFO: copying region 0x00000002
+LDR|INFO: copying region 0x00000003
+LDR|INFO: copying region 0x00000004
+LDR|INFO: copying region 0x00000005
+LDR|INFO: copying region 0x00000006
+LDR|INFO|CPU0: active CPUs to start: 0x00000001
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: jumping to kernel
+Bootstrapping kernel
+Warning: Could not infer GIC interrupt target ID, assuming 0.
+Available phys memory regions: 1
+  [60000000..c0000000)
+Reserved virt address space regions: 2
+  [8060000000..8060258000)
+  [8060258000..80602c4000)
+Booting all finished, dropped to user space
+INFO  [sel4_capdl_initializer::initialize] Starting CapDL initializer
+INFO  [sel4_capdl_initializer::initialize] Starting threads
+MON|INFO: Microkit Monitor started!
+GATE|INFO|field gatekeeper variant=M|ablate=align
+GATE|INFO|non-clinical; sim only; no write-enable; delivery!=achievement
+GATE|INFO|evidence=FNV-1a32 chain (teaching-grade, keyless)
+EVIDENCE|seq=1|prev=00000000|this=24fd4b26|gate_init
+MON|INFO: PD 'gatekeeper' is now passive!
+CLIENT|INFO|profile=corpus|corpus=seed-20261007|json_sha256=7cf3a6807a0e29aee5dc480ff929531348086e32d72393ec410a45ad40696555|shard=0/1|steps=1380
+EVIDENCE|seq=2|prev=24fd4b26|this=a7baf603|harness_reset
+EVIDENCE|seq=3|prev=a7baf603|this=acaf3f05|clock_set:1195
+EVIDENCE|seq=4|prev=acaf3f05|this=a41e7aee|cosign_grant:e8v1
+CASE|id=1|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=5|prev=a41e7aee|this=bcba1057|c1:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=1|label=DENY
+EVIDENCE|seq=6|prev=bcba1057|this=2692214e|harness_reset
+EVIDENCE|seq=7|prev=2692214e|this=b109081d|clock_set:500
+EVIDENCE|seq=8|prev=b109081d|this=d46d39f6|cosign_grant:e6v3
+CASE|id=2|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=9|prev=d46d39f6|this=1718a751|c2:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=2|label=ALLOW_SIM
+EVIDENCE|seq=10|prev=1718a751|this=c227535a|harness_reset
+EVIDENCE|seq=11|prev=c227535a|this=175d3d6c|clock_set:83
+EVIDENCE|seq=12|prev=175d3d6c|this=60a4f51d|cosign_grant:e1v1
+CASE|id=3|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=13|prev=60a4f51d|this=7c709688|c3:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=3|label=ALLOW_SIM
+EVIDENCE|seq=14|prev=7c709688|this=b9cdf1bf|harness_reset
+EVIDENCE|seq=15|prev=b9cdf1bf|this=ae1ecf7f|clock_set:255
+EVIDENCE|seq=16|prev=ae1ecf7f|this=2c7629f1|cosign_grant:e3v2
+CASE|id=4|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=17|prev=2c7629f1|this=7150380f|c4:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=4|label=ALLOW_SIM
+EVIDENCE|seq=18|prev=7150380f|this=46a57855|harness_reset
+EVIDENCE|seq=19|prev=46a57855|this=761a38a8|clock_set:478
+EVIDENCE|seq=20|prev=761a38a8|this=c187f694|cosign_grant:e5v1
+SETUP|id=5|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=21|prev=c187f694|this=182552f2|c5:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=5|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=22|prev=182552f2|this=5af18748|c5:target:DENY:duplicate_nonce
+CLIENT|REP|case=5|label=DENY
+EVIDENCE|seq=23|prev=5af18748|this=e99c8788|harness_reset
+EVIDENCE|seq=24|prev=e99c8788|this=d2e9953c|clock_set:1078
+CASE|id=6|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=25|prev=d2e9953c|this=c9465973|c6:target:DENY:no_human_cosign
+CLIENT|REP|case=6|label=DENY
+EVIDENCE|seq=26|prev=c9465973|this=9f64ae2a|harness_reset
+EVIDENCE|seq=27|prev=9f64ae2a|this=3c49cfe0|clock_set:132
+EVIDENCE|seq=28|prev=3c49cfe0|this=1eb80c89|cosign_grant:e2v1
+CASE|id=7|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=29|prev=1eb80c89|this=735efcf1|c7:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=7|label=ALLOW_SIM
+EVIDENCE|seq=30|prev=735efcf1|this=4d899f2b|harness_reset
+EVIDENCE|seq=31|prev=4d899f2b|this=9085c218|clock_set:285
+EVIDENCE|seq=32|prev=9085c218|this=8cf59932|cosign_grant:e3v2
+CASE|id=8|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=33|prev=8cf59932|this=faa858d3|c8:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=8|label=ALLOW_SIM
+EVIDENCE|seq=34|prev=faa858d3|this=4992c0be|harness_reset
+EVIDENCE|seq=35|prev=4992c0be|this=2c446b33|clock_set:218
+EVIDENCE|seq=36|prev=2c446b33|this=67e293b3|cosign_grant:e2v1
+EVIDENCE|seq=37|prev=67e293b3|this=b272abd7|cosign_grant:e3v2
+CASE|id=9|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=38|prev=b272abd7|this=84413865|c9:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9|label=ALLOW_SIM
+EVIDENCE|seq=39|prev=84413865|this=c6a7487e|harness_reset
+EVIDENCE|seq=40|prev=c6a7487e|this=47f916f4|clock_set:335
+EVIDENCE|seq=41|prev=47f916f4|this=b0486906|cosign_grant:e6v3
+CASE|id=10|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=42|prev=b0486906|this=22e497e2|c10:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=10|label=ALLOW_SIM
+EVIDENCE|seq=43|prev=22e497e2|this=83d2b705|harness_reset
+EVIDENCE|seq=44|prev=83d2b705|this=03ecab89|clock_set:116
+EVIDENCE|seq=45|prev=03ecab89|this=ef5d3f28|cosign_grant:e1v1
+CASE|id=11|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=46|prev=ef5d3f28|this=b3a1b519|c11:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=11|label=ALLOW_SIM
+EVIDENCE|seq=47|prev=b3a1b519|this=67c1a724|harness_reset
+EVIDENCE|seq=48|prev=67c1a724|this=79ec1363|clock_set:130
+EVIDENCE|seq=49|prev=79ec1363|this=2b8ed3d3|cosign_grant:e4v1
+EVIDENCE|seq=50|prev=2b8ed3d3|this=e3bc4cb1|cosign_grant:e1v1
+CASE|id=12|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=51|prev=e3bc4cb1|this=b320d144|c12:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=12|label=ALLOW_SIM
+EVIDENCE|seq=52|prev=b320d144|this=379088b5|harness_reset
+EVIDENCE|seq=53|prev=379088b5|this=bf490580|clock_set:1000
+EVIDENCE|seq=54|prev=bf490580|this=fa84ed35|cosign_grant:e7v1
+CASE|id=13|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=55|prev=fa84ed35|this=800b69ff|c13:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=13|label=ALLOW_SIM
+EVIDENCE|seq=56|prev=800b69ff|this=c757be52|harness_reset
+EVIDENCE|seq=57|prev=c757be52|this=aedb7628|clock_set:252
+EVIDENCE|seq=58|prev=aedb7628|this=95985316|cosign_grant:e6v1
+EVIDENCE|seq=59|prev=95985316|this=3e45aebd|cosign_revoke:all
+EVIDENCE|seq=60|prev=3e45aebd|this=08be89a3|cosign_grant:e6v3
+CASE|id=14|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=61|prev=08be89a3|this=f3a95cbe|c14:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=14|label=ALLOW_SIM
+EVIDENCE|seq=62|prev=f3a95cbe|this=4830403b|harness_reset
+EVIDENCE|seq=63|prev=4830403b|this=761cc965|clock_set:249
+EVIDENCE|seq=64|prev=761cc965|this=ead8b489|cosign_grant:e2v1
+SETUP|id=15|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=65|prev=ead8b489|this=cfe52b22|c15:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=15|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=66|prev=cfe52b22|this=62d03609|c15:target:DENY:duplicate_nonce
+CLIENT|REP|case=15|label=DENY
+EVIDENCE|seq=67|prev=62d03609|this=81735fa9|harness_reset
+EVIDENCE|seq=68|prev=81735fa9|this=5378d3c3|clock_set:900
+EVIDENCE|seq=69|prev=5378d3c3|this=17a34f41|cosign_grant:e4v1
+CASE|id=16|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=70|prev=17a34f41|this=c1cd6e0d|c16:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=16|label=ALLOW_SIM
+EVIDENCE|seq=71|prev=c1cd6e0d|this=12d4bcc9|harness_reset
+EVIDENCE|seq=72|prev=12d4bcc9|this=2cb7997e|clock_set:1439
+EVIDENCE|seq=73|prev=2cb7997e|this=b2223042|cosign_grant:e4v1
+EVIDENCE|seq=74|prev=b2223042|this=d3806733|cosign_grant:e3v2
+EVIDENCE|seq=75|prev=d3806733|this=e569d1f6|cosign_grant:e7v1
+CASE|id=17|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=76|prev=e569d1f6|this=2430a3c3|c17:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=17|label=ALLOW_SIM
+EVIDENCE|seq=77|prev=2430a3c3|this=13164bbe|harness_reset
+EVIDENCE|seq=78|prev=13164bbe|this=cddbc2e2|clock_set:228
+EVIDENCE|seq=79|prev=cddbc2e2|this=b2d9dc52|cosign_grant:e3v2
+CASE|id=18|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=80|prev=b2d9dc52|this=3d638eff|c18:target:DENY:role_forbidden
+CLIENT|REP|case=18|label=DENY
+EVIDENCE|seq=81|prev=3d638eff|this=9310dcf3|harness_reset
+EVIDENCE|seq=82|prev=9310dcf3|this=db4e4e7d|clock_set:146
+EVIDENCE|seq=83|prev=db4e4e7d|this=b4fe7a42|cosign_grant:e8v1
+CASE|id=19|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=84|prev=b4fe7a42|this=a05b2a69|c19:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=19|label=DENY
+EVIDENCE|seq=85|prev=a05b2a69|this=7b7e0dd8|harness_reset
+EVIDENCE|seq=86|prev=7b7e0dd8|this=7b64d92b|clock_set:245
+EVIDENCE|seq=87|prev=7b64d92b|this=7fb8bac9|cosign_grant:e3v2
+CASE|id=20|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=88|prev=7fb8bac9|this=bb3116fd|c20:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=20|label=DENY
+EVIDENCE|seq=89|prev=bb3116fd|this=dc8c55f5|harness_reset
+EVIDENCE|seq=90|prev=dc8c55f5|this=6f378a7a|clock_set:60
+EVIDENCE|seq=91|prev=6f378a7a|this=9d635dfc|cosign_grant:e8v1
+CASE|id=21|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=92|prev=9d635dfc|this=de0a52f2|c21:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=21|label=ALLOW_SIM
+EVIDENCE|seq=93|prev=de0a52f2|this=4289efb0|harness_reset
+EVIDENCE|seq=94|prev=4289efb0|this=794aeb18|clock_set:219
+EVIDENCE|seq=95|prev=794aeb18|this=a52a8a0b|cosign_grant:e3v1
+CASE|id=22|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=96|prev=a52a8a0b|this=5ea8fbaa|c22:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=22|label=ALLOW_SIM
+EVIDENCE|seq=97|prev=5ea8fbaa|this=397406df|harness_reset
+EVIDENCE|seq=98|prev=397406df|this=640c936f|clock_set:1037
+EVIDENCE|seq=99|prev=640c936f|this=04f8c9f1|cosign_grant:e7v1
+CASE|id=23|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=100|prev=04f8c9f1|this=1c066b77|c23:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=23|label=ALLOW_SIM
+EVIDENCE|seq=101|prev=1c066b77|this=230daf6c|harness_reset
+EVIDENCE|seq=102|prev=230daf6c|this=a69b89ee|clock_set:324
+EVIDENCE|seq=103|prev=a69b89ee|this=ef28b2b5|cosign_grant:e6v2
+EVIDENCE|seq=104|prev=ef28b2b5|this=db0d0d4c|cosign_revoke:e6v2
+EVIDENCE|seq=105|prev=db0d0d4c|this=f1938189|cosign_grant:e6v3
+CASE|id=24|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=106|prev=f1938189|this=59585fd0|c24:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=24|label=ALLOW_SIM
+EVIDENCE|seq=107|prev=59585fd0|this=f5e71aec|harness_reset
+EVIDENCE|seq=108|prev=f5e71aec|this=361886f8|clock_set:165
+EVIDENCE|seq=109|prev=361886f8|this=e66df36b|cosign_grant:e1v1
+SETUP|id=25|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=110|prev=e66df36b|this=f483b1e6|c25:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=25|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=111|prev=f483b1e6|this=3d7af5de|c25:target:DENY:duplicate_nonce
+CLIENT|REP|case=25|label=DENY
+EVIDENCE|seq=112|prev=3d7af5de|this=816d6f83|harness_reset
+EVIDENCE|seq=113|prev=816d6f83|this=742bc871|clock_set:114
+EVIDENCE|seq=114|prev=742bc871|this=f5fa1b02|cosign_grant:e3v1
+EVIDENCE|seq=115|prev=f5fa1b02|this=8d94d933|cosign_revoke:all
+EVIDENCE|seq=116|prev=8d94d933|this=ed8cdfda|cosign_grant:e3v2
+CASE|id=26|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=117|prev=ed8cdfda|this=da40d9f1|c26:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=26|label=ALLOW_SIM
+EVIDENCE|seq=118|prev=da40d9f1|this=59319f39|harness_reset
+EVIDENCE|seq=119|prev=59319f39|this=75dfb811|clock_set:525
+CASE|id=27|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=120|prev=75dfb811|this=cebec854|c27:target:DENY:no_human_cosign
+CLIENT|REP|case=27|label=DENY
+EVIDENCE|seq=121|prev=cebec854|this=09881604|harness_reset
+EVIDENCE|seq=122|prev=09881604|this=67a2e1bc|clock_set:106
+EVIDENCE|seq=123|prev=67a2e1bc|this=4b1cc1fd|cosign_grant:e1v1
+CASE|id=28|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=124|prev=4b1cc1fd|this=adb166a5|c28:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=28|label=ALLOW_SIM
+EVIDENCE|seq=125|prev=adb166a5|this=3a64ee2f|harness_reset
+EVIDENCE|seq=126|prev=3a64ee2f|this=eeeced03|clock_set:1474
+EVIDENCE|seq=127|prev=eeeced03|this=14155d35|cosign_grant:e7v1
+CASE|id=29|kind=target|verdict=DENY|reason=achievement_not_claimable
+EVIDENCE|seq=128|prev=14155d35|this=21f8d7f7|c29:target:DENY:achievement_not_claimable
+CLIENT|REP|case=29|label=DENY
+EVIDENCE|seq=129|prev=21f8d7f7|this=29e010bf|harness_reset
+EVIDENCE|seq=130|prev=29e010bf|this=b5b83f2b|clock_set:102
+EVIDENCE|seq=131|prev=b5b83f2b|this=9f20acad|cosign_grant:e8v1
+CASE|id=30|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=132|prev=9f20acad|this=a8553869|c30:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=30|label=ALLOW_SIM
+EVIDENCE|seq=133|prev=a8553869|this=cac23a10|harness_reset
+EVIDENCE|seq=134|prev=cac23a10|this=a33d2f9f|clock_set:49
+EVIDENCE|seq=135|prev=a33d2f9f|this=493c9da8|cosign_grant:e8v1
+CASE|id=31|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=136|prev=493c9da8|this=13191c0e|c31:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=31|label=ALLOW_SIM
+EVIDENCE|seq=137|prev=13191c0e|this=7e784a36|harness_reset
+EVIDENCE|seq=138|prev=7e784a36|this=b1857841|clock_set:199
+EVIDENCE|seq=139|prev=b1857841|this=4d043333|cosign_grant:e3v2
+CASE|id=32|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=140|prev=4d043333|this=e949fa9c|c32:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=32|label=ALLOW_SIM
+EVIDENCE|seq=141|prev=e949fa9c|this=e7dd457c|harness_reset
+EVIDENCE|seq=142|prev=e7dd457c|this=84361a5b|clock_set:156
+EVIDENCE|seq=143|prev=84361a5b|this=9c7375d8|cosign_grant:e1v1
+CASE|id=33|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=144|prev=9c7375d8|this=8f372fe0|c33:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=33|label=ALLOW_SIM
+EVIDENCE|seq=145|prev=8f372fe0|this=8c7e445d|harness_reset
+EVIDENCE|seq=146|prev=8c7e445d|this=d929c09b|clock_set:134
+EVIDENCE|seq=147|prev=d929c09b|this=1c22ac81|cosign_grant:e8v1
+CASE|id=34|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=148|prev=1c22ac81|this=bbf821f8|c34:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=34|label=ALLOW_SIM
+EVIDENCE|seq=149|prev=bbf821f8|this=a67b85ce|harness_reset
+EVIDENCE|seq=150|prev=a67b85ce|this=f2504798|clock_set:1229
+EVIDENCE|seq=151|prev=f2504798|this=f7591736|cosign_grant:e7v1
+CASE|id=35|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=152|prev=f7591736|this=d34091e3|c35:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=35|label=ALLOW_SIM
+EVIDENCE|seq=153|prev=d34091e3|this=c80bab0f|harness_reset
+EVIDENCE|seq=154|prev=c80bab0f|this=55dcf9ec|clock_set:340
+EVIDENCE|seq=155|prev=55dcf9ec|this=14765b90|cosign_grant:e2v1
+CASE|id=36|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=156|prev=14765b90|this=5c3b0422|c36:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=36|label=ALLOW_SIM
+EVIDENCE|seq=157|prev=5c3b0422|this=14b1417f|harness_reset
+EVIDENCE|seq=158|prev=14b1417f|this=4e8c16af|clock_set:240
+EVIDENCE|seq=159|prev=4e8c16af|this=6942eac7|cosign_grant:e3v2
+CASE|id=37|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=160|prev=6942eac7|this=fbab4c24|c37:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=37|label=ALLOW_SIM
+EVIDENCE|seq=161|prev=fbab4c24|this=e10e1dae|harness_reset
+EVIDENCE|seq=162|prev=e10e1dae|this=17ade092|clock_set:633
+EVIDENCE|seq=163|prev=17ade092|this=f94fd3a8|cosign_grant:e4v1
+CASE|id=38|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=164|prev=f94fd3a8|this=2aaeedcd|c38:target:DENY:role_forbidden
+CLIENT|REP|case=38|label=DENY
+EVIDENCE|seq=165|prev=2aaeedcd|this=ba615cca|harness_reset
+EVIDENCE|seq=166|prev=ba615cca|this=47963a77|clock_set:150
+EVIDENCE|seq=167|prev=47963a77|this=d1675a40|cosign_grant:e8v1
+CASE|id=39|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=168|prev=d1675a40|this=27b3082c|c39:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=39|label=ALLOW_SIM
+EVIDENCE|seq=169|prev=27b3082c|this=5ce68936|harness_reset
+EVIDENCE|seq=170|prev=5ce68936|this=04052f09|clock_set:712
+EVIDENCE|seq=171|prev=04052f09|this=e0dad6a1|cosign_grant:e4v1
+CASE|id=40|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=172|prev=e0dad6a1|this=0f4cbe56|c40:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=40|label=DENY
+EVIDENCE|seq=173|prev=0f4cbe56|this=67e54adf|harness_reset
+EVIDENCE|seq=174|prev=67e54adf|this=70fff7bb|clock_set:176
+EVIDENCE|seq=175|prev=70fff7bb|this=97c5abfa|cosign_grant:e1v1
+CASE|id=41|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=176|prev=97c5abfa|this=087803ac|c41:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=41|label=ALLOW_SIM
+EVIDENCE|seq=177|prev=087803ac|this=73a003b7|harness_reset
+EVIDENCE|seq=178|prev=73a003b7|this=964ad103|clock_set:219
+EVIDENCE|seq=179|prev=964ad103|this=c0c6f376|cosign_grant:e3v2
+CASE|id=42|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=180|prev=c0c6f376|this=b44bad9a|c42:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=42|label=DENY
+EVIDENCE|seq=181|prev=b44bad9a|this=4853ab0e|harness_reset
+EVIDENCE|seq=182|prev=4853ab0e|this=b3f649b0|clock_set:1311
+EVIDENCE|seq=183|prev=b3f649b0|this=c7b5d12b|cosign_grant:e7v1
+CASE|id=43|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=184|prev=c7b5d12b|this=b3f09dcb|c43:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=43|label=ALLOW_SIM
+EVIDENCE|seq=185|prev=b3f09dcb|this=5dc470f3|harness_reset
+EVIDENCE|seq=186|prev=5dc470f3|this=7c7a563a|clock_set:145
+EVIDENCE|seq=187|prev=7c7a563a|this=8205d2dc|cosign_grant:e3v2
+CASE|id=44|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=188|prev=8205d2dc|this=fe92072c|c44:target:DENY:role_forbidden
+CLIENT|REP|case=44|label=DENY
+EVIDENCE|seq=189|prev=fe92072c|this=7a69e237|harness_reset
+EVIDENCE|seq=190|prev=7a69e237|this=414d451a|clock_set:1193
+EVIDENCE|seq=191|prev=414d451a|this=69d1fdc2|cosign_grant:e7v1
+CASE|id=45|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=192|prev=69d1fdc2|this=5c32c2e7|c45:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=45|label=DENY
+EVIDENCE|seq=193|prev=5c32c2e7|this=1f4ac529|harness_reset
+EVIDENCE|seq=194|prev=1f4ac529|this=7bbf61c0|clock_set:223
+EVIDENCE|seq=195|prev=7bbf61c0|this=f2f85e45|cosign_grant:e6v3
+CASE|id=46|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=196|prev=f2f85e45|this=cfc60386|c46:target:DENY:role_forbidden
+CLIENT|REP|case=46|label=DENY
+EVIDENCE|seq=197|prev=cfc60386|this=85709f84|harness_reset
+EVIDENCE|seq=198|prev=85709f84|this=0998582f|clock_set:1330
+EVIDENCE|seq=199|prev=0998582f|this=6dd473f3|cosign_grant:e7v1
+CASE|id=47|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=200|prev=6dd473f3|this=c5687283|c47:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=47|label=DENY
+EVIDENCE|seq=201|prev=c5687283|this=3e46287a|harness_reset
+EVIDENCE|seq=202|prev=3e46287a|this=a33a07c1|clock_set:326
+EVIDENCE|seq=203|prev=a33a07c1|this=428e221d|cosign_grant:e2v1
+CASE|id=48|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=204|prev=428e221d|this=ad2a55c3|c48:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=48|label=ALLOW_SIM
+EVIDENCE|seq=205|prev=ad2a55c3|this=c20d6053|harness_reset
+EVIDENCE|seq=206|prev=c20d6053|this=c29a95be|clock_set:376
+EVIDENCE|seq=207|prev=c29a95be|this=09fe60fb|cosign_grant:e2v1
+CASE|id=49|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=208|prev=09fe60fb|this=94df0b4b|c49:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=49|label=ALLOW_SIM
+EVIDENCE|seq=209|prev=94df0b4b|this=ebdd666f|harness_reset
+EVIDENCE|seq=210|prev=ebdd666f|this=54e8b5ea|clock_set:193
+EVIDENCE|seq=211|prev=54e8b5ea|this=091eec76|cosign_grant:e5v1
+SETUP|id=50|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=212|prev=091eec76|this=6be87bfa|c50:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=50|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=213|prev=6be87bfa|this=b25d2ef0|c50:target:DENY:duplicate_nonce
+CLIENT|REP|case=50|label=DENY
+EVIDENCE|seq=214|prev=b25d2ef0|this=8f69e0ea|harness_reset
+EVIDENCE|seq=215|prev=8f69e0ea|this=63b4156e|clock_set:353
+EVIDENCE|seq=216|prev=63b4156e|this=c1537944|cosign_grant:e6v2
+EVIDENCE|seq=217|prev=c1537944|this=aa3b57b8|cosign_revoke:e6v2
+EVIDENCE|seq=218|prev=aa3b57b8|this=ae442759|cosign_grant:e6v3
+CASE|id=51|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=219|prev=ae442759|this=d84552d3|c51:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=51|label=ALLOW_SIM
+EVIDENCE|seq=220|prev=d84552d3|this=15803c17|harness_reset
+EVIDENCE|seq=221|prev=15803c17|this=d8fdb7a5|clock_set:1050
+EVIDENCE|seq=222|prev=d8fdb7a5|this=37b4add7|cosign_grant:e7v1
+CASE|id=52|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=223|prev=37b4add7|this=174398a7|c52:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=52|label=ALLOW_SIM
+EVIDENCE|seq=224|prev=174398a7|this=c37d7970|harness_reset
+EVIDENCE|seq=225|prev=c37d7970|this=055bf036|clock_set:307
+EVIDENCE|seq=226|prev=055bf036|this=e384ad9d|cosign_grant:e2v1
+CASE|id=53|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=227|prev=e384ad9d|this=6d5f0d32|c53:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=53|label=ALLOW_SIM
+EVIDENCE|seq=228|prev=6d5f0d32|this=394bc9d8|harness_reset
+EVIDENCE|seq=229|prev=394bc9d8|this=7f087507|clock_set:173
+EVIDENCE|seq=230|prev=7f087507|this=e20078f8|cosign_grant:e2v1
+CASE|id=54|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=231|prev=e20078f8|this=e3d936f4|c54:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=54|label=ALLOW_SIM
+EVIDENCE|seq=232|prev=e3d936f4|this=910bc471|harness_reset
+EVIDENCE|seq=233|prev=910bc471|this=c98f2664|clock_set:361
+EVIDENCE|seq=234|prev=c98f2664|this=2c8dcc41|cosign_grant:e2v1
+CASE|id=55|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=235|prev=2c8dcc41|this=2637e585|c55:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=55|label=ALLOW_SIM
+EVIDENCE|seq=236|prev=2637e585|this=071e1622|harness_reset
+EVIDENCE|seq=237|prev=071e1622|this=07e6a9c5|clock_set:827
+EVIDENCE|seq=238|prev=07e6a9c5|this=3f29e97d|cosign_grant:e5v1
+CASE|id=56|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=239|prev=3f29e97d|this=8360fbc9|c56:target:DENY:role_forbidden
+CLIENT|REP|case=56|label=DENY
+EVIDENCE|seq=240|prev=8360fbc9|this=09a7d2b8|harness_reset
+EVIDENCE|seq=241|prev=09a7d2b8|this=549ebfa8|clock_set:120
+EVIDENCE|seq=242|prev=549ebfa8|this=2bc8afa9|cosign_grant:e3v1
+EVIDENCE|seq=243|prev=2bc8afa9|this=071b69ee|cosign_revoke:e3v1
+EVIDENCE|seq=244|prev=071b69ee|this=77b295f6|cosign_grant:e3v2
+CASE|id=57|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=245|prev=77b295f6|this=a08c678b|c57:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=57|label=ALLOW_SIM
+EVIDENCE|seq=246|prev=a08c678b|this=e9cc339b|harness_reset
+EVIDENCE|seq=247|prev=e9cc339b|this=f1ef9b36|clock_set:130
+EVIDENCE|seq=248|prev=f1ef9b36|this=7e43adac|cosign_grant:e2v1
+CASE|id=58|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=249|prev=7e43adac|this=f431ebfa|c58:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=58|label=ALLOW_SIM
+EVIDENCE|seq=250|prev=f431ebfa|this=06542f43|harness_reset
+EVIDENCE|seq=251|prev=06542f43|this=d12c690e|clock_set:171
+EVIDENCE|seq=252|prev=d12c690e|this=bf53298e|cosign_grant:e1v1
+CASE|id=59|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=253|prev=bf53298e|this=15272b5e|c59:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=59|label=ALLOW_SIM
+EVIDENCE|seq=254|prev=15272b5e|this=0360c520|harness_reset
+EVIDENCE|seq=255|prev=0360c520|this=807d283b|clock_set:141
+EVIDENCE|seq=256|prev=807d283b|this=ea34ad48|cosign_grant:e3v2
+CASE|id=60|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=257|prev=ea34ad48|this=74d83415|c60:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=60|label=ALLOW_SIM
+EVIDENCE|seq=258|prev=74d83415|this=ec3b060b|harness_reset
+EVIDENCE|seq=259|prev=ec3b060b|this=fc9dec89|clock_set:27
+EVIDENCE|seq=260|prev=fc9dec89|this=0bf0693d|cosign_grant:e1v1
+CASE|id=61|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=261|prev=0bf0693d|this=1e1e4850|c61:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=61|label=ALLOW_SIM
+EVIDENCE|seq=262|prev=1e1e4850|this=b0770484|harness_reset
+EVIDENCE|seq=263|prev=b0770484|this=9e22817a|clock_set:430
+EVIDENCE|seq=264|prev=9e22817a|this=b4d1f06e|cosign_grant:e5v1
+EVIDENCE|seq=265|prev=b4d1f06e|this=997c3f3b|cosign_revoke:all
+CASE|id=62|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=266|prev=997c3f3b|this=3b45b158|c62:target:DENY:no_human_cosign
+CLIENT|REP|case=62|label=DENY
+EVIDENCE|seq=267|prev=3b45b158|this=060a3082|harness_reset
+EVIDENCE|seq=268|prev=060a3082|this=132b8445|clock_set:13
+EVIDENCE|seq=269|prev=132b8445|this=3f77d3e3|cosign_grant:e5v1
+CASE|id=63|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=270|prev=3f77d3e3|this=069c486e|c63:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=63|label=ALLOW_SIM
+EVIDENCE|seq=271|prev=069c486e|this=2024b41f|harness_reset
+EVIDENCE|seq=272|prev=2024b41f|this=32cdf9f1|clock_set:94
+EVIDENCE|seq=273|prev=32cdf9f1|this=d62844fd|cosign_grant:e1v1
+CASE|id=64|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=274|prev=d62844fd|this=a496500e|c64:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=64|label=ALLOW_SIM
+EVIDENCE|seq=275|prev=a496500e|this=cb042183|harness_reset
+EVIDENCE|seq=276|prev=cb042183|this=6ccf552a|clock_set:901
+EVIDENCE|seq=277|prev=6ccf552a|this=123e7d77|cosign_grant:e4v1
+CASE|id=65|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=278|prev=123e7d77|this=7ca6db14|c65:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=65|label=ALLOW_SIM
+EVIDENCE|seq=279|prev=7ca6db14|this=70dea87e|harness_reset
+EVIDENCE|seq=280|prev=70dea87e|this=a4e54397|clock_set:200
+EVIDENCE|seq=281|prev=a4e54397|this=05d0130f|cosign_grant:e1v1
+CASE|id=66|kind=target|verdict=DENY|reason=invalid_range
+EVIDENCE|seq=282|prev=05d0130f|this=1ebabb90|c66:target:DENY:invalid_range
+CLIENT|REP|case=66|label=DENY
+EVIDENCE|seq=283|prev=1ebabb90|this=97af2cf0|harness_reset
+EVIDENCE|seq=284|prev=97af2cf0|this=ae68fdef|clock_set:365
+EVIDENCE|seq=285|prev=ae68fdef|this=0984f972|cosign_grant:e7v1
+EVIDENCE|seq=286|prev=0984f972|this=c11dfd62|cosign_grant:e4v1
+EVIDENCE|seq=287|prev=c11dfd62|this=123fa9e0|cosign_grant:e2v1
+CASE|id=67|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=288|prev=123fa9e0|this=6cd3c43a|c67:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=67|label=ALLOW_SIM
+EVIDENCE|seq=289|prev=6cd3c43a|this=f6dde836|harness_reset
+EVIDENCE|seq=290|prev=f6dde836|this=fa446ec0|clock_set:318
+EVIDENCE|seq=291|prev=fa446ec0|this=d5fea467|cosign_grant:e3v2
+CASE|id=68|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=292|prev=d5fea467|this=4972f87b|c68:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=68|label=ALLOW_SIM
+EVIDENCE|seq=293|prev=4972f87b|this=e260211b|harness_reset
+EVIDENCE|seq=294|prev=e260211b|this=485670be|clock_set:261
+EVIDENCE|seq=295|prev=485670be|this=edd34cf3|cosign_grant:e6v3
+CASE|id=69|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=296|prev=edd34cf3|this=e7d207c3|c69:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=69|label=ALLOW_SIM
+EVIDENCE|seq=297|prev=e7d207c3|this=2d47e09a|harness_reset
+EVIDENCE|seq=298|prev=2d47e09a|this=9fec49e0|clock_set:263
+EVIDENCE|seq=299|prev=9fec49e0|this=1be547a2|cosign_grant:e6v2
+EVIDENCE|seq=300|prev=1be547a2|this=752b9a6a|cosign_revoke:e6v2
+EVIDENCE|seq=301|prev=752b9a6a|this=5e68b379|cosign_grant:e6v3
+CASE|id=70|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=302|prev=5e68b379|this=d10759b0|c70:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=70|label=ALLOW_SIM
+EVIDENCE|seq=303|prev=d10759b0|this=2d6dfaae|harness_reset
+EVIDENCE|seq=304|prev=2d6dfaae|this=52641496|clock_set:155
+EVIDENCE|seq=305|prev=52641496|this=8274ecae|cosign_grant:e1v1
+CASE|id=71|kind=target|verdict=DENY|reason=invalid_range
+EVIDENCE|seq=306|prev=8274ecae|this=dc779e2b|c71:target:DENY:invalid_range
+CLIENT|REP|case=71|label=DENY
+EVIDENCE|seq=307|prev=dc779e2b|this=7fd2436d|harness_reset
+EVIDENCE|seq=308|prev=7fd2436d|this=deb84c4e|clock_set:2013
+EVIDENCE|seq=309|prev=deb84c4e|this=4ed8f418|cosign_grant:e7v1
+CASE|id=72|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=310|prev=4ed8f418|this=8cfa2316|c72:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=72|label=ALLOW_SIM
+EVIDENCE|seq=311|prev=8cfa2316|this=4a538f08|harness_reset
+EVIDENCE|seq=312|prev=4a538f08|this=c551bedf|clock_set:877
+EVIDENCE|seq=313|prev=c551bedf|this=021fed87|cosign_grant:e5v1
+EVIDENCE|seq=314|prev=021fed87|this=a5d694e6|cosign_revoke:e5v1
+CASE|id=73|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=315|prev=a5d694e6|this=98ec211f|c73:target:DENY:no_human_cosign
+CLIENT|REP|case=73|label=DENY
+EVIDENCE|seq=316|prev=98ec211f|this=5b97d706|harness_reset
+EVIDENCE|seq=317|prev=5b97d706|this=7a284911|clock_set:1805
+EVIDENCE|seq=318|prev=7a284911|this=13caa815|cosign_grant:e7v1
+CASE|id=74|kind=target|verdict=DENY|reason=achievement_not_claimable
+EVIDENCE|seq=319|prev=13caa815|this=41d707be|c74:target:DENY:achievement_not_claimable
+CLIENT|REP|case=74|label=DENY
+EVIDENCE|seq=320|prev=41d707be|this=d63ee56b|harness_reset
+EVIDENCE|seq=321|prev=d63ee56b|this=6dbb91b7|clock_set:362
+EVIDENCE|seq=322|prev=6dbb91b7|this=f2d3098c|cosign_grant:e6v3
+EVIDENCE|seq=323|prev=f2d3098c|this=0dc93f7b|cosign_grant:e2v1
+CASE|id=75|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=324|prev=0dc93f7b|this=88d362c3|c75:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=75|label=ALLOW_SIM
+EVIDENCE|seq=325|prev=88d362c3|this=dff41ccf|harness_reset
+EVIDENCE|seq=326|prev=dff41ccf|this=d7d727f6|clock_set:175
+EVIDENCE|seq=327|prev=d7d727f6|this=8cf2876f|cosign_grant:e1v1
+CASE|id=76|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=328|prev=8cf2876f|this=f8fd3509|c76:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=76|label=DENY
+EVIDENCE|seq=329|prev=f8fd3509|this=d15c5d40|harness_reset
+EVIDENCE|seq=330|prev=d15c5d40|this=dc2322c9|clock_set:194
+EVIDENCE|seq=331|prev=dc2322c9|this=df10ece1|cosign_grant:e2v1
+EVIDENCE|seq=332|prev=df10ece1|this=7d9b2ebe|cosign_grant:e3v2
+EVIDENCE|seq=333|prev=7d9b2ebe|this=e09ca97e|cosign_grant:e1v1
+CASE|id=77|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=334|prev=e09ca97e|this=f59ee5f4|c77:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=77|label=ALLOW_SIM
+EVIDENCE|seq=335|prev=f59ee5f4|this=976a04d5|harness_reset
+EVIDENCE|seq=336|prev=976a04d5|this=6be2270f|clock_set:347
+EVIDENCE|seq=337|prev=6be2270f|this=8d71f716|cosign_grant:e6v3
+CASE|id=78|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=338|prev=8d71f716|this=570cfa51|c78:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=78|label=ALLOW_SIM
+EVIDENCE|seq=339|prev=570cfa51|this=b2c4eb6d|harness_reset
+EVIDENCE|seq=340|prev=b2c4eb6d|this=d93404b5|clock_set:561
+EVIDENCE|seq=341|prev=d93404b5|this=20dc1420|cosign_grant:e5v1
+CASE|id=79|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=342|prev=20dc1420|this=afcb2131|c79:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=79|label=ALLOW_SIM
+EVIDENCE|seq=343|prev=afcb2131|this=4204790f|harness_reset
+EVIDENCE|seq=344|prev=4204790f|this=1702b420|clock_set:1440
+EVIDENCE|seq=345|prev=1702b420|this=8e69ff25|cosign_grant:e7v1
+CASE|id=80|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=346|prev=8e69ff25|this=1a1e2487|c80:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=80|label=DENY
+EVIDENCE|seq=347|prev=1a1e2487|this=e8c620d6|harness_reset
+EVIDENCE|seq=348|prev=e8c620d6|this=963f94ea|clock_set:500
+EVIDENCE|seq=349|prev=963f94ea|this=11d79860|cosign_grant:e4v1
+CASE|id=81|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=350|prev=11d79860|this=c4b78fae|c81:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=81|label=ALLOW_SIM
+EVIDENCE|seq=351|prev=c4b78fae|this=3460823f|harness_reset
+EVIDENCE|seq=352|prev=3460823f|this=72ca6d09|clock_set:207
+EVIDENCE|seq=353|prev=72ca6d09|this=e0f5ed50|cosign_grant:e6v2
+CASE|id=82|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=354|prev=e0f5ed50|this=4a1e9c85|c82:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=82|label=ALLOW_SIM
+EVIDENCE|seq=355|prev=4a1e9c85|this=28d819f0|harness_reset
+EVIDENCE|seq=356|prev=28d819f0|this=786df2c3|clock_set:203
+EVIDENCE|seq=357|prev=786df2c3|this=e0f996b6|cosign_grant:e1v1
+CASE|id=83|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=358|prev=e0f996b6|this=5e45c9f3|c83:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=83|label=ALLOW_SIM
+EVIDENCE|seq=359|prev=5e45c9f3|this=bca300f2|harness_reset
+EVIDENCE|seq=360|prev=bca300f2|this=5cbc16e6|clock_set:97
+EVIDENCE|seq=361|prev=5cbc16e6|this=d19999e9|cosign_grant:e8v1
+CASE|id=84|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=362|prev=d19999e9|this=3982486e|c84:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=84|label=DENY
+EVIDENCE|seq=363|prev=3982486e|this=76f8c1f6|harness_reset
+EVIDENCE|seq=364|prev=76f8c1f6|this=758b5d4d|clock_set:1848
+EVIDENCE|seq=365|prev=758b5d4d|this=708fc426|cosign_grant:e7v1
+CASE|id=85|kind=target|verdict=DENY|reason=invalid_enum
+EVIDENCE|seq=366|prev=708fc426|this=d39b1f0b|c85:target:DENY:invalid_enum
+CLIENT|REP|case=85|label=DENY
+EVIDENCE|seq=367|prev=d39b1f0b|this=0096d423|harness_reset
+EVIDENCE|seq=368|prev=0096d423|this=1c924b90|clock_set:244
+EVIDENCE|seq=369|prev=1c924b90|this=6214a3e8|cosign_grant:e3v2
+CASE|id=86|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=370|prev=6214a3e8|this=896f1c96|c86:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=86|label=ALLOW_SIM
+EVIDENCE|seq=371|prev=896f1c96|this=ee304fa9|harness_reset
+EVIDENCE|seq=372|prev=ee304fa9|this=14a04ff1|clock_set:2082
+EVIDENCE|seq=373|prev=14a04ff1|this=9a5fabf6|cosign_grant:e1v1
+CASE|id=87|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=374|prev=9a5fabf6|this=2b87d5ca|c87:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=87|label=ALLOW_SIM
+EVIDENCE|seq=375|prev=2b87d5ca|this=abf6beee|harness_reset
+EVIDENCE|seq=376|prev=abf6beee|this=5eda4667|clock_set:1639
+EVIDENCE|seq=377|prev=5eda4667|this=03ed24e9|cosign_grant:e1v1
+CASE|id=88|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=378|prev=03ed24e9|this=832f287e|c88:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=88|label=ALLOW_SIM
+EVIDENCE|seq=379|prev=832f287e|this=2beb4b2f|harness_reset
+EVIDENCE|seq=380|prev=2beb4b2f|this=3df3e4c3|clock_set:147
+EVIDENCE|seq=381|prev=3df3e4c3|this=e90c2a7f|cosign_grant:e1v1
+CASE|id=89|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=382|prev=e90c2a7f|this=f681469c|c89:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=89|label=ALLOW_SIM
+EVIDENCE|seq=383|prev=f681469c|this=6a3fd48c|harness_reset
+EVIDENCE|seq=384|prev=6a3fd48c|this=5ebe5ae7|clock_set:69
+EVIDENCE|seq=385|prev=5ebe5ae7|this=6d253fda|cosign_grant:e8v1
+CASE|id=90|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=386|prev=6d253fda|this=1ffc0e23|c90:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=90|label=ALLOW_SIM
+EVIDENCE|seq=387|prev=1ffc0e23|this=cad9c02f|harness_reset
+EVIDENCE|seq=388|prev=cad9c02f|this=abb1a331|clock_set:242
+EVIDENCE|seq=389|prev=abb1a331|this=f8492d59|cosign_grant:e3v2
+CASE|id=91|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=390|prev=f8492d59|this=5269213a|c91:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=91|label=ALLOW_SIM
+EVIDENCE|seq=391|prev=5269213a|this=202eb789|harness_reset
+EVIDENCE|seq=392|prev=202eb789|this=2e8bce3d|clock_set:301
+EVIDENCE|seq=393|prev=2e8bce3d|this=8ae059cf|cosign_grant:e3v2
+CASE|id=92|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=394|prev=8ae059cf|this=79c0e070|c92:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=92|label=ALLOW_SIM
+EVIDENCE|seq=395|prev=79c0e070|this=b6b55802|harness_reset
+EVIDENCE|seq=396|prev=b6b55802|this=c6fc3e3c|clock_set:169
+EVIDENCE|seq=397|prev=c6fc3e3c|this=ea9adaa5|cosign_grant:e8v1
+EVIDENCE|seq=398|prev=ea9adaa5|this=aeb9164d|cosign_grant:e6v3
+EVIDENCE|seq=399|prev=aeb9164d|this=30c605f5|cosign_grant:e2v1
+CASE|id=93|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=400|prev=30c605f5|this=7d9d3f4f|c93:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=93|label=ALLOW_SIM
+EVIDENCE|seq=401|prev=7d9d3f4f|this=81e47f4d|harness_reset
+EVIDENCE|seq=402|prev=81e47f4d|this=7f300e24|clock_set:150
+EVIDENCE|seq=403|prev=7f300e24|this=921d2bfa|cosign_grant:e3v2
+CASE|id=94|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=404|prev=921d2bfa|this=8d01d815|c94:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=94|label=DENY
+EVIDENCE|seq=405|prev=8d01d815|this=fe1e2fe8|harness_reset
+EVIDENCE|seq=406|prev=fe1e2fe8|this=2afeef0c|clock_set:466
+EVIDENCE|seq=407|prev=2afeef0c|this=1848f560|cosign_grant:e6v3
+CASE|id=95|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=408|prev=1848f560|this=be02bcb4|c95:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=95|label=ALLOW_SIM
+EVIDENCE|seq=409|prev=be02bcb4|this=160e87d1|harness_reset
+EVIDENCE|seq=410|prev=160e87d1|this=c0aac32d|clock_set:1469
+EVIDENCE|seq=411|prev=c0aac32d|this=81056e6c|cosign_grant:e7v1
+CASE|id=96|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=412|prev=81056e6c|this=2e780370|c96:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=96|label=ALLOW_SIM
+EVIDENCE|seq=413|prev=2e780370|this=795e61ac|harness_reset
+EVIDENCE|seq=414|prev=795e61ac|this=2dd9ec05|clock_set:765
+EVIDENCE|seq=415|prev=2dd9ec05|this=7db1c6ce|cosign_grant:e3v2
+CASE|id=97|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=416|prev=7db1c6ce|this=4eb4edd0|c97:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=97|label=DENY
+EVIDENCE|seq=417|prev=4eb4edd0|this=c1fa8a5a|harness_reset
+EVIDENCE|seq=418|prev=c1fa8a5a|this=d57f096c|clock_set:651
+EVIDENCE|seq=419|prev=d57f096c|this=a25daf2e|cosign_grant:e4v1
+CASE|id=98|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=420|prev=a25daf2e|this=65e0eb76|c98:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=98|label=ALLOW_SIM
+EVIDENCE|seq=421|prev=65e0eb76|this=143bf401|harness_reset
+EVIDENCE|seq=422|prev=143bf401|this=fbd11551|clock_set:189
+EVIDENCE|seq=423|prev=fbd11551|this=601587d9|cosign_grant:e3v2
+EVIDENCE|seq=424|prev=601587d9|this=393fd877|cosign_revoke:e3v2
+CASE|id=99|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=425|prev=393fd877|this=f3a28599|c99:target:DENY:no_human_cosign
+CLIENT|REP|case=99|label=DENY
+EVIDENCE|seq=426|prev=f3a28599|this=2fb4989b|harness_reset
+EVIDENCE|seq=427|prev=2fb4989b|this=caae6d32|clock_set:457
+EVIDENCE|seq=428|prev=caae6d32|this=6a39e2b5|cosign_grant:e6v3
+CASE|id=100|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=429|prev=6a39e2b5|this=b8a2ceaa|c100:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=100|label=DENY
+EVIDENCE|seq=430|prev=b8a2ceaa|this=1470a00e|harness_reset
+EVIDENCE|seq=431|prev=1470a00e|this=07be5638|clock_set:107
+EVIDENCE|seq=432|prev=07be5638|this=a18177b8|cosign_grant:e3v1
+EVIDENCE|seq=433|prev=a18177b8|this=90be9533|cosign_revoke:all
+EVIDENCE|seq=434|prev=90be9533|this=fb13e04e|cosign_grant:e3v2
+CASE|id=101|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=435|prev=fb13e04e|this=33f6583e|c101:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=101|label=ALLOW_SIM
+EVIDENCE|seq=436|prev=33f6583e|this=d967bfc9|harness_reset
+EVIDENCE|seq=437|prev=d967bfc9|this=c8af5117|clock_set:425
+EVIDENCE|seq=438|prev=c8af5117|this=e472f9e6|cosign_grant:e5v1
+CASE|id=102|kind=target|verdict=DENY|reason=invalid_range
+EVIDENCE|seq=439|prev=e472f9e6|this=285317e6|c102:target:DENY:invalid_range
+CLIENT|REP|case=102|label=DENY
+EVIDENCE|seq=440|prev=285317e6|this=fcf78d42|harness_reset
+EVIDENCE|seq=441|prev=fcf78d42|this=a9e80eb0|clock_set:567
+EVIDENCE|seq=442|prev=a9e80eb0|this=97f262ab|cosign_grant:e3v2
+EVIDENCE|seq=443|prev=97f262ab|this=02144669|cosign_grant:e6v3
+CASE|id=103|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=444|prev=02144669|this=fe510a5e|c103:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=103|label=ALLOW_SIM
+EVIDENCE|seq=445|prev=fe510a5e|this=04eda038|harness_reset
+EVIDENCE|seq=446|prev=04eda038|this=6df1e22b|clock_set:1525
+EVIDENCE|seq=447|prev=6df1e22b|this=b59f7e13|cosign_grant:e7v1
+CASE|id=104|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=448|prev=b59f7e13|this=d0234daf|c104:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=104|label=ALLOW_SIM
+EVIDENCE|seq=449|prev=d0234daf|this=06b3abe4|harness_reset
+EVIDENCE|seq=450|prev=06b3abe4|this=9bc564a2|clock_set:2003
+EVIDENCE|seq=451|prev=9bc564a2|this=a914e7cc|cosign_grant:e7v1
+CASE|id=105|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=452|prev=a914e7cc|this=a3f3f62f|c105:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=105|label=ALLOW_SIM
+EVIDENCE|seq=453|prev=a3f3f62f|this=12ccff6c|harness_reset
+EVIDENCE|seq=454|prev=12ccff6c|this=c5232b94|clock_set:1081
+CASE|id=106|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=455|prev=c5232b94|this=66fec208|c106:target:DENY:no_human_cosign
+CLIENT|REP|case=106|label=DENY
+EVIDENCE|seq=456|prev=66fec208|this=d3d01b88|harness_reset
+EVIDENCE|seq=457|prev=d3d01b88|this=fbc6e258|clock_set:1001
+EVIDENCE|seq=458|prev=fbc6e258|this=b191984c|cosign_grant:e5v1
+CASE|id=107|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=459|prev=b191984c|this=8990b332|c107:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=107|label=ALLOW_SIM
+EVIDENCE|seq=460|prev=8990b332|this=c301a802|harness_reset
+EVIDENCE|seq=461|prev=c301a802|this=8ea7e1ee|clock_set:244
+EVIDENCE|seq=462|prev=8ea7e1ee|this=ffca2f64|cosign_grant:e3v2
+CASE|id=108|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=463|prev=ffca2f64|this=a009f44a|c108:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=108|label=DENY
+EVIDENCE|seq=464|prev=a009f44a|this=a4fdc5f3|harness_reset
+EVIDENCE|seq=465|prev=a4fdc5f3|this=a2eafb04|clock_set:414
+EVIDENCE|seq=466|prev=a2eafb04|this=6a35a457|cosign_grant:e6v3
+CASE|id=109|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=467|prev=6a35a457|this=522dbef5|c109:target:DENY:role_forbidden
+CLIENT|REP|case=109|label=DENY
+EVIDENCE|seq=468|prev=522dbef5|this=fadac8b2|harness_reset
+EVIDENCE|seq=469|prev=fadac8b2|this=f0fbfe62|clock_set:132
+EVIDENCE|seq=470|prev=f0fbfe62|this=ee74d23d|cosign_grant:e3v2
+CASE|id=110|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=471|prev=ee74d23d|this=bdd41f86|c110:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=110|label=DENY
+EVIDENCE|seq=472|prev=bdd41f86|this=ca03afce|harness_reset
+EVIDENCE|seq=473|prev=ca03afce|this=7d07f53d|clock_set:393
+EVIDENCE|seq=474|prev=7d07f53d|this=34ee63da|cosign_grant:e6v3
+CASE|id=111|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=475|prev=34ee63da|this=c239a0ee|c111:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=111|label=ALLOW_SIM
+EVIDENCE|seq=476|prev=c239a0ee|this=55a79d09|harness_reset
+EVIDENCE|seq=477|prev=55a79d09|this=05bfcc88|clock_set:273
+EVIDENCE|seq=478|prev=05bfcc88|this=ec9cd718|cosign_grant:e3v2
+CASE|id=112|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=479|prev=ec9cd718|this=89d74c1b|c112:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=112|label=ALLOW_SIM
+EVIDENCE|seq=480|prev=89d74c1b|this=50c09d23|harness_reset
+EVIDENCE|seq=481|prev=50c09d23|this=0385db2b|clock_set:238
+EVIDENCE|seq=482|prev=0385db2b|this=be655bce|cosign_grant:e3v2
+CASE|id=113|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=483|prev=be655bce|this=ddb7e91d|c113:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=113|label=ALLOW_SIM
+EVIDENCE|seq=484|prev=ddb7e91d|this=096221f8|harness_reset
+EVIDENCE|seq=485|prev=096221f8|this=62e2d6ff|clock_set:2014
+EVIDENCE|seq=486|prev=62e2d6ff|this=9186756a|cosign_grant:e7v1
+CASE|id=114|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=487|prev=9186756a|this=14006d54|c114:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=114|label=ALLOW_SIM
+EVIDENCE|seq=488|prev=14006d54|this=17a7399f|harness_reset
+EVIDENCE|seq=489|prev=17a7399f|this=36822a4e|clock_set:118
+EVIDENCE|seq=490|prev=36822a4e|this=1f4cdc5c|cosign_grant:e3v2
+CASE|id=115|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=491|prev=1f4cdc5c|this=0629413b|c115:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=115|label=DENY
+EVIDENCE|seq=492|prev=0629413b|this=87c60e7f|harness_reset
+EVIDENCE|seq=493|prev=87c60e7f|this=49f1740f|clock_set:197
+EVIDENCE|seq=494|prev=49f1740f|this=987f3f4d|cosign_grant:e2v1
+CASE|id=116|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=495|prev=987f3f4d|this=2c1e5179|c116:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=116|label=ALLOW_SIM
+EVIDENCE|seq=496|prev=2c1e5179|this=89fcdaa6|harness_reset
+EVIDENCE|seq=497|prev=89fcdaa6|this=55b49df5|clock_set:312
+EVIDENCE|seq=498|prev=55b49df5|this=e5cb63d5|cosign_grant:e6v1
+EVIDENCE|seq=499|prev=e5cb63d5|this=50015684|cosign_revoke:all
+EVIDENCE|seq=500|prev=50015684|this=f66eb5eb|cosign_grant:e6v3
+CASE|id=117|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=501|prev=f66eb5eb|this=e960db0f|c117:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=117|label=ALLOW_SIM
+EVIDENCE|seq=502|prev=e960db0f|this=d4c355cb|harness_reset
+EVIDENCE|seq=503|prev=d4c355cb|this=90939f50|clock_set:1198
+EVIDENCE|seq=504|prev=90939f50|this=e3899b74|cosign_grant:e8v1
+EVIDENCE|seq=505|prev=e3899b74|this=9229e1c7|cosign_grant:e7v1
+CASE|id=118|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=506|prev=9229e1c7|this=00d2fada|c118:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=118|label=ALLOW_SIM
+EVIDENCE|seq=507|prev=00d2fada|this=699a092d|harness_reset
+EVIDENCE|seq=508|prev=699a092d|this=e0379aea|clock_set:370
+EVIDENCE|seq=509|prev=e0379aea|this=5df79bea|cosign_grant:e6v1
+CASE|id=119|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=510|prev=5df79bea|this=276e8be5|c119:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=119|label=ALLOW_SIM
+EVIDENCE|seq=511|prev=276e8be5|this=641ad872|harness_reset
+EVIDENCE|seq=512|prev=641ad872|this=02bd241e|clock_set:97
+EVIDENCE|seq=513|prev=02bd241e|this=6c4d8531|cosign_grant:e8v1
+CASE|id=120|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=514|prev=6c4d8531|this=e68a90fc|c120:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=120|label=ALLOW_SIM
+EVIDENCE|seq=515|prev=e68a90fc|this=fd0a2924|harness_reset
+EVIDENCE|seq=516|prev=fd0a2924|this=9365a9d2|clock_set:604
+EVIDENCE|seq=517|prev=9365a9d2|this=533206b6|cosign_grant:e5v1
+EVIDENCE|seq=518|prev=533206b6|this=94024e43|cosign_grant:e7v1
+CASE|id=121|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=519|prev=94024e43|this=76526372|c121:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=121|label=ALLOW_SIM
+EVIDENCE|seq=520|prev=76526372|this=aae9a910|harness_reset
+EVIDENCE|seq=521|prev=aae9a910|this=d04ab5ee|clock_set:355
+EVIDENCE|seq=522|prev=d04ab5ee|this=bf52b87a|cosign_grant:e6v3
+CASE|id=122|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=523|prev=bf52b87a|this=e06fdf45|c122:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=122|label=ALLOW_SIM
+EVIDENCE|seq=524|prev=e06fdf45|this=c24d8cfc|harness_reset
+EVIDENCE|seq=525|prev=c24d8cfc|this=03d75787|clock_set:412
+CASE|id=123|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=526|prev=03d75787|this=76d3e718|c123:target:DENY:no_human_cosign
+CLIENT|REP|case=123|label=DENY
+EVIDENCE|seq=527|prev=76d3e718|this=0c4e64b8|harness_reset
+EVIDENCE|seq=528|prev=0c4e64b8|this=b4dae67a|clock_set:503
+EVIDENCE|seq=529|prev=b4dae67a|this=9b231f70|cosign_grant:e4v1
+CASE|id=124|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=530|prev=9b231f70|this=6e470dec|c124:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=124|label=ALLOW_SIM
+EVIDENCE|seq=531|prev=6e470dec|this=14503f62|harness_reset
+EVIDENCE|seq=532|prev=14503f62|this=d4f4b91f|clock_set:286
+EVIDENCE|seq=533|prev=d4f4b91f|this=00cb8e55|cosign_grant:e5v1
+CASE|id=125|kind=target|verdict=DENY|reason=invalid_range
+EVIDENCE|seq=534|prev=00cb8e55|this=3c40fd3e|c125:target:DENY:invalid_range
+CLIENT|REP|case=125|label=DENY
+EVIDENCE|seq=535|prev=3c40fd3e|this=35afff03|harness_reset
+EVIDENCE|seq=536|prev=35afff03|this=3f0a1b57|clock_set:416
+EVIDENCE|seq=537|prev=3f0a1b57|this=747e6459|cosign_grant:e6v3
+CASE|id=126|kind=target|verdict=DENY|reason=unknown_ticket
+EVIDENCE|seq=538|prev=747e6459|this=1d21b0b8|c126:target:DENY:unknown_ticket
+CLIENT|REP|case=126|label=DENY
+EVIDENCE|seq=539|prev=1d21b0b8|this=a55124aa|harness_reset
+EVIDENCE|seq=540|prev=a55124aa|this=4f188504|clock_set:107
+EVIDENCE|seq=541|prev=4f188504|this=3845b991|cosign_grant:e3v1
+EVIDENCE|seq=542|prev=3845b991|this=a6cd64fa|cosign_grant:e3v2
+CASE|id=127|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=543|prev=a6cd64fa|this=2d3c98f6|c127:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=127|label=ALLOW_SIM
+EVIDENCE|seq=544|prev=2d3c98f6|this=9e8d1d42|harness_reset
+EVIDENCE|seq=545|prev=9e8d1d42|this=2cbdbccd|clock_set:697
+EVIDENCE|seq=546|prev=2cbdbccd|this=614e13cb|cosign_grant:e4v1
+CASE|id=128|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=547|prev=614e13cb|this=e7da1161|c128:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=128|label=ALLOW_SIM
+EVIDENCE|seq=548|prev=e7da1161|this=b06d253e|harness_reset
+EVIDENCE|seq=549|prev=b06d253e|this=6f941fc4|clock_set:4179
+EVIDENCE|seq=550|prev=6f941fc4|this=341e770f|cosign_grant:e3v2
+CASE|id=129|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=551|prev=341e770f|this=7b2fb70d|c129:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=129|label=ALLOW_SIM
+EVIDENCE|seq=552|prev=7b2fb70d|this=2806ad4b|harness_reset
+EVIDENCE|seq=553|prev=2806ad4b|this=ea2b3b1f|clock_set:273
+EVIDENCE|seq=554|prev=ea2b3b1f|this=00a3e4c1|cosign_grant:e6v2
+EVIDENCE|seq=555|prev=00a3e4c1|this=220d17bd|cosign_revoke:all
+EVIDENCE|seq=556|prev=220d17bd|this=96835a54|cosign_grant:e6v3
+CASE|id=130|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=557|prev=96835a54|this=fec0c6e2|c130:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=130|label=ALLOW_SIM
+EVIDENCE|seq=558|prev=fec0c6e2|this=98a96751|harness_reset
+EVIDENCE|seq=559|prev=98a96751|this=3e961500|clock_set:149
+EVIDENCE|seq=560|prev=3e961500|this=40cc690c|cosign_grant:e3v2
+CASE|id=131|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=561|prev=40cc690c|this=7a7fac79|c131:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=131|label=ALLOW_SIM
+EVIDENCE|seq=562|prev=7a7fac79|this=14f5d1db|harness_reset
+EVIDENCE|seq=563|prev=14f5d1db|this=12895e6c|clock_set:637
+EVIDENCE|seq=564|prev=12895e6c|this=75526451|cosign_grant:e5v1
+CASE|id=132|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=565|prev=75526451|this=f882e713|c132:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=132|label=ALLOW_SIM
+EVIDENCE|seq=566|prev=f882e713|this=776e0c9f|harness_reset
+EVIDENCE|seq=567|prev=776e0c9f|this=24bcd492|clock_set:102
+EVIDENCE|seq=568|prev=24bcd492|this=f481aec4|cosign_grant:e1v1
+CASE|id=133|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=569|prev=f481aec4|this=50931aaf|c133:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=133|label=ALLOW_SIM
+EVIDENCE|seq=570|prev=50931aaf|this=83935575|harness_reset
+EVIDENCE|seq=571|prev=83935575|this=1fd1ad80|clock_set:625
+EVIDENCE|seq=572|prev=1fd1ad80|this=2f730d6c|cosign_grant:e4v1
+EVIDENCE|seq=573|prev=2f730d6c|this=052b6b43|cosign_revoke:e4v1
+CASE|id=134|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=574|prev=052b6b43|this=2df74c42|c134:target:DENY:no_human_cosign
+CLIENT|REP|case=134|label=DENY
+EVIDENCE|seq=575|prev=2df74c42|this=8238735e|harness_reset
+EVIDENCE|seq=576|prev=8238735e|this=d3055412|clock_set:254
+EVIDENCE|seq=577|prev=d3055412|this=0057245c|cosign_grant:e6v3
+CASE|id=135|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=578|prev=0057245c|this=027334e2|c135:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=135|label=ALLOW_SIM
+EVIDENCE|seq=579|prev=027334e2|this=0aad058d|harness_reset
+EVIDENCE|seq=580|prev=0aad058d|this=b48b2c7c|clock_set:739
+EVIDENCE|seq=581|prev=b48b2c7c|this=91d3536c|cosign_grant:e5v1
+CASE|id=136|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=582|prev=91d3536c|this=58b4637d|c136:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=136|label=ALLOW_SIM
+EVIDENCE|seq=583|prev=58b4637d|this=3ccd8658|harness_reset
+EVIDENCE|seq=584|prev=3ccd8658|this=793ae1ad|clock_set:279
+EVIDENCE|seq=585|prev=793ae1ad|this=927814c3|cosign_grant:e6v3
+EVIDENCE|seq=586|prev=927814c3|this=7ea7b174|cosign_grant:e8v1
+EVIDENCE|seq=587|prev=7ea7b174|this=9cd6b498|cosign_grant:e2v1
+CASE|id=137|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=588|prev=9cd6b498|this=f4200937|c137:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=137|label=ALLOW_SIM
+EVIDENCE|seq=589|prev=f4200937|this=1546028e|harness_reset
+EVIDENCE|seq=590|prev=1546028e|this=beab0046|clock_set:155
+EVIDENCE|seq=591|prev=beab0046|this=7139393c|cosign_grant:e3v1
+EVIDENCE|seq=592|prev=7139393c|this=2a4ccddf|cosign_revoke:e3v1
+EVIDENCE|seq=593|prev=2a4ccddf|this=3c89d378|cosign_grant:e3v2
+CASE|id=138|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=594|prev=3c89d378|this=cc420f76|c138:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=138|label=ALLOW_SIM
+EVIDENCE|seq=595|prev=cc420f76|this=bc864d73|harness_reset
+EVIDENCE|seq=596|prev=bc864d73|this=5bf430d5|clock_set:1581
+EVIDENCE|seq=597|prev=5bf430d5|this=73d85d8f|cosign_grant:e7v1
+SETUP|id=139|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=598|prev=73d85d8f|this=a1a10ae0|c139:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=139|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=599|prev=a1a10ae0|this=faf0b9c2|c139:target:DENY:duplicate_nonce
+CLIENT|REP|case=139|label=DENY
+EVIDENCE|seq=600|prev=faf0b9c2|this=0afd0bf0|harness_reset
+EVIDENCE|seq=601|prev=0afd0bf0|this=a10eb59a|clock_set:344
+EVIDENCE|seq=602|prev=a10eb59a|this=1593a5be|cosign_grant:e7v1
+EVIDENCE|seq=603|prev=1593a5be|this=43fcd5b9|cosign_grant:e2v1
+CASE|id=140|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=604|prev=43fcd5b9|this=d10b1630|c140:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=140|label=ALLOW_SIM
+EVIDENCE|seq=605|prev=d10b1630|this=6470112c|harness_reset
+EVIDENCE|seq=606|prev=6470112c|this=58d7c31a|clock_set:265
+EVIDENCE|seq=607|prev=58d7c31a|this=c2e7eff6|cosign_grant:e2v1
+CASE|id=141|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=608|prev=c2e7eff6|this=eb441f6d|c141:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=141|label=DENY
+EVIDENCE|seq=609|prev=eb441f6d|this=6cfdc069|harness_reset
+EVIDENCE|seq=610|prev=6cfdc069|this=21a74881|clock_set:142
+EVIDENCE|seq=611|prev=21a74881|this=0f223fbb|cosign_grant:e8v1
+CASE|id=142|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=612|prev=0f223fbb|this=9f4dae00|c142:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=142|label=ALLOW_SIM
+EVIDENCE|seq=613|prev=9f4dae00|this=06aacfe0|harness_reset
+EVIDENCE|seq=614|prev=06aacfe0|this=5afe20dd|clock_set:1700
+EVIDENCE|seq=615|prev=5afe20dd|this=aaa01d33|cosign_grant:e3v2
+CASE|id=143|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=616|prev=aaa01d33|this=4c047480|c143:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=143|label=ALLOW_SIM
+EVIDENCE|seq=617|prev=4c047480|this=ebf66812|harness_reset
+EVIDENCE|seq=618|prev=ebf66812|this=feda3a83|clock_set:167
+EVIDENCE|seq=619|prev=feda3a83|this=37664a2a|cosign_grant:e3v1
+EVIDENCE|seq=620|prev=37664a2a|this=af0f1199|cosign_revoke:e3v1
+EVIDENCE|seq=621|prev=af0f1199|this=7af827fe|cosign_grant:e3v2
+CASE|id=144|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=622|prev=7af827fe|this=53c80850|c144:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=144|label=ALLOW_SIM
+EVIDENCE|seq=623|prev=53c80850|this=20a6aae7|harness_reset
+EVIDENCE|seq=624|prev=20a6aae7|this=4ec45b5d|clock_set:499
+EVIDENCE|seq=625|prev=4ec45b5d|this=4d5ecb14|cosign_grant:e4v1
+CASE|id=145|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=626|prev=4d5ecb14|this=966c1bce|c145:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=145|label=ALLOW_SIM
+EVIDENCE|seq=627|prev=966c1bce|this=13423857|harness_reset
+EVIDENCE|seq=628|prev=13423857|this=619daba4|clock_set:554
+EVIDENCE|seq=629|prev=619daba4|this=4395595b|cosign_grant:e6v3
+CASE|id=146|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=630|prev=4395595b|this=26bbd72b|c146:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=146|label=ALLOW_SIM
+EVIDENCE|seq=631|prev=26bbd72b|this=1cc7c2a1|harness_reset
+EVIDENCE|seq=632|prev=1cc7c2a1|this=94223c91|clock_set:841
+EVIDENCE|seq=633|prev=94223c91|this=4ce8587b|cosign_grant:e4v1
+CASE|id=147|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=634|prev=4ce8587b|this=c3ab8613|c147:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=147|label=ALLOW_SIM
+EVIDENCE|seq=635|prev=c3ab8613|this=80bcff49|harness_reset
+EVIDENCE|seq=636|prev=80bcff49|this=942bd2fb|clock_set:115
+EVIDENCE|seq=637|prev=942bd2fb|this=529a6d94|cosign_grant:e3v2
+SETUP|id=148|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=638|prev=529a6d94|this=e01cf16a|c148:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=148|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=639|prev=e01cf16a|this=7e3b87bb|c148:target:DENY:duplicate_nonce
+CLIENT|REP|case=148|label=DENY
+EVIDENCE|seq=640|prev=7e3b87bb|this=c62f8cbc|harness_reset
+EVIDENCE|seq=641|prev=c62f8cbc|this=8588f043|clock_set:151
+EVIDENCE|seq=642|prev=8588f043|this=866059a0|cosign_grant:e1v1
+CASE|id=149|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=643|prev=866059a0|this=e7725091|c149:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=149|label=DENY
+EVIDENCE|seq=644|prev=e7725091|this=affa97df|harness_reset
+EVIDENCE|seq=645|prev=affa97df|this=a518c75a|clock_set:440
+EVIDENCE|seq=646|prev=a518c75a|this=a995e218|cosign_grant:e5v1
+CASE|id=150|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=647|prev=a995e218|this=eda44f32|c150:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=150|label=DENY
+EVIDENCE|seq=648|prev=eda44f32|this=1c97e5e1|harness_reset
+EVIDENCE|seq=649|prev=1c97e5e1|this=39258548|clock_set:59
+EVIDENCE|seq=650|prev=39258548|this=ad684553|cosign_grant:e5v1
+CASE|id=151|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=651|prev=ad684553|this=c1d5b3c5|c151:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=151|label=ALLOW_SIM
+EVIDENCE|seq=652|prev=c1d5b3c5|this=57ef55a7|harness_reset
+EVIDENCE|seq=653|prev=57ef55a7|this=c6690a13|clock_set:439
+EVIDENCE|seq=654|prev=c6690a13|this=61bd8be6|cosign_grant:e6v2
+EVIDENCE|seq=655|prev=61bd8be6|this=f2fe7034|cosign_revoke:all
+EVIDENCE|seq=656|prev=f2fe7034|this=4752f1b5|cosign_grant:e6v3
+CASE|id=152|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=657|prev=4752f1b5|this=e8e75050|c152:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=152|label=ALLOW_SIM
+EVIDENCE|seq=658|prev=e8e75050|this=9ea44132|harness_reset
+EVIDENCE|seq=659|prev=9ea44132|this=319749b9|clock_set:78
+EVIDENCE|seq=660|prev=319749b9|this=970b84af|cosign_grant:e8v1
+CASE|id=153|kind=target|verdict=DENY|reason=achievement_not_claimable
+EVIDENCE|seq=661|prev=970b84af|this=052dcc7a|c153:target:DENY:achievement_not_claimable
+CLIENT|REP|case=153|label=DENY
+EVIDENCE|seq=662|prev=052dcc7a|this=3e62dd5f|harness_reset
+EVIDENCE|seq=663|prev=3e62dd5f|this=b7e03db4|clock_set:535
+EVIDENCE|seq=664|prev=b7e03db4|this=fc7b7b47|cosign_grant:e6v3
+CASE|id=154|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=665|prev=fc7b7b47|this=322f3c0a|c154:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=154|label=ALLOW_SIM
+EVIDENCE|seq=666|prev=322f3c0a|this=c0cba5ea|harness_reset
+EVIDENCE|seq=667|prev=c0cba5ea|this=e8102e30|clock_set:151
+EVIDENCE|seq=668|prev=e8102e30|this=7aee1540|cosign_grant:e1v1
+CASE|id=155|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=669|prev=7aee1540|this=9f39d74b|c155:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=155|label=ALLOW_SIM
+EVIDENCE|seq=670|prev=9f39d74b|this=d69029e1|harness_reset
+EVIDENCE|seq=671|prev=d69029e1|this=91fdd1d5|clock_set:240
+EVIDENCE|seq=672|prev=91fdd1d5|this=5fd96269|cosign_grant:e6v3
+EVIDENCE|seq=673|prev=5fd96269|this=c7e0e945|cosign_grant:e6v1
+CASE|id=156|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=674|prev=c7e0e945|this=dc7c8251|c156:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=156|label=ALLOW_SIM
+EVIDENCE|seq=675|prev=dc7c8251|this=28731d29|harness_reset
+EVIDENCE|seq=676|prev=28731d29|this=f55abb34|clock_set:779
+EVIDENCE|seq=677|prev=f55abb34|this=80494fea|cosign_grant:e4v1
+EVIDENCE|seq=678|prev=80494fea|this=1bcf1eae|cosign_grant:e1v1
+CASE|id=157|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=679|prev=1bcf1eae|this=57d333a6|c157:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=157|label=ALLOW_SIM
+EVIDENCE|seq=680|prev=57d333a6|this=64c58eea|harness_reset
+EVIDENCE|seq=681|prev=64c58eea|this=a1c57a7e|clock_set:286
+EVIDENCE|seq=682|prev=a1c57a7e|this=1eeae01d|cosign_grant:e3v2
+EVIDENCE|seq=683|prev=1eeae01d|this=67218999|cosign_grant:e2v1
+EVIDENCE|seq=684|prev=67218999|this=adc7bfa4|cosign_grant:e1v1
+CASE|id=158|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=685|prev=adc7bfa4|this=b82e436e|c158:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=158|label=ALLOW_SIM
+EVIDENCE|seq=686|prev=b82e436e|this=89799a9c|harness_reset
+EVIDENCE|seq=687|prev=89799a9c|this=a898eb37|clock_set:552
+EVIDENCE|seq=688|prev=a898eb37|this=4b03ab38|cosign_grant:e6v2
+EVIDENCE|seq=689|prev=4b03ab38|this=2e678d88|cosign_revoke:all
+EVIDENCE|seq=690|prev=2e678d88|this=e8ea44fd|cosign_grant:e6v3
+CASE|id=159|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=691|prev=e8ea44fd|this=ff7ab4ed|c159:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=159|label=ALLOW_SIM
+EVIDENCE|seq=692|prev=ff7ab4ed|this=5acb840f|harness_reset
+EVIDENCE|seq=693|prev=5acb840f|this=3a11ac46|clock_set:421
+EVIDENCE|seq=694|prev=3a11ac46|this=faa48088|cosign_grant:e6v3
+CASE|id=160|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=695|prev=faa48088|this=24cc5df3|c160:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=160|label=DENY
+EVIDENCE|seq=696|prev=24cc5df3|this=92ae7005|harness_reset
+EVIDENCE|seq=697|prev=92ae7005|this=5bb6b018|clock_set:204
+EVIDENCE|seq=698|prev=5bb6b018|this=73e9334d|cosign_grant:e1v1
+CASE|id=161|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=699|prev=73e9334d|this=93fc4b85|c161:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=161|label=ALLOW_SIM
+EVIDENCE|seq=700|prev=93fc4b85|this=026c8b92|harness_reset
+EVIDENCE|seq=701|prev=026c8b92|this=ecd87601|clock_set:113
+EVIDENCE|seq=702|prev=ecd87601|this=c553bbe2|cosign_grant:e3v2
+CASE|id=162|kind=target|verdict=DENY|reason=invalid_enum
+EVIDENCE|seq=703|prev=c553bbe2|this=5c568c3d|c162:target:DENY:invalid_enum
+CLIENT|REP|case=162|label=DENY
+EVIDENCE|seq=704|prev=5c568c3d|this=fd4150b4|harness_reset
+EVIDENCE|seq=705|prev=fd4150b4|this=f9e07ee6|clock_set:70
+EVIDENCE|seq=706|prev=f9e07ee6|this=3d085115|cosign_grant:e5v1
+CASE|id=163|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=707|prev=3d085115|this=4ab59a42|c163:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=163|label=ALLOW_SIM
+EVIDENCE|seq=708|prev=4ab59a42|this=81c223f8|harness_reset
+EVIDENCE|seq=709|prev=81c223f8|this=cac1c1f8|clock_set:843
+EVIDENCE|seq=710|prev=cac1c1f8|this=b845a09c|cosign_grant:e5v1
+CASE|id=164|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=711|prev=b845a09c|this=47fba538|c164:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=164|label=DENY
+EVIDENCE|seq=712|prev=47fba538|this=bfb81baa|harness_reset
+EVIDENCE|seq=713|prev=bfb81baa|this=1a5c7441|clock_set:428
+EVIDENCE|seq=714|prev=1a5c7441|this=dca5a4ad|cosign_grant:e5v1
+CASE|id=165|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=715|prev=dca5a4ad|this=3bb7fbb4|c165:target:DENY:role_forbidden
+CLIENT|REP|case=165|label=DENY
+EVIDENCE|seq=716|prev=3bb7fbb4|this=6860be8c|harness_reset
+EVIDENCE|seq=717|prev=6860be8c|this=26f0f23f|clock_set:64
+EVIDENCE|seq=718|prev=26f0f23f|this=787d7cba|cosign_grant:e8v1
+CASE|id=166|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=719|prev=787d7cba|this=17cef346|c166:target:DENY:role_forbidden
+CLIENT|REP|case=166|label=DENY
+EVIDENCE|seq=720|prev=17cef346|this=7750470d|harness_reset
+EVIDENCE|seq=721|prev=7750470d|this=79f844fe|clock_set:88
+EVIDENCE|seq=722|prev=79f844fe|this=4c9798ac|cosign_grant:e8v1
+SETUP|id=167|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=723|prev=4c9798ac|this=417b1c18|c167:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=167|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=724|prev=417b1c18|this=a22003a2|c167:target:DENY:duplicate_nonce
+CLIENT|REP|case=167|label=DENY
+EVIDENCE|seq=725|prev=a22003a2|this=327b9f69|harness_reset
+EVIDENCE|seq=726|prev=327b9f69|this=48eed75c|clock_set:126
+EVIDENCE|seq=727|prev=48eed75c|this=c1c7b952|cosign_grant:e1v1
+CASE|id=168|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=728|prev=c1c7b952|this=c2fb9b58|c168:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=168|label=ALLOW_SIM
+EVIDENCE|seq=729|prev=c2fb9b58|this=70fab76e|harness_reset
+EVIDENCE|seq=730|prev=70fab76e|this=29180f8a|clock_set:520
+EVIDENCE|seq=731|prev=29180f8a|this=572e2ecc|cosign_grant:e3v2
+EVIDENCE|seq=732|prev=572e2ecc|this=20a0e6a6|cosign_grant:e6v3
+EVIDENCE|seq=733|prev=20a0e6a6|this=72b8b1f2|cosign_grant:e8v1
+CASE|id=169|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=734|prev=72b8b1f2|this=ea31422f|c169:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=169|label=ALLOW_SIM
+EVIDENCE|seq=735|prev=ea31422f|this=511cdcb2|harness_reset
+EVIDENCE|seq=736|prev=511cdcb2|this=5584503e|clock_set:838
+EVIDENCE|seq=737|prev=5584503e|this=f03c7b2a|cosign_grant:e5v1
+CASE|id=170|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=738|prev=f03c7b2a|this=68873902|c170:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=170|label=DENY
+EVIDENCE|seq=739|prev=68873902|this=821d93b2|harness_reset
+EVIDENCE|seq=740|prev=821d93b2|this=c341c50c|clock_set:200
+EVIDENCE|seq=741|prev=c341c50c|this=f72341b4|cosign_grant:e1v1
+CASE|id=171|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=742|prev=f72341b4|this=bea7db90|c171:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=171|label=ALLOW_SIM
+EVIDENCE|seq=743|prev=bea7db90|this=785cffe0|harness_reset
+EVIDENCE|seq=744|prev=785cffe0|this=f81b1b2b|clock_set:235
+EVIDENCE|seq=745|prev=f81b1b2b|this=602463b9|cosign_grant:e3v2
+CASE|id=172|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=746|prev=602463b9|this=b2556668|c172:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=172|label=ALLOW_SIM
+EVIDENCE|seq=747|prev=b2556668|this=306126df|harness_reset
+EVIDENCE|seq=748|prev=306126df|this=e20aaf60|clock_set:262
+EVIDENCE|seq=749|prev=e20aaf60|this=6523bc70|cosign_grant:e3v1
+EVIDENCE|seq=750|prev=6523bc70|this=3ff7bed4|cosign_revoke:e3v1
+EVIDENCE|seq=751|prev=3ff7bed4|this=98662efc|cosign_grant:e3v2
+CASE|id=173|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=752|prev=98662efc|this=f64b1615|c173:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=173|label=ALLOW_SIM
+EVIDENCE|seq=753|prev=f64b1615|this=5f6378c4|harness_reset
+EVIDENCE|seq=754|prev=5f6378c4|this=f905f530|clock_set:150
+EVIDENCE|seq=755|prev=f905f530|this=79ef7621|cosign_grant:e2v1
+CASE|id=174|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=756|prev=79ef7621|this=2155d5b3|c174:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=174|label=ALLOW_SIM
+EVIDENCE|seq=757|prev=2155d5b3|this=37baaac4|harness_reset
+EVIDENCE|seq=758|prev=37baaac4|this=9616c39e|clock_set:568
+EVIDENCE|seq=759|prev=9616c39e|this=28d1ac65|cosign_grant:e4v1
+EVIDENCE|seq=760|prev=28d1ac65|this=cb1799cd|cosign_grant:e6v3
+CASE|id=175|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=761|prev=cb1799cd|this=a0a17ad2|c175:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=175|label=ALLOW_SIM
+EVIDENCE|seq=762|prev=a0a17ad2|this=08742ca4|harness_reset
+EVIDENCE|seq=763|prev=08742ca4|this=ad5911b0|clock_set:261
+EVIDENCE|seq=764|prev=ad5911b0|this=da2bd125|cosign_grant:e5v1
+CASE|id=176|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=765|prev=da2bd125|this=43be9ba3|c176:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=176|label=DENY
+EVIDENCE|seq=766|prev=43be9ba3|this=dd0afaf0|harness_reset
+EVIDENCE|seq=767|prev=dd0afaf0|this=d8718358|clock_set:240
+EVIDENCE|seq=768|prev=d8718358|this=49b192cc|cosign_grant:e6v3
+CASE|id=177|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=769|prev=49b192cc|this=20a4c08b|c177:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=177|label=ALLOW_SIM
+EVIDENCE|seq=770|prev=20a4c08b|this=895b2687|harness_reset
+EVIDENCE|seq=771|prev=895b2687|this=953a5259|clock_set:95
+EVIDENCE|seq=772|prev=953a5259|this=d5195d82|cosign_grant:e8v1
+CASE|id=178|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=773|prev=d5195d82|this=0463c418|c178:target:DENY:role_forbidden
+CLIENT|REP|case=178|label=DENY
+EVIDENCE|seq=774|prev=0463c418|this=5a4bd137|harness_reset
+EVIDENCE|seq=775|prev=5a4bd137|this=b924e5ac|clock_set:267
+EVIDENCE|seq=776|prev=b924e5ac|this=b5526b00|cosign_grant:e3v2
+CASE|id=179|kind=target|verdict=DENY|reason=achievement_not_claimable
+EVIDENCE|seq=777|prev=b5526b00|this=cd8c82b0|c179:target:DENY:achievement_not_claimable
+CLIENT|REP|case=179|label=DENY
+EVIDENCE|seq=778|prev=cd8c82b0|this=9dc46e49|harness_reset
+EVIDENCE|seq=779|prev=9dc46e49|this=05cb5335|clock_set:126
+EVIDENCE|seq=780|prev=05cb5335|this=79860ea3|cosign_grant:e5v1
+CASE|id=180|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=781|prev=79860ea3|this=528072fe|c180:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=180|label=DENY
+EVIDENCE|seq=782|prev=528072fe|this=ac3ad090|harness_reset
+EVIDENCE|seq=783|prev=ac3ad090|this=936b55bd|clock_set:928
+EVIDENCE|seq=784|prev=936b55bd|this=ce64cd03|cosign_grant:e5v1
+CASE|id=181|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=785|prev=ce64cd03|this=72c8dcec|c181:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=181|label=ALLOW_SIM
+EVIDENCE|seq=786|prev=72c8dcec|this=d8dc1698|harness_reset
+EVIDENCE|seq=787|prev=d8dc1698|this=f0851980|clock_set:840
+EVIDENCE|seq=788|prev=f0851980|this=34b7b6d5|cosign_grant:e5v1
+EVIDENCE|seq=789|prev=34b7b6d5|this=c273662b|cosign_grant:e4v1
+CASE|id=182|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=790|prev=c273662b|this=d68168c8|c182:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=182|label=ALLOW_SIM
+EVIDENCE|seq=791|prev=d68168c8|this=93ccb2e4|harness_reset
+EVIDENCE|seq=792|prev=93ccb2e4|this=2ab4a6bc|clock_set:796
+EVIDENCE|seq=793|prev=2ab4a6bc|this=e7c7c3ef|cosign_grant:e4v1
+CASE|id=183|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=794|prev=e7c7c3ef|this=e3ea44ff|c183:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=183|label=ALLOW_SIM
+EVIDENCE|seq=795|prev=e3ea44ff|this=8941db71|harness_reset
+EVIDENCE|seq=796|prev=8941db71|this=a2a5e87b|clock_set:183
+EVIDENCE|seq=797|prev=a2a5e87b|this=af6d18b4|cosign_grant:e5v1
+CASE|id=184|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=798|prev=af6d18b4|this=254f76c5|c184:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=184|label=DENY
+EVIDENCE|seq=799|prev=254f76c5|this=c377604c|harness_reset
+EVIDENCE|seq=800|prev=c377604c|this=6bf320a9|clock_set:707
+EVIDENCE|seq=801|prev=6bf320a9|this=b065d94d|cosign_grant:e5v1
+CASE|id=185|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=802|prev=b065d94d|this=5da3f182|c185:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=185|label=ALLOW_SIM
+EVIDENCE|seq=803|prev=5da3f182|this=112f78fa|harness_reset
+EVIDENCE|seq=804|prev=112f78fa|this=99fe591b|clock_set:132
+EVIDENCE|seq=805|prev=99fe591b|this=a8c5139c|cosign_grant:e8v1
+CASE|id=186|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=806|prev=a8c5139c|this=93f27183|c186:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=186|label=DENY
+EVIDENCE|seq=807|prev=93f27183|this=e2b70684|harness_reset
+EVIDENCE|seq=808|prev=e2b70684|this=7ce14ef4|clock_set:183
+EVIDENCE|seq=809|prev=7ce14ef4|this=05569be4|cosign_grant:e2v1
+CASE|id=187|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=810|prev=05569be4|this=2f6f095b|c187:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=187|label=ALLOW_SIM
+EVIDENCE|seq=811|prev=2f6f095b|this=6b66adb3|harness_reset
+EVIDENCE|seq=812|prev=6b66adb3|this=ab49baeb|clock_set:111
+EVIDENCE|seq=813|prev=ab49baeb|this=aeca9648|cosign_grant:e8v1
+CASE|id=188|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=814|prev=aeca9648|this=b7d9a284|c188:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=188|label=ALLOW_SIM
+EVIDENCE|seq=815|prev=b7d9a284|this=2f04823b|harness_reset
+EVIDENCE|seq=816|prev=2f04823b|this=836946bf|clock_set:233
+EVIDENCE|seq=817|prev=836946bf|this=f056e1e9|cosign_grant:e3v1
+EVIDENCE|seq=818|prev=f056e1e9|this=3c096d7d|cosign_revoke:all
+EVIDENCE|seq=819|prev=3c096d7d|this=01917bb8|cosign_grant:e3v2
+CASE|id=189|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=820|prev=01917bb8|this=c5433914|c189:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=189|label=ALLOW_SIM
+EVIDENCE|seq=821|prev=c5433914|this=a115fe4a|harness_reset
+EVIDENCE|seq=822|prev=a115fe4a|this=2571d8dc|clock_set:364
+EVIDENCE|seq=823|prev=2571d8dc|this=990a7a41|cosign_grant:e2v1
+CASE|id=190|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=824|prev=990a7a41|this=c5217377|c190:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=190|label=ALLOW_SIM
+EVIDENCE|seq=825|prev=c5217377|this=e0d4e15b|harness_reset
+EVIDENCE|seq=826|prev=e0d4e15b|this=5223a9d3|clock_set:954
+EVIDENCE|seq=827|prev=5223a9d3|this=1e06c629|cosign_grant:e5v1
+CASE|id=191|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=828|prev=1e06c629|this=fdf1146d|c191:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=191|label=ALLOW_SIM
+EVIDENCE|seq=829|prev=fdf1146d|this=ad1214b2|harness_reset
+EVIDENCE|seq=830|prev=ad1214b2|this=b6a5f87c|clock_set:282
+EVIDENCE|seq=831|prev=b6a5f87c|this=bcf940a2|cosign_grant:e2v1
+CASE|id=192|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=832|prev=bcf940a2|this=4fa6ba3c|c192:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=192|label=ALLOW_SIM
+EVIDENCE|seq=833|prev=4fa6ba3c|this=5a514264|harness_reset
+EVIDENCE|seq=834|prev=5a514264|this=c3276b91|clock_set:885
+EVIDENCE|seq=835|prev=c3276b91|this=08f99bc3|cosign_grant:e4v1
+EVIDENCE|seq=836|prev=08f99bc3|this=ea483fc2|cosign_grant:e5v1
+EVIDENCE|seq=837|prev=ea483fc2|this=b626dc31|cosign_grant:e7v1
+CASE|id=193|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=838|prev=b626dc31|this=ee9aaa3f|c193:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=193|label=ALLOW_SIM
+EVIDENCE|seq=839|prev=ee9aaa3f|this=8079fb0a|harness_reset
+EVIDENCE|seq=840|prev=8079fb0a|this=e07eed7c|clock_set:120
+EVIDENCE|seq=841|prev=e07eed7c|this=8cf6126d|cosign_grant:e3v1
+EVIDENCE|seq=842|prev=8cf6126d|this=5878de2a|cosign_revoke:all
+EVIDENCE|seq=843|prev=5878de2a|this=c20cff65|cosign_grant:e3v2
+CASE|id=194|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=844|prev=c20cff65|this=4321b69f|c194:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=194|label=ALLOW_SIM
+EVIDENCE|seq=845|prev=4321b69f|this=91586410|harness_reset
+EVIDENCE|seq=846|prev=91586410|this=882e14c0|clock_set:181
+EVIDENCE|seq=847|prev=882e14c0|this=f772f3fc|cosign_grant:e1v1
+CASE|id=195|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=848|prev=f772f3fc|this=7e6edf38|c195:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=195|label=ALLOW_SIM
+EVIDENCE|seq=849|prev=7e6edf38|this=33275450|harness_reset
+EVIDENCE|seq=850|prev=33275450|this=f57c2ddc|clock_set:135
+EVIDENCE|seq=851|prev=f57c2ddc|this=a04177c9|cosign_grant:e3v2
+CASE|id=196|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=852|prev=a04177c9|this=9d75e63a|c196:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=196|label=ALLOW_SIM
+EVIDENCE|seq=853|prev=9d75e63a|this=7c28ec91|harness_reset
+EVIDENCE|seq=854|prev=7c28ec91|this=ebf7e8e0|clock_set:486
+CASE|id=197|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=855|prev=ebf7e8e0|this=72d7b52f|c197:target:DENY:no_human_cosign
+CLIENT|REP|case=197|label=DENY
+EVIDENCE|seq=856|prev=72d7b52f|this=5847ab37|harness_reset
+EVIDENCE|seq=857|prev=5847ab37|this=4351c375|clock_set:518
+EVIDENCE|seq=858|prev=4351c375|this=9cb00676|cosign_grant:e4v1
+CASE|id=198|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=859|prev=9cb00676|this=d93f1c3d|c198:target:DENY:role_forbidden
+CLIENT|REP|case=198|label=DENY
+EVIDENCE|seq=860|prev=d93f1c3d|this=7b4ac5a3|harness_reset
+EVIDENCE|seq=861|prev=7b4ac5a3|this=355b6e31|clock_set:299
+EVIDENCE|seq=862|prev=355b6e31|this=438c5247|cosign_grant:e3v2
+CASE|id=199|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=863|prev=438c5247|this=7ff94350|c199:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=199|label=DENY
+EVIDENCE|seq=864|prev=7ff94350|this=782a0aa7|harness_reset
+EVIDENCE|seq=865|prev=782a0aa7|this=bb11035f|clock_set:587
+EVIDENCE|seq=866|prev=bb11035f|this=f941a4b0|cosign_grant:e4v1
+CASE|id=200|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=867|prev=f941a4b0|this=824a11b8|c200:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=200|label=ALLOW_SIM
+EVIDENCE|seq=868|prev=824a11b8|this=9eb8093d|harness_reset
+EVIDENCE|seq=869|prev=9eb8093d|this=749e7bdc|clock_set:163
+EVIDENCE|seq=870|prev=749e7bdc|this=2f49892b|cosign_grant:e3v2
+CASE|id=201|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=871|prev=2f49892b|this=e68eb88d|c201:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=201|label=ALLOW_SIM
+EVIDENCE|seq=872|prev=e68eb88d|this=31b5e413|harness_reset
+EVIDENCE|seq=873|prev=31b5e413|this=8070d9d6|clock_set:252
+EVIDENCE|seq=874|prev=8070d9d6|this=dfb8105c|cosign_grant:e3v1
+EVIDENCE|seq=875|prev=dfb8105c|this=497efe3a|cosign_grant:e3v2
+CASE|id=202|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=876|prev=497efe3a|this=36d0c74a|c202:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=202|label=ALLOW_SIM
+EVIDENCE|seq=877|prev=36d0c74a|this=5aaf776c|harness_reset
+EVIDENCE|seq=878|prev=5aaf776c|this=a1b1ca19|clock_set:1719
+EVIDENCE|seq=879|prev=a1b1ca19|this=52db620b|cosign_grant:e7v1
+CASE|id=203|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=880|prev=52db620b|this=c5f9668c|c203:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=203|label=ALLOW_SIM
+EVIDENCE|seq=881|prev=c5f9668c|this=89e3b773|harness_reset
+EVIDENCE|seq=882|prev=89e3b773|this=18623fb4|clock_set:360
+EVIDENCE|seq=883|prev=18623fb4|this=159ece5c|cosign_grant:e4v1
+CASE|id=204|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=884|prev=159ece5c|this=c975686f|c204:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=204|label=DENY
+EVIDENCE|seq=885|prev=c975686f|this=512f5824|harness_reset
+EVIDENCE|seq=886|prev=512f5824|this=a98d1c3d|clock_set:64
+EVIDENCE|seq=887|prev=a98d1c3d|this=a53b9454|cosign_grant:e8v1
+CASE|id=205|kind=target|verdict=DENY|reason=invalid_range
+EVIDENCE|seq=888|prev=a53b9454|this=060b1d50|c205:target:DENY:invalid_range
+CLIENT|REP|case=205|label=DENY
+EVIDENCE|seq=889|prev=060b1d50|this=ebee945d|harness_reset
+EVIDENCE|seq=890|prev=ebee945d|this=9d2b3334|clock_set:98
+EVIDENCE|seq=891|prev=9d2b3334|this=9788e0de|cosign_grant:e8v1
+CASE|id=206|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=892|prev=9788e0de|this=3abc9c07|c206:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=206|label=DENY
+EVIDENCE|seq=893|prev=3abc9c07|this=1242c3dc|harness_reset
+EVIDENCE|seq=894|prev=1242c3dc|this=cbad52e9|clock_set:171
+EVIDENCE|seq=895|prev=cbad52e9|this=7f1a0a7f|cosign_grant:e1v1
+CASE|id=207|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=896|prev=7f1a0a7f|this=6d65eced|c207:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=207|label=DENY
+EVIDENCE|seq=897|prev=6d65eced|this=40596aca|harness_reset
+EVIDENCE|seq=898|prev=40596aca|this=cb1379a2|clock_set:299
+EVIDENCE|seq=899|prev=cb1379a2|this=42b4ab52|cosign_grant:e2v1
+CASE|id=208|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=900|prev=42b4ab52|this=e1fc909c|c208:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=208|label=ALLOW_SIM
+EVIDENCE|seq=901|prev=e1fc909c|this=fc8789e6|harness_reset
+EVIDENCE|seq=902|prev=fc8789e6|this=cdc0c65a|clock_set:23
+EVIDENCE|seq=903|prev=cdc0c65a|this=a0b68e58|cosign_grant:e8v1
+CASE|id=209|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=904|prev=a0b68e58|this=b28faa2a|c209:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=209|label=ALLOW_SIM
+EVIDENCE|seq=905|prev=b28faa2a|this=5f1a9498|harness_reset
+EVIDENCE|seq=906|prev=5f1a9498|this=93db6f49|clock_set:195
+EVIDENCE|seq=907|prev=93db6f49|this=1bd55288|cosign_grant:e1v1
+CASE|id=210|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=908|prev=1bd55288|this=f1e2ae06|c210:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=210|label=ALLOW_SIM
+EVIDENCE|seq=909|prev=f1e2ae06|this=95957ec4|harness_reset
+EVIDENCE|seq=910|prev=95957ec4|this=e9e3cb6a|clock_set:3495
+EVIDENCE|seq=911|prev=e9e3cb6a|this=5a31cdcc|cosign_grant:e8v1
+CASE|id=211|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=912|prev=5a31cdcc|this=7de58c17|c211:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=211|label=ALLOW_SIM
+EVIDENCE|seq=913|prev=7de58c17|this=e7501390|harness_reset
+EVIDENCE|seq=914|prev=e7501390|this=ac407f24|clock_set:335
+EVIDENCE|seq=915|prev=ac407f24|this=b34e83e8|cosign_grant:e6v1
+EVIDENCE|seq=916|prev=b34e83e8|this=c6b268b5|cosign_revoke:all
+EVIDENCE|seq=917|prev=c6b268b5|this=bd93d58c|cosign_grant:e6v3
+CASE|id=212|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=918|prev=bd93d58c|this=989a1bff|c212:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=212|label=ALLOW_SIM
+EVIDENCE|seq=919|prev=989a1bff|this=4b1e0815|harness_reset
+EVIDENCE|seq=920|prev=4b1e0815|this=24cdcbab|clock_set:288
+EVIDENCE|seq=921|prev=24cdcbab|this=021832e3|cosign_grant:e3v1
+EVIDENCE|seq=922|prev=021832e3|this=31ba3504|cosign_revoke:e3v1
+EVIDENCE|seq=923|prev=31ba3504|this=1be6558f|cosign_grant:e3v2
+CASE|id=213|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=924|prev=1be6558f|this=2280ad1a|c213:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=213|label=ALLOW_SIM
+EVIDENCE|seq=925|prev=2280ad1a|this=2727c342|harness_reset
+EVIDENCE|seq=926|prev=2727c342|this=066f2019|clock_set:81
+EVIDENCE|seq=927|prev=066f2019|this=9e1970fd|cosign_grant:e3v2
+CASE|id=214|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=928|prev=9e1970fd|this=15b79ffe|c214:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=214|label=ALLOW_SIM
+EVIDENCE|seq=929|prev=15b79ffe|this=e4e6eee6|harness_reset
+EVIDENCE|seq=930|prev=e4e6eee6|this=c032ccdd|clock_set:147
+CASE|id=215|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=931|prev=c032ccdd|this=c7562cb1|c215:target:DENY:no_human_cosign
+CLIENT|REP|case=215|label=DENY
+EVIDENCE|seq=932|prev=c7562cb1|this=75098852|harness_reset
+EVIDENCE|seq=933|prev=75098852|this=6f4e59ca|clock_set:1027
+EVIDENCE|seq=934|prev=6f4e59ca|this=7e4ef1b1|cosign_grant:e7v1
+SETUP|id=216|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=935|prev=7e4ef1b1|this=7bbcacf1|c216:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=216|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=936|prev=7bbcacf1|this=411b5680|c216:target:DENY:duplicate_nonce
+CLIENT|REP|case=216|label=DENY
+EVIDENCE|seq=937|prev=411b5680|this=b1b816bd|harness_reset
+EVIDENCE|seq=938|prev=b1b816bd|this=b2bad18c|clock_set:511
+EVIDENCE|seq=939|prev=b2bad18c|this=2f345798|cosign_grant:e6v3
+CASE|id=217|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=940|prev=2f345798|this=816ec6b8|c217:target:DENY:role_forbidden
+CLIENT|REP|case=217|label=DENY
+EVIDENCE|seq=941|prev=816ec6b8|this=855321de|harness_reset
+EVIDENCE|seq=942|prev=855321de|this=2b6a8a20|clock_set:99
+EVIDENCE|seq=943|prev=2b6a8a20|this=bae24da9|cosign_grant:e1v1
+CASE|id=218|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=944|prev=bae24da9|this=4528b81e|c218:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=218|label=ALLOW_SIM
+EVIDENCE|seq=945|prev=4528b81e|this=34def3b0|harness_reset
+EVIDENCE|seq=946|prev=34def3b0|this=21b00a07|clock_set:399
+EVIDENCE|seq=947|prev=21b00a07|this=bfc0792b|cosign_grant:e6v3
+EVIDENCE|seq=948|prev=bfc0792b|this=a6050ae8|cosign_grant:e5v1
+CASE|id=219|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=949|prev=a6050ae8|this=2fd92453|c219:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=219|label=ALLOW_SIM
+EVIDENCE|seq=950|prev=2fd92453|this=0ac33193|harness_reset
+EVIDENCE|seq=951|prev=0ac33193|this=039d3bfb|clock_set:172
+EVIDENCE|seq=952|prev=039d3bfb|this=a04651cd|cosign_grant:e5v1
+CASE|id=220|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=953|prev=a04651cd|this=6db6286a|c220:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=220|label=ALLOW_SIM
+EVIDENCE|seq=954|prev=6db6286a|this=3e2ad8d7|harness_reset
+EVIDENCE|seq=955|prev=3e2ad8d7|this=8b111cc9|clock_set:154
+EVIDENCE|seq=956|prev=8b111cc9|this=a659dbb8|cosign_grant:e1v1
+CASE|id=221|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=957|prev=a659dbb8|this=eef73278|c221:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=221|label=DENY
+EVIDENCE|seq=958|prev=eef73278|this=4e6cdb33|harness_reset
+EVIDENCE|seq=959|prev=4e6cdb33|this=1ee9dd9e|clock_set:1591
+EVIDENCE|seq=960|prev=1ee9dd9e|this=4a51445f|cosign_grant:e7v1
+CASE|id=222|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=961|prev=4a51445f|this=ba4fd977|c222:target:DENY:role_forbidden
+CLIENT|REP|case=222|label=DENY
+EVIDENCE|seq=962|prev=ba4fd977|this=21396541|harness_reset
+EVIDENCE|seq=963|prev=21396541|this=e6b3a29b|clock_set:151
+EVIDENCE|seq=964|prev=e6b3a29b|this=7ad5b1ac|cosign_grant:e8v1
+CASE|id=223|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=965|prev=7ad5b1ac|this=5ea7cb03|c223:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=223|label=ALLOW_SIM
+EVIDENCE|seq=966|prev=5ea7cb03|this=0509e0f7|harness_reset
+EVIDENCE|seq=967|prev=0509e0f7|this=4ce4b5d9|clock_set:901
+EVIDENCE|seq=968|prev=4ce4b5d9|this=16a2eaae|cosign_grant:e4v1
+CASE|id=224|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=969|prev=16a2eaae|this=02a0b35e|c224:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=224|label=ALLOW_SIM
+EVIDENCE|seq=970|prev=02a0b35e|this=c40958fd|harness_reset
+EVIDENCE|seq=971|prev=c40958fd|this=663368ac|clock_set:103
+EVIDENCE|seq=972|prev=663368ac|this=91b37027|cosign_grant:e8v1
+CASE|id=225|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=973|prev=91b37027|this=6ccdae6d|c225:target:DENY:role_forbidden
+CLIENT|REP|case=225|label=DENY
+EVIDENCE|seq=974|prev=6ccdae6d|this=6ef8fa68|harness_reset
+EVIDENCE|seq=975|prev=6ef8fa68|this=8c9a68c9|clock_set:478
+EVIDENCE|seq=976|prev=8c9a68c9|this=360be43d|cosign_grant:e6v3
+CASE|id=226|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=977|prev=360be43d|this=8993e4dd|c226:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=226|label=DENY
+EVIDENCE|seq=978|prev=8993e4dd|this=55856fc1|harness_reset
+EVIDENCE|seq=979|prev=55856fc1|this=029935b2|clock_set:240
+EVIDENCE|seq=980|prev=029935b2|this=b3a61e32|cosign_grant:e6v3
+CASE|id=227|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=981|prev=b3a61e32|this=8cc8be30|c227:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=227|label=ALLOW_SIM
+EVIDENCE|seq=982|prev=8cc8be30|this=052ef934|harness_reset
+EVIDENCE|seq=983|prev=052ef934|this=733ef4b7|clock_set:298
+EVIDENCE|seq=984|prev=733ef4b7|this=e2ba28c8|cosign_grant:e3v2
+CASE|id=228|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=985|prev=e2ba28c8|this=6b3e9d81|c228:target:DENY:role_forbidden
+CLIENT|REP|case=228|label=DENY
+EVIDENCE|seq=986|prev=6b3e9d81|this=2d5f9df9|harness_reset
+EVIDENCE|seq=987|prev=2d5f9df9|this=b8b6c016|clock_set:279
+EVIDENCE|seq=988|prev=b8b6c016|this=8f433b50|cosign_grant:e3v2
+CASE|id=229|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=989|prev=8f433b50|this=79f5c3b7|c229:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=229|label=DENY
+EVIDENCE|seq=990|prev=79f5c3b7|this=0893f9f2|harness_reset
+EVIDENCE|seq=991|prev=0893f9f2|this=a5f4d931|clock_set:120
+EVIDENCE|seq=992|prev=a5f4d931|this=5c6b471b|cosign_grant:e3v2
+CASE|id=230|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=993|prev=5c6b471b|this=ffa32d6f|c230:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=230|label=DENY
+EVIDENCE|seq=994|prev=ffa32d6f|this=c4b64954|harness_reset
+EVIDENCE|seq=995|prev=c4b64954|this=86ae90bf|clock_set:330
+EVIDENCE|seq=996|prev=86ae90bf|this=345bbd8b|cosign_grant:e2v1
+CASE|id=231|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=997|prev=345bbd8b|this=6a3de077|c231:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=231|label=ALLOW_SIM
+EVIDENCE|seq=998|prev=6a3de077|this=09c9190a|harness_reset
+EVIDENCE|seq=999|prev=09c9190a|this=1db962c2|clock_set:559
+EVIDENCE|seq=1000|prev=1db962c2|this=19a5f271|cosign_grant:e6v2
+EVIDENCE|seq=1001|prev=19a5f271|this=82d62fb7|cosign_revoke:e6v2
+EVIDENCE|seq=1002|prev=82d62fb7|this=8d4f4e74|cosign_grant:e6v3
+CASE|id=232|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1003|prev=8d4f4e74|this=f82fc3b1|c232:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=232|label=ALLOW_SIM
+EVIDENCE|seq=1004|prev=f82fc3b1|this=fc72dcd1|harness_reset
+EVIDENCE|seq=1005|prev=fc72dcd1|this=ec8c6d44|clock_set:340
+EVIDENCE|seq=1006|prev=ec8c6d44|this=a9562b60|cosign_grant:e1v1
+CASE|id=233|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=1007|prev=a9562b60|this=09ca2761|c233:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=233|label=DENY
+EVIDENCE|seq=1008|prev=09ca2761|this=d48870e7|harness_reset
+EVIDENCE|seq=1009|prev=d48870e7|this=56dc2040|clock_set:155
+EVIDENCE|seq=1010|prev=56dc2040|this=dc5aba4c|cosign_grant:e3v2
+SETUP|id=234|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1011|prev=dc5aba4c|this=dc9dd50b|c234:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=234|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=1012|prev=dc9dd50b|this=3113e529|c234:target:DENY:duplicate_nonce
+CLIENT|REP|case=234|label=DENY
+EVIDENCE|seq=1013|prev=3113e529|this=94348291|harness_reset
+EVIDENCE|seq=1014|prev=94348291|this=93a4cb8e|clock_set:446
+EVIDENCE|seq=1015|prev=93a4cb8e|this=b2526f8f|cosign_grant:e6v3
+CASE|id=235|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=1016|prev=b2526f8f|this=6cfe9d36|c235:target:DENY:role_forbidden
+CLIENT|REP|case=235|label=DENY
+EVIDENCE|seq=1017|prev=6cfe9d36|this=a6b39766|harness_reset
+EVIDENCE|seq=1018|prev=a6b39766|this=86b7d620|clock_set:166
+EVIDENCE|seq=1019|prev=86b7d620|this=1f848e8f|cosign_grant:e1v1
+EVIDENCE|seq=1020|prev=1f848e8f|this=a142a7b0|cosign_grant:e8v1
+EVIDENCE|seq=1021|prev=a142a7b0|this=261eecaf|cosign_grant:e4v1
+CASE|id=236|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1022|prev=261eecaf|this=8e73e055|c236:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=236|label=ALLOW_SIM
+EVIDENCE|seq=1023|prev=8e73e055|this=8e2a213d|harness_reset
+EVIDENCE|seq=1024|prev=8e2a213d|this=5668ce95|clock_set:1028
+EVIDENCE|seq=1025|prev=5668ce95|this=1a4aa71f|cosign_grant:e8v1
+EVIDENCE|seq=1026|prev=1a4aa71f|this=0cecd4bb|cosign_grant:e6v3
+EVIDENCE|seq=1027|prev=0cecd4bb|this=2071de52|cosign_grant:e7v1
+CASE|id=237|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1028|prev=2071de52|this=ab9e1d97|c237:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=237|label=ALLOW_SIM
+EVIDENCE|seq=1029|prev=ab9e1d97|this=33bb8391|harness_reset
+EVIDENCE|seq=1030|prev=33bb8391|this=d6beeb32|clock_set:330
+EVIDENCE|seq=1031|prev=d6beeb32|this=0616943b|cosign_grant:e6v3
+EVIDENCE|seq=1032|prev=0616943b|this=da3b2445|cosign_grant:e6v2
+CASE|id=238|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1033|prev=da3b2445|this=ae9b9ed2|c238:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=238|label=ALLOW_SIM
+EVIDENCE|seq=1034|prev=ae9b9ed2|this=fadebd9a|harness_reset
+EVIDENCE|seq=1035|prev=fadebd9a|this=22a5bb90|clock_set:1926
+EVIDENCE|seq=1036|prev=22a5bb90|this=19851bb4|cosign_grant:e7v1
+CASE|id=239|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=1037|prev=19851bb4|this=3944e6a9|c239:target:DENY:role_forbidden
+CLIENT|REP|case=239|label=DENY
+EVIDENCE|seq=1038|prev=3944e6a9|this=6674d45d|harness_reset
+EVIDENCE|seq=1039|prev=6674d45d|this=a96534e4|clock_set:978
+EVIDENCE|seq=1040|prev=a96534e4|this=c7bd2b0e|cosign_grant:e5v1
+CASE|id=240|kind=target|verdict=DENY|reason=invalid_enum
+EVIDENCE|seq=1041|prev=c7bd2b0e|this=204bce62|c240:target:DENY:invalid_enum
+CLIENT|REP|case=240|label=DENY
+EVIDENCE|seq=1042|prev=204bce62|this=dde584b0|harness_reset
+EVIDENCE|seq=1043|prev=dde584b0|this=f42fde0a|clock_set:256
+EVIDENCE|seq=1044|prev=f42fde0a|this=905e91b9|cosign_grant:e5v1
+CASE|id=241|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=1045|prev=905e91b9|this=076c293f|c241:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=241|label=DENY
+EVIDENCE|seq=1046|prev=076c293f|this=382b4c12|harness_reset
+EVIDENCE|seq=1047|prev=382b4c12|this=66040622|clock_set:123
+EVIDENCE|seq=1048|prev=66040622|this=485443b1|cosign_grant:e8v1
+CASE|id=242|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1049|prev=485443b1|this=cb0e2627|c242:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=242|label=ALLOW_SIM
+EVIDENCE|seq=1050|prev=cb0e2627|this=ba8059ab|harness_reset
+EVIDENCE|seq=1051|prev=ba8059ab|this=561d5831|clock_set:477
+EVIDENCE|seq=1052|prev=561d5831|this=0b54252f|cosign_grant:e6v1
+CASE|id=243|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1053|prev=0b54252f|this=cab53d3d|c243:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=243|label=ALLOW_SIM
+EVIDENCE|seq=1054|prev=cab53d3d|this=6d6147d2|harness_reset
+EVIDENCE|seq=1055|prev=6d6147d2|this=22454f8a|clock_set:541
+EVIDENCE|seq=1056|prev=22454f8a|this=68093a80|cosign_grant:e6v2
+EVIDENCE|seq=1057|prev=68093a80|this=133a46a2|cosign_revoke:all
+EVIDENCE|seq=1058|prev=133a46a2|this=5902e018|cosign_grant:e6v3
+CASE|id=244|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1059|prev=5902e018|this=6c6ee546|c244:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=244|label=ALLOW_SIM
+EVIDENCE|seq=1060|prev=6c6ee546|this=c809b962|harness_reset
+EVIDENCE|seq=1061|prev=c809b962|this=dd6e4efb|clock_set:545
+EVIDENCE|seq=1062|prev=dd6e4efb|this=ba53efc9|cosign_grant:e6v3
+CASE|id=245|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1063|prev=ba53efc9|this=24921a8d|c245:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=245|label=ALLOW_SIM
+EVIDENCE|seq=1064|prev=24921a8d|this=a61bc718|harness_reset
+EVIDENCE|seq=1065|prev=a61bc718|this=f0f684fc|clock_set:4450
+EVIDENCE|seq=1066|prev=f0f684fc|this=cc5beaab|cosign_grant:e4v1
+CASE|id=246|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1067|prev=cc5beaab|this=492af937|c246:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=246|label=ALLOW_SIM
+EVIDENCE|seq=1068|prev=492af937|this=bff5d2b0|harness_reset
+EVIDENCE|seq=1069|prev=bff5d2b0|this=a51c425a|clock_set:311
+EVIDENCE|seq=1070|prev=a51c425a|this=afd65f6a|cosign_grant:e2v1
+CASE|id=247|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1071|prev=afd65f6a|this=1c941a8a|c247:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=247|label=ALLOW_SIM
+EVIDENCE|seq=1072|prev=1c941a8a|this=521eb3bf|harness_reset
+EVIDENCE|seq=1073|prev=521eb3bf|this=e54a4474|clock_set:155
+EVIDENCE|seq=1074|prev=e54a4474|this=b17f9be9|cosign_grant:e1v1
+CASE|id=248|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=1075|prev=b17f9be9|this=a2e674de|c248:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=248|label=DENY
+EVIDENCE|seq=1076|prev=a2e674de|this=1778c029|harness_reset
+EVIDENCE|seq=1077|prev=1778c029|this=b4f2b5e9|clock_set:71
+EVIDENCE|seq=1078|prev=b4f2b5e9|this=48d5bdc9|cosign_grant:e8v1
+CASE|id=249|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1079|prev=48d5bdc9|this=5535118b|c249:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=249|label=ALLOW_SIM
+EVIDENCE|seq=1080|prev=5535118b|this=23b8b9ed|harness_reset
+EVIDENCE|seq=1081|prev=23b8b9ed|this=b04bdbac|clock_set:1254
+EVIDENCE|seq=1082|prev=b04bdbac|this=2eef0192|cosign_grant:e7v1
+CASE|id=250|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1083|prev=2eef0192|this=ba1348a6|c250:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=250|label=ALLOW_SIM
+EVIDENCE|seq=1084|prev=ba1348a6|this=7b26dcc2|harness_reset
+EVIDENCE|seq=1085|prev=7b26dcc2|this=8b6800e8|clock_set:127
+EVIDENCE|seq=1086|prev=8b6800e8|this=cb9bb006|cosign_grant:e3v2
+CASE|id=251|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=1087|prev=cb9bb006|this=1eb5402c|c251:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=251|label=DENY
+EVIDENCE|seq=1088|prev=1eb5402c|this=dd839566|harness_reset
+EVIDENCE|seq=1089|prev=dd839566|this=6c373334|clock_set:901
+EVIDENCE|seq=1090|prev=6c373334|this=59828eeb|cosign_grant:e4v1
+CASE|id=252|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1091|prev=59828eeb|this=6fcf7ea8|c252:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=252|label=ALLOW_SIM
+EVIDENCE|seq=1092|prev=6fcf7ea8|this=fd67a2df|harness_reset
+EVIDENCE|seq=1093|prev=fd67a2df|this=59c1b494|clock_set:404
+EVIDENCE|seq=1094|prev=59c1b494|this=a14d1c38|cosign_grant:e6v2
+CASE|id=253|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1095|prev=a14d1c38|this=30185979|c253:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=253|label=ALLOW_SIM
+EVIDENCE|seq=1096|prev=30185979|this=88ba0729|harness_reset
+EVIDENCE|seq=1097|prev=88ba0729|this=d32fc4a3|clock_set:208
+EVIDENCE|seq=1098|prev=d32fc4a3|this=78816a1a|cosign_grant:e3v2
+EVIDENCE|seq=1099|prev=78816a1a|this=bae8633a|cosign_revoke:all
+CASE|id=254|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=1100|prev=bae8633a|this=0a1b497a|c254:target:DENY:no_human_cosign
+CLIENT|REP|case=254|label=DENY
+EVIDENCE|seq=1101|prev=0a1b497a|this=fa6439d8|harness_reset
+EVIDENCE|seq=1102|prev=fa6439d8|this=3e97529d|clock_set:417
+EVIDENCE|seq=1103|prev=3e97529d|this=290b8cac|cosign_grant:e6v3
+CASE|id=255|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=1104|prev=290b8cac|this=2645c58b|c255:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=255|label=DENY
+EVIDENCE|seq=1105|prev=2645c58b|this=dfd22635|harness_reset
+EVIDENCE|seq=1106|prev=dfd22635|this=bbdaf21f|clock_set:65
+EVIDENCE|seq=1107|prev=bbdaf21f|this=ba1e4ecc|cosign_grant:e4v1
+CASE|id=256|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1108|prev=ba1e4ecc|this=35b78e85|c256:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=256|label=ALLOW_SIM
+EVIDENCE|seq=1109|prev=35b78e85|this=92fcc9fd|harness_reset
+EVIDENCE|seq=1110|prev=92fcc9fd|this=30686b62|clock_set:2006
+EVIDENCE|seq=1111|prev=30686b62|this=7ac89d9e|cosign_grant:e7v1
+CASE|id=257|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1112|prev=7ac89d9e|this=e2f569ef|c257:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=257|label=ALLOW_SIM
+EVIDENCE|seq=1113|prev=e2f569ef|this=6436a809|harness_reset
+EVIDENCE|seq=1114|prev=6436a809|this=139318ea|clock_set:120
+EVIDENCE|seq=1115|prev=139318ea|this=93cfd68e|cosign_grant:e8v1
+CASE|id=258|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=1116|prev=93cfd68e|this=1a4d1700|c258:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=258|label=DENY
+EVIDENCE|seq=1117|prev=1a4d1700|this=4de26ed2|harness_reset
+EVIDENCE|seq=1118|prev=4de26ed2|this=c831c025|clock_set:1290
+EVIDENCE|seq=1119|prev=c831c025|this=4932b06b|cosign_grant:e7v1
+CASE|id=259|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1120|prev=4932b06b|this=4f151424|c259:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=259|label=ALLOW_SIM
+EVIDENCE|seq=1121|prev=4f151424|this=03cef154|harness_reset
+EVIDENCE|seq=1122|prev=03cef154|this=0a89173c|clock_set:73
+EVIDENCE|seq=1123|prev=0a89173c|this=ee340274|cosign_grant:e8v1
+CASE|id=260|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=1124|prev=ee340274|this=881cf005|c260:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=260|label=DENY
+EVIDENCE|seq=1125|prev=881cf005|this=38838fc3|harness_reset
+EVIDENCE|seq=1126|prev=38838fc3|this=0dcbfa5c|clock_set:630
+CASE|id=261|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=1127|prev=0dcbfa5c|this=c1acf8ce|c261:target:DENY:no_human_cosign
+CLIENT|REP|case=261|label=DENY
+EVIDENCE|seq=1128|prev=c1acf8ce|this=b09ad5ac|harness_reset
+EVIDENCE|seq=1129|prev=b09ad5ac|this=c0064b18|clock_set:1186
+EVIDENCE|seq=1130|prev=c0064b18|this=19790569|cosign_grant:e7v1
+CASE|id=262|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1131|prev=19790569|this=6ff5d453|c262:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=262|label=ALLOW_SIM
+EVIDENCE|seq=1132|prev=6ff5d453|this=39759b22|harness_reset
+EVIDENCE|seq=1133|prev=39759b22|this=767af455|clock_set:465
+EVIDENCE|seq=1134|prev=767af455|this=35750d16|cosign_grant:e6v3
+EVIDENCE|seq=1135|prev=35750d16|this=accf2890|cosign_revoke:all
+CASE|id=263|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=1136|prev=accf2890|this=48d9ca82|c263:target:DENY:no_human_cosign
+CLIENT|REP|case=263|label=DENY
+EVIDENCE|seq=1137|prev=48d9ca82|this=402e3dbf|harness_reset
+EVIDENCE|seq=1138|prev=402e3dbf|this=e2051ba3|clock_set:153
+EVIDENCE|seq=1139|prev=e2051ba3|this=0533b75a|cosign_grant:e1v1
+EVIDENCE|seq=1140|prev=0533b75a|this=6f7f6c75|cosign_revoke:all
+CASE|id=264|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=1141|prev=6f7f6c75|this=ef00646a|c264:target:DENY:no_human_cosign
+CLIENT|REP|case=264|label=DENY
+EVIDENCE|seq=1142|prev=ef00646a|this=60cfc2c4|harness_reset
+EVIDENCE|seq=1143|prev=60cfc2c4|this=6867c9b5|clock_set:324
+EVIDENCE|seq=1144|prev=6867c9b5|this=9919a92e|cosign_grant:e6v1
+EVIDENCE|seq=1145|prev=9919a92e|this=d21fed81|cosign_revoke:e6v1
+EVIDENCE|seq=1146|prev=d21fed81|this=9b6bfa64|cosign_grant:e6v3
+CASE|id=265|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1147|prev=9b6bfa64|this=2936aa2a|c265:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=265|label=ALLOW_SIM
+EVIDENCE|seq=1148|prev=2936aa2a|this=d5665ab4|harness_reset
+EVIDENCE|seq=1149|prev=d5665ab4|this=8db129f6|clock_set:1397
+EVIDENCE|seq=1150|prev=8db129f6|this=784022c5|cosign_grant:e7v1
+CASE|id=266|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=1151|prev=784022c5|this=e5332c3f|c266:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=266|label=DENY
+EVIDENCE|seq=1152|prev=e5332c3f|this=7917aece|harness_reset
+EVIDENCE|seq=1153|prev=7917aece|this=52ce77b8|clock_set:368
+EVIDENCE|seq=1154|prev=52ce77b8|this=6e867c0d|cosign_grant:e5v1
+CASE|id=267|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1155|prev=6e867c0d|this=d80095d1|c267:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=267|label=ALLOW_SIM
+EVIDENCE|seq=1156|prev=d80095d1|this=f6997e79|harness_reset
+EVIDENCE|seq=1157|prev=f6997e79|this=a108bd81|clock_set:257
+EVIDENCE|seq=1158|prev=a108bd81|this=b230a41a|cosign_grant:e6v3
+CASE|id=268|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1159|prev=b230a41a|this=136fdf95|c268:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=268|label=ALLOW_SIM
+EVIDENCE|seq=1160|prev=136fdf95|this=1f3b03e1|harness_reset
+EVIDENCE|seq=1161|prev=1f3b03e1|this=57c9aff4|clock_set:872
+EVIDENCE|seq=1162|prev=57c9aff4|this=1407fa3d|cosign_grant:e5v1
+CASE|id=269|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1163|prev=1407fa3d|this=7ee5957a|c269:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=269|label=ALLOW_SIM
+EVIDENCE|seq=1164|prev=7ee5957a|this=019fbd71|harness_reset
+EVIDENCE|seq=1165|prev=019fbd71|this=5afb86e0|clock_set:137
+EVIDENCE|seq=1166|prev=5afb86e0|this=41aade8c|cosign_grant:e3v2
+EVIDENCE|seq=1167|prev=41aade8c|this=89f8133a|cosign_grant:e3v1
+CASE|id=270|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1168|prev=89f8133a|this=d42257ef|c270:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=270|label=ALLOW_SIM
+EVIDENCE|seq=1169|prev=d42257ef|this=f6d30f24|harness_reset
+EVIDENCE|seq=1170|prev=f6d30f24|this=6e581dbc|clock_set:222
+EVIDENCE|seq=1171|prev=6e581dbc|this=d27ee43c|cosign_grant:e3v1
+EVIDENCE|seq=1172|prev=d27ee43c|this=0e579ee8|cosign_revoke:e3v1
+EVIDENCE|seq=1173|prev=0e579ee8|this=9844475d|cosign_grant:e3v2
+CASE|id=271|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1174|prev=9844475d|this=81c018be|c271:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=271|label=ALLOW_SIM
+EVIDENCE|seq=1175|prev=81c018be|this=ffb7d901|harness_reset
+EVIDENCE|seq=1176|prev=ffb7d901|this=84b62f51|clock_set:300
+EVIDENCE|seq=1177|prev=84b62f51|this=6ca4b04e|cosign_grant:e3v2
+CASE|id=272|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1178|prev=6ca4b04e|this=5f6be4e5|c272:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=272|label=ALLOW_SIM
+EVIDENCE|seq=1179|prev=5f6be4e5|this=881d63d7|harness_reset
+EVIDENCE|seq=1180|prev=881d63d7|this=100bc76b|clock_set:1418
+EVIDENCE|seq=1181|prev=100bc76b|this=033ee31a|cosign_grant:e7v1
+CASE|id=273|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=1182|prev=033ee31a|this=40e28877|c273:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=273|label=DENY
+EVIDENCE|seq=1183|prev=40e28877|this=f656daf1|harness_reset
+EVIDENCE|seq=1184|prev=f656daf1|this=8b9d47db|clock_set:35
+EVIDENCE|seq=1185|prev=8b9d47db|this=ecc3891e|cosign_grant:e8v1
+CASE|id=274|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1186|prev=ecc3891e|this=d42e35cb|c274:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=274|label=ALLOW_SIM
+EVIDENCE|seq=1187|prev=d42e35cb|this=a464a45c|harness_reset
+EVIDENCE|seq=1188|prev=a464a45c|this=c9018b91|clock_set:36
+EVIDENCE|seq=1189|prev=c9018b91|this=ce91a97d|cosign_grant:e5v1
+CASE|id=275|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1190|prev=ce91a97d|this=7207612f|c275:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=275|label=ALLOW_SIM
+EVIDENCE|seq=1191|prev=7207612f|this=c9cab0fd|harness_reset
+EVIDENCE|seq=1192|prev=c9cab0fd|this=8b86863d|clock_set:267
+EVIDENCE|seq=1193|prev=8b86863d|this=9eb1d2c2|cosign_grant:e2v1
+CASE|id=276|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1194|prev=9eb1d2c2|this=c66ae3c0|c276:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=276|label=ALLOW_SIM
+EVIDENCE|seq=1195|prev=c66ae3c0|this=d9181a69|harness_reset
+EVIDENCE|seq=1196|prev=d9181a69|this=9342dfda|clock_set:1669
+EVIDENCE|seq=1197|prev=9342dfda|this=3ae1d271|cosign_grant:e7v1
+CASE|id=277|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=1198|prev=3ae1d271|this=7241e4b7|c277:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=277|label=DENY
+EVIDENCE|seq=1199|prev=7241e4b7|this=fbb096ea|harness_reset
+EVIDENCE|seq=1200|prev=fbb096ea|this=a2fe1c39|clock_set:576
+EVIDENCE|seq=1201|prev=a2fe1c39|this=b4640db3|cosign_grant:e4v1
+CASE|id=278|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=1202|prev=b4640db3|this=2819d3fa|c278:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=278|label=DENY
+EVIDENCE|seq=1203|prev=2819d3fa|this=764b6a08|harness_reset
+EVIDENCE|seq=1204|prev=764b6a08|this=90b508aa|clock_set:597
+EVIDENCE|seq=1205|prev=90b508aa|this=0f873b61|cosign_grant:e4v1
+CASE|id=279|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1206|prev=0f873b61|this=c800e434|c279:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=279|label=ALLOW_SIM
+EVIDENCE|seq=1207|prev=c800e434|this=a8fec382|harness_reset
+EVIDENCE|seq=1208|prev=a8fec382|this=4dc30227|clock_set:501
+EVIDENCE|seq=1209|prev=4dc30227|this=fd2524bb|cosign_grant:e6v3
+CASE|id=280|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1210|prev=fd2524bb|this=22403fc3|c280:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=280|label=ALLOW_SIM
+EVIDENCE|seq=1211|prev=22403fc3|this=0b822e3e|harness_reset
+EVIDENCE|seq=1212|prev=0b822e3e|this=88817285|clock_set:800
+EVIDENCE|seq=1213|prev=88817285|this=230b21ce|cosign_grant:e4v1
+CASE|id=281|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=1214|prev=230b21ce|this=3f2a7f8d|c281:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=281|label=DENY
+EVIDENCE|seq=1215|prev=3f2a7f8d|this=5b7b897b|harness_reset
+EVIDENCE|seq=1216|prev=5b7b897b|this=bcf43ce0|clock_set:235
+EVIDENCE|seq=1217|prev=bcf43ce0|this=9fc0a8dc|cosign_grant:e3v2
+CASE|id=282|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1218|prev=9fc0a8dc|this=58fb1df1|c282:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=282|label=ALLOW_SIM
+EVIDENCE|seq=1219|prev=58fb1df1|this=99131b7d|harness_reset
+EVIDENCE|seq=1220|prev=99131b7d|this=60e21cc8|clock_set:149
+EVIDENCE|seq=1221|prev=60e21cc8|this=4000de1f|cosign_grant:e3v1
+CASE|id=283|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1222|prev=4000de1f|this=a63c5b6e|c283:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=283|label=ALLOW_SIM
+EVIDENCE|seq=1223|prev=a63c5b6e|this=1a709271|harness_reset
+EVIDENCE|seq=1224|prev=1a709271|this=2bf31de7|clock_set:884
+EVIDENCE|seq=1225|prev=2bf31de7|this=b900b562|cosign_grant:e4v1
+CASE|id=284|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1226|prev=b900b562|this=0f295180|c284:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=284|label=ALLOW_SIM
+EVIDENCE|seq=1227|prev=0f295180|this=48a462eb|harness_reset
+EVIDENCE|seq=1228|prev=48a462eb|this=34e7654a|clock_set:999
+EVIDENCE|seq=1229|prev=34e7654a|this=9c9d73f3|cosign_grant:e7v1
+CASE|id=285|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1230|prev=9c9d73f3|this=ac31aeda|c285:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=285|label=ALLOW_SIM
+EVIDENCE|seq=1231|prev=ac31aeda|this=dc12ab8d|harness_reset
+EVIDENCE|seq=1232|prev=dc12ab8d|this=8a7be58b|clock_set:810
+EVIDENCE|seq=1233|prev=8a7be58b|this=6e5e753b|cosign_grant:e4v1
+CASE|id=286|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1234|prev=6e5e753b|this=c7930db0|c286:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=286|label=ALLOW_SIM
+EVIDENCE|seq=1235|prev=c7930db0|this=a881b3c5|harness_reset
+EVIDENCE|seq=1236|prev=a881b3c5|this=a435e7b5|clock_set:226
+EVIDENCE|seq=1237|prev=a435e7b5|this=3be0d6d6|cosign_grant:e3v1
+CASE|id=287|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1238|prev=3be0d6d6|this=16a9f116|c287:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=287|label=ALLOW_SIM
+EVIDENCE|seq=1239|prev=16a9f116|this=76fa5da0|harness_reset
+EVIDENCE|seq=1240|prev=76fa5da0|this=0ef70b5a|clock_set:276
+EVIDENCE|seq=1241|prev=0ef70b5a|this=cd9b90d3|cosign_grant:e3v1
+EVIDENCE|seq=1242|prev=cd9b90d3|this=3a0fbdd1|cosign_revoke:e3v1
+EVIDENCE|seq=1243|prev=3a0fbdd1|this=4c32a62b|cosign_grant:e3v2
+CASE|id=288|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1244|prev=4c32a62b|this=a970b327|c288:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=288|label=ALLOW_SIM
+EVIDENCE|seq=1245|prev=a970b327|this=06774613|harness_reset
+EVIDENCE|seq=1246|prev=06774613|this=fc6cea43|clock_set:201
+EVIDENCE|seq=1247|prev=fc6cea43|this=dbaa3666|cosign_grant:e1v1
+CASE|id=289|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1248|prev=dbaa3666|this=b0348dd8|c289:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=289|label=ALLOW_SIM
+EVIDENCE|seq=1249|prev=b0348dd8|this=a8edc5c5|harness_reset
+EVIDENCE|seq=1250|prev=a8edc5c5|this=59482b65|clock_set:71
+EVIDENCE|seq=1251|prev=59482b65|this=f997b76b|cosign_grant:e8v1
+CASE|id=290|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1252|prev=f997b76b|this=033538bb|c290:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=290|label=ALLOW_SIM
+EVIDENCE|seq=1253|prev=033538bb|this=c7d77415|harness_reset
+EVIDENCE|seq=1254|prev=c7d77415|this=d4daefb8|clock_set:405
+EVIDENCE|seq=1255|prev=d4daefb8|this=cf93b5d3|cosign_grant:e6v3
+EVIDENCE|seq=1256|prev=cf93b5d3|this=5b2a829e|cosign_grant:e6v2
+CASE|id=291|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1257|prev=5b2a829e|this=519956d8|c291:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=291|label=ALLOW_SIM
+EVIDENCE|seq=1258|prev=519956d8|this=ce7cc771|harness_reset
+EVIDENCE|seq=1259|prev=ce7cc771|this=72cbab74|clock_set:18
+EVIDENCE|seq=1260|prev=72cbab74|this=a2d92d0f|cosign_grant:e3v2
+CASE|id=292|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1261|prev=a2d92d0f|this=18059ec1|c292:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=292|label=ALLOW_SIM
+EVIDENCE|seq=1262|prev=18059ec1|this=fb0ed98f|harness_reset
+EVIDENCE|seq=1263|prev=fb0ed98f|this=36d6e04f|clock_set:1693
+EVIDENCE|seq=1264|prev=36d6e04f|this=701031b3|cosign_grant:e7v1
+EVIDENCE|seq=1265|prev=701031b3|this=0eae5f0b|cosign_grant:e5v1
+EVIDENCE|seq=1266|prev=0eae5f0b|this=313092e7|cosign_grant:e3v2
+CASE|id=293|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1267|prev=313092e7|this=5081aa41|c293:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=293|label=ALLOW_SIM
+EVIDENCE|seq=1268|prev=5081aa41|this=90f30899|harness_reset
+EVIDENCE|seq=1269|prev=90f30899|this=620a8355|clock_set:237
+EVIDENCE|seq=1270|prev=620a8355|this=46289799|cosign_grant:e4v1
+EVIDENCE|seq=1271|prev=46289799|this=a40e4bfe|cosign_grant:e2v1
+EVIDENCE|seq=1272|prev=a40e4bfe|this=64744fd8|cosign_grant:e3v2
+CASE|id=294|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1273|prev=64744fd8|this=416d5a75|c294:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=294|label=ALLOW_SIM
+EVIDENCE|seq=1274|prev=416d5a75|this=e5c07402|harness_reset
+EVIDENCE|seq=1275|prev=e5c07402|this=b5c02a8e|clock_set:691
+EVIDENCE|seq=1276|prev=b5c02a8e|this=8828aec2|cosign_grant:e4v1
+CASE|id=295|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1277|prev=8828aec2|this=f1dd3473|c295:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=295|label=ALLOW_SIM
+EVIDENCE|seq=1278|prev=f1dd3473|this=325cfd0a|harness_reset
+EVIDENCE|seq=1279|prev=325cfd0a|this=558d0a01|clock_set:1295
+EVIDENCE|seq=1280|prev=558d0a01|this=b7767720|cosign_grant:e7v1
+CASE|id=296|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=1281|prev=b7767720|this=58bd092a|c296:target:DENY:role_forbidden
+CLIENT|REP|case=296|label=DENY
+EVIDENCE|seq=1282|prev=58bd092a|this=3f00a650|harness_reset
+EVIDENCE|seq=1283|prev=3f00a650|this=c2cd8dc7|clock_set:1371
+EVIDENCE|seq=1284|prev=c2cd8dc7|this=19697d8a|cosign_grant:e7v1
+CASE|id=297|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1285|prev=19697d8a|this=e38d28d9|c297:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=297|label=ALLOW_SIM
+EVIDENCE|seq=1286|prev=e38d28d9|this=dbed6e2b|harness_reset
+EVIDENCE|seq=1287|prev=dbed6e2b|this=66f947a3|clock_set:99
+EVIDENCE|seq=1288|prev=66f947a3|this=95d0f716|cosign_grant:e1v1
+CASE|id=298|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1289|prev=95d0f716|this=b8a99977|c298:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=298|label=ALLOW_SIM
+EVIDENCE|seq=1290|prev=b8a99977|this=f3638043|harness_reset
+EVIDENCE|seq=1291|prev=f3638043|this=2e1beb86|clock_set:89
+EVIDENCE|seq=1292|prev=2e1beb86|this=ab2a6a4c|cosign_grant:e8v1
+CASE|id=299|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1293|prev=ab2a6a4c|this=4e635ec9|c299:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=299|label=ALLOW_SIM
+EVIDENCE|seq=1294|prev=4e635ec9|this=4947b97a|harness_reset
+EVIDENCE|seq=1295|prev=4947b97a|this=d9ba84ce|clock_set:223
+EVIDENCE|seq=1296|prev=d9ba84ce|this=e37affcf|cosign_grant:e3v2
+CASE|id=300|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1297|prev=e37affcf|this=42ec8484|c300:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=300|label=ALLOW_SIM
+EVIDENCE|seq=1298|prev=42ec8484|this=d2926b7e|harness_reset
+EVIDENCE|seq=1299|prev=d2926b7e|this=7beeed5e|clock_set:500
+EVIDENCE|seq=1300|prev=7beeed5e|this=8b1ea82c|cosign_grant:e4v1
+CASE|id=301|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1301|prev=8b1ea82c|this=af104f69|c301:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=301|label=ALLOW_SIM
+EVIDENCE|seq=1302|prev=af104f69|this=65eb14ff|harness_reset
+EVIDENCE|seq=1303|prev=65eb14ff|this=374af204|clock_set:160
+EVIDENCE|seq=1304|prev=374af204|this=f282d3d1|cosign_grant:e3v2
+SETUP|id=302|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1305|prev=f282d3d1|this=2faeb801|c302:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=302|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=1306|prev=2faeb801|this=067e4d68|c302:target:DENY:duplicate_nonce
+CLIENT|REP|case=302|label=DENY
+EVIDENCE|seq=1307|prev=067e4d68|this=31815e0e|harness_reset
+EVIDENCE|seq=1308|prev=31815e0e|this=e1c23ca3|clock_set:149
+EVIDENCE|seq=1309|prev=e1c23ca3|this=4fc7dd2d|cosign_grant:e2v1
+CASE|id=303|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1310|prev=4fc7dd2d|this=8a5de43b|c303:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=303|label=ALLOW_SIM
+EVIDENCE|seq=1311|prev=8a5de43b|this=6daecbdf|harness_reset
+EVIDENCE|seq=1312|prev=6daecbdf|this=8d38dd4e|clock_set:24
+EVIDENCE|seq=1313|prev=8d38dd4e|this=5c7908db|cosign_grant:e8v1
+CASE|id=304|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1314|prev=5c7908db|this=2c8098b0|c304:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=304|label=ALLOW_SIM
+EVIDENCE|seq=1315|prev=2c8098b0|this=2ef57bd7|harness_reset
+EVIDENCE|seq=1316|prev=2ef57bd7|this=c29313e2|clock_set:255
+EVIDENCE|seq=1317|prev=c29313e2|this=c362460b|cosign_grant:e3v2
+CASE|id=305|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=1318|prev=c362460b|this=3b69b1f4|c305:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=305|label=DENY
+EVIDENCE|seq=1319|prev=3b69b1f4|this=0074686a|harness_reset
+EVIDENCE|seq=1320|prev=0074686a|this=81fa2eb2|clock_set:89
+EVIDENCE|seq=1321|prev=81fa2eb2|this=1a1b1b2e|cosign_grant:e8v1
+EVIDENCE|seq=1322|prev=1a1b1b2e|this=32f209a6|cosign_grant:e3v2
+CASE|id=306|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1323|prev=32f209a6|this=8bc228d8|c306:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=306|label=ALLOW_SIM
+EVIDENCE|seq=1324|prev=8bc228d8|this=f12349fb|harness_reset
+EVIDENCE|seq=1325|prev=f12349fb|this=868f9206|clock_set:790
+EVIDENCE|seq=1326|prev=868f9206|this=4b520f97|cosign_grant:e4v1
+CASE|id=307|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1327|prev=4b520f97|this=9a76efb3|c307:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=307|label=ALLOW_SIM
+EVIDENCE|seq=1328|prev=9a76efb3|this=7f8db738|harness_reset
+EVIDENCE|seq=1329|prev=7f8db738|this=6ccec802|clock_set:221
+EVIDENCE|seq=1330|prev=6ccec802|this=afe15e6e|cosign_grant:e6v1
+EVIDENCE|seq=1331|prev=afe15e6e|this=d74be618|cosign_revoke:all
+EVIDENCE|seq=1332|prev=d74be618|this=42284232|cosign_grant:e6v3
+CASE|id=308|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1333|prev=42284232|this=21adb05b|c308:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=308|label=ALLOW_SIM
+EVIDENCE|seq=1334|prev=21adb05b|this=91c1628b|harness_reset
+EVIDENCE|seq=1335|prev=91c1628b|this=1d9bddf1|clock_set:826
+EVIDENCE|seq=1336|prev=1d9bddf1|this=adc8bf47|cosign_grant:e5v1
+CASE|id=309|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=1337|prev=adc8bf47|this=90583562|c309:target:DENY:role_forbidden
+CLIENT|REP|case=309|label=DENY
+EVIDENCE|seq=1338|prev=90583562|this=1a6b849f|harness_reset
+EVIDENCE|seq=1339|prev=1a6b849f|this=4e8e72b2|clock_set:475
+EVIDENCE|seq=1340|prev=4e8e72b2|this=70f7965a|cosign_grant:e6v3
+CASE|id=310|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1341|prev=70f7965a|this=7ab48e1f|c310:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=310|label=ALLOW_SIM
+EVIDENCE|seq=1342|prev=7ab48e1f|this=9c2a0b31|harness_reset
+EVIDENCE|seq=1343|prev=9c2a0b31|this=1e139602|clock_set:1663
+EVIDENCE|seq=1344|prev=1e139602|this=e71f8c58|cosign_grant:e7v1
+CASE|id=311|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=1345|prev=e71f8c58|this=52c6d194|c311:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=311|label=DENY
+EVIDENCE|seq=1346|prev=52c6d194|this=e3acb0a9|harness_reset
+EVIDENCE|seq=1347|prev=e3acb0a9|this=e1597750|clock_set:758
+EVIDENCE|seq=1348|prev=e1597750|this=e710ae8f|cosign_grant:e4v1
+CASE|id=312|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=1349|prev=e710ae8f|this=8dad4821|c312:target:DENY:role_forbidden
+CLIENT|REP|case=312|label=DENY
+EVIDENCE|seq=1350|prev=8dad4821|this=57f2cae1|harness_reset
+EVIDENCE|seq=1351|prev=57f2cae1|this=033e2f72|clock_set:499
+EVIDENCE|seq=1352|prev=033e2f72|this=f3d74d6a|cosign_grant:e4v1
+CASE|id=313|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1353|prev=f3d74d6a|this=4e8dc1ae|c313:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=313|label=ALLOW_SIM
+EVIDENCE|seq=1354|prev=4e8dc1ae|this=69cb5e96|harness_reset
+EVIDENCE|seq=1355|prev=69cb5e96|this=178b4453|clock_set:108
+EVIDENCE|seq=1356|prev=178b4453|this=0790b5a9|cosign_grant:e8v1
+CASE|id=314|kind=target|verdict=DENY|reason=invalid_enum
+EVIDENCE|seq=1357|prev=0790b5a9|this=07ed4a3d|c314:target:DENY:invalid_enum
+CLIENT|REP|case=314|label=DENY
+EVIDENCE|seq=1358|prev=07ed4a3d|this=4ee5a6b1|harness_reset
+EVIDENCE|seq=1359|prev=4ee5a6b1|this=eac24fc3|clock_set:117
+EVIDENCE|seq=1360|prev=eac24fc3|this=889d6db4|cosign_grant:e8v1
+CASE|id=315|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1361|prev=889d6db4|this=d6b77b51|c315:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=315|label=ALLOW_SIM
+EVIDENCE|seq=1362|prev=d6b77b51|this=555e398f|harness_reset
+EVIDENCE|seq=1363|prev=555e398f|this=30ebf8d5|clock_set:114
+EVIDENCE|seq=1364|prev=30ebf8d5|this=8c8ce68b|cosign_grant:e1v1
+CASE|id=316|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1365|prev=8c8ce68b|this=28d63c3b|c316:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=316|label=ALLOW_SIM
+EVIDENCE|seq=1366|prev=28d63c3b|this=d6fbdb97|harness_reset
+EVIDENCE|seq=1367|prev=d6fbdb97|this=0977b497|clock_set:1216
+EVIDENCE|seq=1368|prev=0977b497|this=310cc64a|cosign_grant:e7v1
+CASE|id=317|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=1369|prev=310cc64a|this=cee8b471|c317:target:DENY:role_forbidden
+CLIENT|REP|case=317|label=DENY
+EVIDENCE|seq=1370|prev=cee8b471|this=4f711595|harness_reset
+EVIDENCE|seq=1371|prev=4f711595|this=301cd520|clock_set:961
+EVIDENCE|seq=1372|prev=301cd520|this=87ce344c|cosign_grant:e5v1
+CASE|id=318|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=1373|prev=87ce344c|this=3e4423c0|c318:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=318|label=DENY
+EVIDENCE|seq=1374|prev=3e4423c0|this=e25f2759|harness_reset
+EVIDENCE|seq=1375|prev=e25f2759|this=de3deedd|clock_set:204
+EVIDENCE|seq=1376|prev=de3deedd|this=3cb04032|cosign_grant:e6v3
+CASE|id=319|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1377|prev=3cb04032|this=a71f2ea9|c319:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=319|label=ALLOW_SIM
+EVIDENCE|seq=1378|prev=a71f2ea9|this=eeb0741b|harness_reset
+EVIDENCE|seq=1379|prev=eeb0741b|this=a09ceb9c|clock_set:113
+EVIDENCE|seq=1380|prev=a09ceb9c|this=8560edc2|cosign_grant:e1v1
+CASE|id=320|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=1381|prev=8560edc2|this=4bd61cbd|c320:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=320|label=ALLOW_SIM
+GATE|CHAIN|tip=4bd61cbd|len=1381
+GATE|INFO|corpus_done
+CLIENT|INFO|CORPUS_DONE|n=320
+qemu-system-aarch64: terminating on signal 15 from pid 337059 (bash)
+RUN|END|status=done|elapsed_s=2

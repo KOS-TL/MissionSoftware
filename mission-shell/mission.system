@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mission shell demo — non-clinical simulation only. -->
+<system>
+    <protection_domain name="gatekeeper" priority="100" passive="true">
+        <program_image path="gatekeeper.elf" />
+    </protection_domain>
+    <protection_domain name="client" priority="99">
+        <program_image path="client.elf" />
+    </protection_domain>
+    <channel>
+        <end pd="gatekeeper" id="0" />
+        <end pd="client" id="0" pp="true" />
+    </channel>
+</system>

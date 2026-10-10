@@ -1,0 +1,605 @@
+{
+ "schema": "mission-se-entrustment-record/v0-draft",
+ "notice": "示例（拟定）。记录取值逐字取自 experiment/corpus/entrustments.json；entrustor/trustee/purpose/accountability/evidence 为草案新增字段，门闩不按记录执行。",
+ "derived_from": "experiment/corpus/entrustments.json (mission-se-entrustments/v1)",
+ "records": [
+  {
+   "id": 1,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": false,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 100,
+    "t_end": 200,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     1,
+     2,
+     3
+    ],
+    "forbidden_zones": [
+     7,
+     15
+    ],
+    "sim_level_max": 300,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 2,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": false,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 150,
+    "t_end": 400,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     4,
+     5
+    ],
+    "forbidden_zones": [
+     7,
+     15
+    ],
+    "sim_level_max": 500,
+    "allowed_actions": [
+     "RECOMMEND"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 3,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": true,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 100,
+    "t_end": 300,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     1,
+     2,
+     3,
+     6
+    ],
+    "forbidden_zones": [
+     7,
+     8,
+     15
+    ],
+    "sim_level_max": 300,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 3,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 2,
+    "superseded": false,
+    "supersedes": 1
+   },
+   "validity": {
+    "t_start": 100,
+    "t_end": 300,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     1,
+     2,
+     3,
+     6
+    ],
+    "forbidden_zones": [
+     7,
+     8,
+     15
+    ],
+    "sim_level_max": 200,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 4,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": false,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 500,
+    "t_end": 900,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     8,
+     9,
+     10,
+     11
+    ],
+    "forbidden_zones": [
+     0,
+     7,
+     12,
+     15
+    ],
+    "sim_level_max": 800,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 5,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": false,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 50,
+    "t_end": 1000,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "forbidden_zones": [
+     7,
+     13,
+     14,
+     15
+    ],
+    "sim_level_max": 600,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 6,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": true,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 200,
+    "t_end": 600,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     9,
+     10,
+     14
+    ],
+    "forbidden_zones": [
+     7,
+     11,
+     15
+    ],
+    "sim_level_max": 400,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 6,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 2,
+    "superseded": true,
+    "supersedes": 1
+   },
+   "validity": {
+    "t_start": 200,
+    "t_end": 600,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     9,
+     10,
+     14
+    ],
+    "forbidden_zones": [
+     7,
+     11,
+     15
+    ],
+    "sim_level_max": 350,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 6,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 3,
+    "superseded": false,
+    "supersedes": 2
+   },
+   "validity": {
+    "t_start": 200,
+    "t_end": 600,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     9,
+     10
+    ],
+    "forbidden_zones": [
+     7,
+     11,
+     14,
+     15
+    ],
+    "sim_level_max": 250,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 7,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": false,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 1000,
+    "t_end": 2000,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     12,
+     13,
+     14
+    ],
+    "forbidden_zones": [
+     3,
+     7,
+     15
+    ],
+    "sim_level_max": 900,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  },
+  {
+   "id": 8,
+   "entrustor": {
+    "role": "SUPERVISING_HUMAN",
+    "name": "（示例占位）"
+   },
+   "trustee": {
+    "role": "OPERATOR",
+    "via_client_pd": "client"
+   },
+   "purpose": "（示例占位：仿真内的有限任务描述，自然语言，不被门闩执行）",
+   "version": {
+    "ver": 1,
+    "superseded": false,
+    "supersedes": null
+   },
+   "validity": {
+    "t_start": 50,
+    "t_end": 150,
+    "clock": "logical"
+   },
+   "scope": {
+    "allowed_zones": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "forbidden_zones": [
+     3,
+     5,
+     7,
+     15
+    ],
+    "sim_level_max": 150,
+    "allowed_actions": [
+     "ENABLE_SIM",
+     "RECOMMEND",
+     "QUERY_STATUS"
+    ]
+   },
+   "accountability": {
+    "cosign_required": true,
+    "cosign_binds": "id+ver",
+    "enable_requires_role": "OPERATOR",
+    "enable_requires_origin": "OPERATOR"
+   },
+   "evidence": {
+    "u_decl_required_nonempty_for": [
+     "ENABLE_SIM",
+     "CLAIM_ACHIEVE"
+    ],
+    "claim_achieve": "never_permitted",
+    "chain": "FNV-1a32 (teaching-grade)"
+   }
+  }
+ ]
+}

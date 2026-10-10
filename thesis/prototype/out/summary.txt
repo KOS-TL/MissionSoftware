@@ -1,0 +1,35 @@
+【示意性原型；主机模拟、非 QEMU 实测；作者自建语料、非独立、非确证性】
+cases=210 MUST_DENY=161 MAY_PERMIT=49
+condition                FN         FNR [Wilson95]       FP         FPR [Wilson95]  INVALID reason=oracle
+B                       154    95.7% [91.3, 97.9]        0     0.0% [ 0.0,  7.3]        0 56/210
+Bplus                   132    82.0% [75.3, 87.2]        0     0.0% [ 0.0,  7.3]        0 56/210
+M-U                      23    14.3% [ 9.7, 20.5]        0     0.0% [ 0.0,  7.3]        0 187/210
+M-align                  97    60.2% [52.5, 67.5]        0     0.0% [ 0.0,  7.3]        0 113/210
+M-cosign                 24    14.9% [10.2, 21.2]        0     0.0% [ 0.0,  7.3]        0 183/210
+M-prov                    7     4.3% [ 2.1,  8.7]        0     0.0% [ 0.0,  7.3]        0 203/210
+M                         0     0.0% [ 0.0,  2.3]        0     0.0% [ 0.0,  7.3]        0 210/210
+mut-action_scope          4     2.5% [ 1.0,  6.2]        0     0.0% [ 0.0,  7.3]        0 206/210
+mut-enable_u_skip         7     4.3% [ 2.1,  8.7]        0     0.0% [ 0.0,  7.3]        0 203/210
+mut-level_ge              0     0.0% [ 0.0,  2.3]        8    16.3% [ 8.5, 29.0]        0 202/210
+mut-no_binding            8     5.0% [ 2.5,  9.5]        0     0.0% [ 0.0,  7.3]        0 199/210
+mut-no_forbidden          0     0.0% [ 0.0,  2.3]        0     0.0% [ 0.0,  7.3]        0 184/210
+mut-no_origin             7     4.3% [ 2.1,  8.7]        0     0.0% [ 0.0,  7.3]        0 203/210
+mut-no_superseded         3     1.9% [ 0.6,  5.3]        0     0.0% [ 0.0,  7.3]        0 207/210
+mut-t_end_open            0     0.0% [ 0.0,  2.3]        8    16.3% [ 8.5, 29.0]        0 202/210
+mut-t_start_open          0     0.0% [ 0.0,  2.3]        8    16.3% [ 8.5, 29.0]        0 201/210
+B vs M on MUST_DENY: discordant M-only-deny=154 B-only-deny=0 exact McNemar p=(8.758115402030107e-47, 4.3790577010150533e-47)
+per element MUST_DENY: n / B-FN / M-FN
+   SPV-accountability      38  31   0
+   SPV-evidence            23  23   0
+   SPV-scope               62  62   0
+   SPV-time                32  32   0
+   SPV-version              6   6   0
+mut-action_scope   verdict-kill=YES (  4 cases) reason-kill=YES (  4 cases) killing subtypes(verdict): action_not_allowed
+mut-enable_u_skip  verdict-kill=YES (  7 cases) reason-kill=YES (  7 cases) killing subtypes(verdict): enable_u0
+mut-level_ge       verdict-kill=YES (  8 cases) reason-kill=YES (  8 cases) killing subtypes(verdict): LEGAL_level_eq_max
+mut-no_binding     verdict-kill=YES (  8 cases) reason-kill=YES ( 11 cases) killing subtypes(verdict): cosign_bound_other
+mut-no_forbidden   verdict-kill=no  (  0 cases) reason-kill=YES ( 26 cases) killing subtypes(verdict): 
+mut-no_origin      verdict-kill=YES (  7 cases) reason-kill=YES (  7 cases) killing subtypes(verdict): advisor_origin_laundered
+mut-no_superseded  verdict-kill=YES (  3 cases) reason-kill=YES (  3 cases) killing subtypes(verdict): stale_bound_old
+mut-t_end_open     verdict-kill=YES (  8 cases) reason-kill=YES (  8 cases) killing subtypes(verdict): LEGAL_at_t_end
+mut-t_start_open   verdict-kill=YES (  8 cases) reason-kill=YES (  9 cases) killing subtypes(verdict): LEGAL_at_t_start

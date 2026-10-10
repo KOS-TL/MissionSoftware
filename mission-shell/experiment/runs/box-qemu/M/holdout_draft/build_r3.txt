@@ -1,0 +1,11 @@
+make: Entering directory '/workspace/microkit-mission-shell'
+aarch64-linux-gnu-gcc -c -nostdlib -ffreestanding -g -O2 -Wall -Wno-unused-function -Werror -I/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/include -I. -mstrict-align -DGATE_VARIANT_M -fno-tree-loop-distribute-patterns experiment/gatekeeper_field.c -o /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/gatekeeper.o
+aarch64-linux-gnu-ld -L/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/lib /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/gatekeeper.o -lmicrokit -Tmicrokit.ld -o /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/gatekeeper.elf
+cp experiment/corpus/out/holdout_draft.h /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/corpus_active.h
+aarch64-linux-gnu-gcc -c -nostdlib -ffreestanding -g -O2 -Wall -Wno-unused-function -Werror -I/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/include -I. -mstrict-align -I/workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft -fno-tree-loop-distribute-patterns experiment/client_corpus.c -o /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/client.o
+aarch64-linux-gnu-ld -L/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/lib /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/client.o -lmicrokit -Tmicrokit.ld -o /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/client.elf
+/workspace/microkit-mission-shell/microkit-sdk-2.3.1/bin/microkit mission.system --search-path /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft --board qemu_virt_aarch64 --config debug -o /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/loader.img -r /workspace/microkit-mission-shell/build_exp/mission_corpus_holdout_draft/report.txt
+MICROKIT|CAPDL SPEC: number of root objects = 55, spec footprint = 8.21 KiB
+MICROKIT|INITIAL TASK: memory size = 396 KiB
+MICROKIT|LOADER: image file size = 2.64 MiB
+make: Leaving directory '/workspace/microkit-mission-shell'

@@ -1,0 +1,10 @@
+make: Entering directory '/workspace/microkit-mission-shell'
+aarch64-linux-gnu-gcc -c -nostdlib -ffreestanding -g -O2 -Wall -Wno-unused-function -Werror -I/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/include -I. -mstrict-align  gatekeeper.c -o /workspace/microkit-mission-shell/build_exp/full_seed_20261007/gatekeeper.o
+aarch64-linux-gnu-ld -L/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/lib /workspace/microkit-mission-shell/build_exp/full_seed_20261007/gatekeeper.o -lmicrokit -Tmicrokit.ld -o /workspace/microkit-mission-shell/build_exp/full_seed_20261007/gatekeeper.elf
+aarch64-linux-gnu-gcc -c -nostdlib -ffreestanding -g -O2 -Wall -Wno-unused-function -Werror -I/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/include -I. -mstrict-align  scenarios/client_full.c -o /workspace/microkit-mission-shell/build_exp/full_seed_20261007/client.o
+aarch64-linux-gnu-ld -L/workspace/microkit-mission-shell/microkit-sdk-2.3.1/board/qemu_virt_aarch64/debug/lib /workspace/microkit-mission-shell/build_exp/full_seed_20261007/client.o -lmicrokit -Tmicrokit.ld -o /workspace/microkit-mission-shell/build_exp/full_seed_20261007/client.elf
+/workspace/microkit-mission-shell/microkit-sdk-2.3.1/bin/microkit mission.system --search-path /workspace/microkit-mission-shell/build_exp/full_seed_20261007 --board qemu_virt_aarch64 --config debug -o /workspace/microkit-mission-shell/build_exp/full_seed_20261007/loader.img -r /workspace/microkit-mission-shell/build_exp/full_seed_20261007/report.txt
+MICROKIT|CAPDL SPEC: number of root objects = 53, spec footprint = 7.94 KiB
+MICROKIT|INITIAL TASK: memory size = 384 KiB
+MICROKIT|LOADER: image file size = 2.64 MiB
+make: Leaving directory '/workspace/microkit-mission-shell'

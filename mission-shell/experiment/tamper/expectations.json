@@ -1,0 +1,13 @@
+{
+  "notice": "预先声明的篡改检出预期（实验方案 §3.4、§7.1）。U_expected_failure=true 表示预期不检出且属显式未覆盖集 U（教学级 FNV-1a32 无密钥；无外部锚点不能防截尾）。冻结后不得修改。",
+  "expected": {
+    "T1": {"B": "undetected", "M": "detected"},
+    "T2": {"B": "detected",   "M": "detected"},
+    "T3": {"B": "detected",   "M": "detected"},
+    "T4": {"B": "detected_under_our_model (方案原文：视序号而定)", "M": "detected"},
+    "T5": {"B": "undetected", "M_no_anchor": "undetected", "M_external_anchor": "detected"},
+    "T6": {"B": "undetected", "M": "detected"},
+    "T7": {"B": "undetected", "M": "undetected"}
+  },
+  "U_expected_failure": {"T5_M_no_anchor": true, "T7_M": true}
+}

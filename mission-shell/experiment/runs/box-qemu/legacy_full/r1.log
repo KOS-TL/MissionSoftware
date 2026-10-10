@@ -1,0 +1,100 @@
+RUN|profile=full|condition=legacy|corpus_set=n/a|seed=n/a|ablate=none|shard=all|image=unknown|git=nogit|corpus_sha256=n/a|regen=n/a|qemu_timeout=120
+RUN|build_ok|gatekeeper_elf=text=5183,data=8,bss=136|client_elf=text=4311,data=64,bss=120|image_sha256=c22776e11008adf51df3c9805d310ce8025d67795ce9cc0207ad79ee58184dc3
+LDR|INFO: Setting all interrupts to Group 1
+LDR|INFO: GICv2 ITLinesNumber: 0x00000008
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO: disabling MMU (if it was enabled)
+LDR|INFO: PSCI version is 1.1
+LDR|INFO: loader for seL4 starting
+LDR|INFO: flags:
+             seL4 configured as hypervisor
+LDR|INFO: kernel:      entry:   0x0000008060000000
+LDR|INFO: root server: physmem: 0x0000000060258000 -- 0x00000000602b8000
+LDR|INFO:              virtmem: 0x0000000000200000 -- 0x0000000000260000
+LDR|INFO:              entry  : 0x0000000000222fe8
+LDR|INFO: region: 0x00000000   addr: 0x0000000060000000   size: 0x0000000000258000   offset: 0x0000000000000000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000001   addr: 0x0000000060258000   size: 0x000000000000b2b8   offset: 0x0000000000258000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000002   addr: 0x00000000602732b8   size: 0x000000000001475c   offset: 0x00000000002632b8   type: 0x0000000000000001
+LDR|INFO: region: 0x00000003   addr: 0x0000000060297a18   size: 0x0000000000010088   offset: 0x0000000000277a14   type: 0x0000000000000001
+LDR|INFO: region: 0x00000004   addr: 0x00000000602a8000   size: 0x0000000000001fc0   offset: 0x0000000000287a9c   type: 0x0000000000000001
+LDR|INFO: region: 0x00000005   addr: 0x00000000602aa000   size: 0x000000000000c000   offset: 0x0000000000289a5c   type: 0x0000000000000001
+LDR|INFO: region: 0x00000006   addr: 0x00000000602b7000   size: 0x00000000000001f8   offset: 0x0000000000295a5c   type: 0x0000000000000001
+LDR|INFO: copying region 0x00000000
+LDR|INFO: copying region 0x00000001
+LDR|INFO: copying region 0x00000002
+LDR|INFO: copying region 0x00000003
+LDR|INFO: copying region 0x00000004
+LDR|INFO: copying region 0x00000005
+LDR|INFO: copying region 0x00000006
+LDR|INFO|CPU0: active CPUs to start: 0x00000001
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: jumping to kernel
+Bootstrapping kernel
+Warning: Could not infer GIC interrupt target ID, assuming 0.
+Available phys memory regions: 1
+  [60000000..c0000000)
+Reserved virt address space regions: 2
+  [8060000000..8060258000)
+  [8060258000..80602b8000)
+Booting all finished, dropped to user space
+INFO  [sel4_capdl_initializer::initialize] Starting CapDL initializer
+INFO  [sel4_capdl_initializer::initialize] Starting threads
+MON|INFO: Microkit Monitor started!
+GATE|INFO|mission shell init (cosign OFF; hash chain on)
+GATE|INFO|K=cited; A=demo; M=discipline; chain=FNV-1a32 demo
+EVIDENCE|seq=1|prev=00000000|this=24fd4b26|gate_init
+MON|INFO: PD 'gatekeeper' is now passive!
+CLIENT|INFO|profile=full
+CLIENT|REQ|query_cosign
+GATE|COSIGN|STATE=OFF
+CLIENT|REP|COSIGN_OFF
+CLIENT|REQ|legal_before_cosign
+GATE|DENY|no_human_cosign
+EVIDENCE|seq=2|prev=24fd4b26|this=dff76c7e|no_human_cosign
+CLIENT|REP|DENY
+CLIENT|REQ|cosign_grant
+GATE|COSIGN|GRANT (demo stand-in)
+EVIDENCE|seq=3|prev=dff76c7e|this=9efeac20|cosign_grant
+CLIENT|REP|OK
+CLIENT|REQ|query_cosign
+GATE|COSIGN|STATE=ON
+CLIENT|REP|COSIGN_ON
+CLIENT|REQ|legal_sim
+GATE|ALLOW_SIM|legal_path_sim
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+EVIDENCE|seq=4|prev=9efeac20|this=811e41c4|legal_path_sim
+CLIENT|REP|ALLOW_SIM
+CLIENT|REQ|expired_trust
+GATE|DENY|expired_entrustment
+EVIDENCE|seq=5|prev=811e41c4|this=0720fccb|expired_entrustment
+CLIENT|REP|DENY
+CLIENT|REQ|forbidden_zone
+GATE|DENY|forbidden_zone
+EVIDENCE|seq=6|prev=0720fccb|this=85fe7af5|forbidden_zone
+CLIENT|REP|DENY
+CLIENT|REQ|advisor_enable
+GATE|DENY|advisor_cannot_enable
+EVIDENCE|seq=7|prev=85fe7af5|this=36bc5c58|advisor_cannot_enable
+CLIENT|REP|DENY
+CLIENT|REQ|empty_u_achieve
+GATE|DENY|empty_U_no_achieve_tag
+EVIDENCE|seq=8|prev=36bc5c58|this=402b2ffd|empty_U_no_achieve_tag
+CLIENT|REP|DENY
+CLIENT|REQ|cosign_revoke
+GATE|COSIGN|REVOKE
+EVIDENCE|seq=9|prev=402b2ffd|this=6c909283|cosign_revoke
+CLIENT|REP|OK
+CLIENT|REQ|legal_after_revoke
+GATE|DENY|no_human_cosign
+EVIDENCE|seq=10|prev=6c909283|this=80488a97|no_human_cosign
+CLIENT|REP|DENY
+CLIENT|REQ|evidence_tip
+GATE|CHAIN|tip=80488a97|len=10
+CLIENT|REP|EVIDENCE_TIP
+CLIENT|INFO|MISSION_SHELL_DEMO_DONE
+qemu-system-aarch64: terminating on signal 15 from pid 337699 (bash)
+RUN|END|status=done|elapsed_s=2

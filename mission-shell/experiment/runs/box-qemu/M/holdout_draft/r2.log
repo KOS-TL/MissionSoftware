@@ -1,0 +1,392 @@
+RUN|profile=mission_corpus|condition=M|corpus_set=holdout_draft|seed=n/a|ablate=none|shard=all|image=unknown|git=nogit|corpus_sha256=7bf427a3eddaa90890fedda7da0f36ec5ec9bc46b8bd0121037c285a24cd0fed|regen=skipped|qemu_timeout=120
+RUN|build_ok|gatekeeper_elf=text=8947,data=48,bss=296|client_elf=text=11679,data=64,bss=120|image_sha256=33b9a84a438bc01a8a3dc14d1684bc6b9d69bfc8d934b38d955afe252dd5a4ab
+LDR|INFO: Setting all interrupts to Group 1
+LDR|INFO: GICv2 ITLinesNumber: 0x00000008
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO: disabling MMU (if it was enabled)
+LDR|INFO: PSCI version is 1.1
+LDR|INFO: loader for seL4 starting
+LDR|INFO: flags:
+             seL4 configured as hypervisor
+LDR|INFO: kernel:      entry:   0x0000008060000000
+LDR|INFO: root server: physmem: 0x0000000060258000 -- 0x00000000602bb000
+LDR|INFO:              virtmem: 0x0000000000200000 -- 0x0000000000263000
+LDR|INFO:              entry  : 0x0000000000222fe8
+LDR|INFO: region: 0x00000000   addr: 0x0000000060000000   size: 0x0000000000258000   offset: 0x0000000000000000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000001   addr: 0x0000000060258000   size: 0x000000000000b2b8   offset: 0x0000000000258000   type: 0x0000000000000001
+LDR|INFO: region: 0x00000002   addr: 0x00000000602732b8   size: 0x000000000001475c   offset: 0x00000000002632b8   type: 0x0000000000000001
+LDR|INFO: region: 0x00000003   addr: 0x0000000060297a18   size: 0x0000000000010088   offset: 0x0000000000277a14   type: 0x0000000000000001
+LDR|INFO: region: 0x00000004   addr: 0x00000000602a8000   size: 0x00000000000020d8   offset: 0x0000000000287a9c   type: 0x0000000000000001
+LDR|INFO: region: 0x00000005   addr: 0x00000000602ab000   size: 0x000000000000e000   offset: 0x0000000000289b74   type: 0x0000000000000001
+LDR|INFO: region: 0x00000006   addr: 0x00000000602ba000   size: 0x00000000000001f8   offset: 0x0000000000297b74   type: 0x0000000000000001
+LDR|INFO: copying region 0x00000000
+LDR|INFO: copying region 0x00000001
+LDR|INFO: copying region 0x00000002
+LDR|INFO: copying region 0x00000003
+LDR|INFO: copying region 0x00000004
+LDR|INFO: copying region 0x00000005
+LDR|INFO: copying region 0x00000006
+LDR|INFO|CPU0: active CPUs to start: 0x00000001
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: CurrentEL=EL2
+LDR|INFO|CPU0: Resetting CNTVOFF
+LDR|INFO|CPU0: enabling MMU
+LDR|INFO|CPU0: jumping to kernel
+Bootstrapping kernel
+Warning: Could not infer GIC interrupt target ID, assuming 0.
+Available phys memory regions: 1
+  [60000000..c0000000)
+Reserved virt address space regions: 2
+  [8060000000..8060258000)
+  [8060258000..80602bb000)
+Booting all finished, dropped to user space
+INFO  [sel4_capdl_initializer::initialize] Starting CapDL initializer
+INFO  [sel4_capdl_initializer::initialize] Starting threads
+MON|INFO: Microkit Monitor started!
+GATE|INFO|field gatekeeper variant=M|ablate=none
+GATE|INFO|non-clinical; sim only; no write-enable; delivery!=achievement
+GATE|INFO|evidence=FNV-1a32 chain (teaching-grade, keyless)
+EVIDENCE|seq=1|prev=00000000|this=24fd4b26|gate_init
+MON|INFO: PD 'gatekeeper' is now passive!
+CLIENT|INFO|profile=corpus|corpus=holdout_draft|json_sha256=7bf427a3eddaa90890fedda7da0f36ec5ec9bc46b8bd0121037c285a24cd0fed|shard=0/1|steps=215
+EVIDENCE|seq=2|prev=24fd4b26|this=a7baf603|harness_reset
+EVIDENCE|seq=3|prev=a7baf603|this=c02e84ff|clock_set:1001
+EVIDENCE|seq=4|prev=c02e84ff|this=ff63f843|cosign_grant:e5v1
+CASE|id=9001|kind=target|verdict=DENY|reason=expired_entrustment
+EVIDENCE|seq=5|prev=ff63f843|this=f850f312|c9001:target:DENY:expired_entrustment
+CLIENT|REP|case=9001|label=DENY
+EVIDENCE|seq=6|prev=f850f312|this=77456cc8|harness_reset
+EVIDENCE|seq=7|prev=77456cc8|this=6ac81453|clock_set:150
+EVIDENCE|seq=8|prev=6ac81453|this=ccc16dd7|cosign_grant:e1v1
+CASE|id=9002|kind=target|verdict=DENY|reason=advisor_cannot_enable
+EVIDENCE|seq=9|prev=ccc16dd7|this=d2b77222|c9002:target:DENY:advisor_cannot_enable
+CLIENT|REP|case=9002|label=DENY
+EVIDENCE|seq=10|prev=d2b77222|this=57455f42|harness_reset
+EVIDENCE|seq=11|prev=57455f42|this=2dad5bae|clock_set:150
+EVIDENCE|seq=12|prev=2dad5bae|this=5ce165d3|cosign_grant:e1v1
+EVIDENCE|seq=13|prev=5ce165d3|this=512e835e|cosign_grant_dup:e1v1
+EVIDENCE|seq=14|prev=512e835e|this=64e4ef9a|cosign_revoke:e1v1
+CASE|id=9003|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=15|prev=64e4ef9a|this=bf4d23d8|c9003:target:DENY:no_human_cosign
+CLIENT|REP|case=9003|label=DENY
+EVIDENCE|seq=16|prev=bf4d23d8|this=a17d65e0|harness_reset
+EVIDENCE|seq=17|prev=a17d65e0|this=96ac5619|clock_set:300
+EVIDENCE|seq=18|prev=96ac5619|this=6b824b65|cosign_grant:e6v2
+CASE|id=9004|kind=target|verdict=DENY|reason=stale_entrustment_version
+EVIDENCE|seq=19|prev=6b824b65|this=1df65e62|c9004:target:DENY:stale_entrustment_version
+CLIENT|REP|case=9004|label=DENY
+EVIDENCE|seq=20|prev=1df65e62|this=cc135598|harness_reset
+EVIDENCE|seq=21|prev=cc135598|this=66f350ea|clock_set:300
+EVIDENCE|seq=22|prev=66f350ea|this=34b7bd60|cosign_grant:e6v3
+CASE|id=9005|kind=target|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=23|prev=34b7bd60|this=e092b356|c9005:target:DENY:forbidden_zone
+CLIENT|REP|case=9005|label=DENY
+EVIDENCE|seq=24|prev=e092b356|this=ad9c40b0|harness_reset
+EVIDENCE|seq=25|prev=ad9c40b0|this=fd76cf2c|clock_set:499
+EVIDENCE|seq=26|prev=fd76cf2c|this=3b875351|cosign_grant:e4v1
+CASE|id=9006|kind=target|verdict=DENY|reason=entrustment_not_yet_valid
+EVIDENCE|seq=27|prev=3b875351|this=f53ae770|c9006:target:DENY:entrustment_not_yet_valid
+CLIENT|REP|case=9006|label=DENY
+EVIDENCE|seq=28|prev=f53ae770|this=4aeec2eb|harness_reset
+EVIDENCE|seq=29|prev=4aeec2eb|this=db02d342|clock_set:150
+EVIDENCE|seq=30|prev=db02d342|this=f1555e5f|cosign_grant:e1v2
+CASE|id=9007|kind=target|verdict=DENY|reason=unknown_entrustment_version
+EVIDENCE|seq=31|prev=f1555e5f|this=5342fc94|c9007:target:DENY:unknown_entrustment_version
+CLIENT|REP|case=9007|label=DENY
+EVIDENCE|seq=32|prev=5342fc94|this=8fdcf22e|harness_reset
+EVIDENCE|seq=33|prev=8fdcf22e|this=e526a8c6|clock_set:150
+EVIDENCE|seq=34|prev=e526a8c6|this=5e2eb75d|cosign_grant:e3v9
+CASE|id=9008|kind=target|verdict=DENY|reason=unknown_entrustment_version
+EVIDENCE|seq=35|prev=5e2eb75d|this=32543b38|c9008:target:DENY:unknown_entrustment_version
+CLIENT|REP|case=9008|label=DENY
+EVIDENCE|seq=36|prev=32543b38|this=bba4e9f6|harness_reset
+EVIDENCE|seq=37|prev=bba4e9f6|this=449b6a55|clock_set:150
+EVIDENCE|seq=38|prev=449b6a55|this=c8bd9e51|cosign_grant:e8v1
+EVIDENCE|seq=39|prev=c8bd9e51|this=d5b3a6e1|clock_set:40
+CASE|id=9009|kind=target|verdict=DENY|reason=entrustment_not_yet_valid
+EVIDENCE|seq=40|prev=d5b3a6e1|this=3f64fb97|c9009:target:DENY:entrustment_not_yet_valid
+CLIENT|REP|case=9009|label=DENY
+EVIDENCE|seq=41|prev=3f64fb97|this=58195ee1|harness_reset
+EVIDENCE|seq=42|prev=58195ee1|this=781d8b72|clock_set:150
+EVIDENCE|seq=43|prev=781d8b72|this=203be8bf|cosign_grant:e1v1
+EVIDENCE|seq=44|prev=203be8bf|this=bb063e9d|cosign_grant:e2v1
+CASE|id=9010|kind=target|verdict=DENY|reason=scope_drift_zone
+EVIDENCE|seq=45|prev=bb063e9d|this=12da2ce5|c9010:target:DENY:scope_drift_zone
+CLIENT|REP|case=9010|label=DENY
+EVIDENCE|seq=46|prev=12da2ce5|this=fb9f35a2|harness_reset
+EVIDENCE|seq=47|prev=fb9f35a2|this=91a1717a|clock_set:150
+EVIDENCE|seq=48|prev=91a1717a|this=ba2f2dd5|cosign_grant:e1v1
+EVIDENCE|seq=49|prev=ba2f2dd5|this=a81580fe|cosign_grant:e5v1
+CASE|id=9011|kind=target|verdict=DENY|reason=scope_drift_level
+EVIDENCE|seq=50|prev=a81580fe|this=fe375a18|c9011:target:DENY:scope_drift_level
+CLIENT|REP|case=9011|label=DENY
+EVIDENCE|seq=51|prev=fe375a18|this=345d8007|harness_reset
+EVIDENCE|seq=52|prev=345d8007|this=16577d48|clock_set:200
+EVIDENCE|seq=53|prev=16577d48|this=dd34f1a8|cosign_grant:e2v1
+EVIDENCE|seq=54|prev=dd34f1a8|this=72b0273e|cosign_grant:e1v1
+CASE|id=9012|kind=target|verdict=DENY|reason=scope_drift_action
+EVIDENCE|seq=55|prev=72b0273e|this=0db6166c|c9012:target:DENY:scope_drift_action
+CLIENT|REP|case=9012|label=DENY
+EVIDENCE|seq=56|prev=0db6166c|this=2e1826f6|harness_reset
+EVIDENCE|seq=57|prev=2e1826f6|this=f7cdb38f|clock_set:150
+EVIDENCE|seq=58|prev=f7cdb38f|this=1bd0d2a2|cosign_grant:e3v1
+CASE|id=9013|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=59|prev=1bd0d2a2|this=8e58d578|c9013:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=9013|label=DENY
+EVIDENCE|seq=60|prev=8e58d578|this=cbf7bdc4|harness_reset
+EVIDENCE|seq=61|prev=cbf7bdc4|this=4b83c6ce|clock_set:150
+EVIDENCE|seq=62|prev=4b83c6ce|this=a01e03c0|cosign_grant:e1v1
+SETUP|id=9014|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=63|prev=a01e03c0|this=eafc6592|c9014:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=9014|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=64|prev=eafc6592|this=3d71cf1d|c9014:target:DENY:duplicate_nonce
+CLIENT|REP|case=9014|label=DENY
+EVIDENCE|seq=65|prev=3d71cf1d|this=0abd1df6|harness_reset
+EVIDENCE|seq=66|prev=0abd1df6|this=b63355ee|clock_set:150
+EVIDENCE|seq=67|prev=b63355ee|this=10ec7e5d|cosign_grant:e1v1
+SETUP|id=9015|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=68|prev=10ec7e5d|this=26c87e84|c9015:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+EVIDENCE|seq=69|prev=26c87e84|this=35deefab|cosign_revoke:all
+EVIDENCE|seq=70|prev=35deefab|this=6bf00a77|cosign_grant:e1v1
+CASE|id=9015|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=71|prev=6bf00a77|this=771a944e|c9015:target:DENY:duplicate_nonce
+CLIENT|REP|case=9015|label=DENY
+EVIDENCE|seq=72|prev=771a944e|this=c7e5d944|harness_reset
+EVIDENCE|seq=73|prev=c7e5d944|this=80304068|clock_set:150
+EVIDENCE|seq=74|prev=80304068|this=811c4f2a|cosign_grant:e1v1
+SETUP|id=9016|kind=setup|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=75|prev=811c4f2a|this=40c1e394|c9016:setup:DENY:forbidden_zone
+CASE|id=9016|kind=target|verdict=DENY|reason=duplicate_nonce
+EVIDENCE|seq=76|prev=40c1e394|this=822345aa|c9016:target:DENY:duplicate_nonce
+CLIENT|REP|case=9016|label=DENY
+EVIDENCE|seq=77|prev=822345aa|this=a8261070|harness_reset
+EVIDENCE|seq=78|prev=a8261070|this=dee129d2|clock_set:150
+EVIDENCE|seq=79|prev=dee129d2|this=2bc5e49f|cosign_grant:e1v1
+CASE|id=9017|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=80|prev=2bc5e49f|this=b309ba8d|c9017:target:DENY:role_forbidden
+CLIENT|REP|case=9017|label=DENY
+EVIDENCE|seq=81|prev=b309ba8d|this=cb6f7f71|harness_reset
+EVIDENCE|seq=82|prev=cb6f7f71|this=4876c68e|clock_set:150
+EVIDENCE|seq=83|prev=4876c68e|this=c132bd03|cosign_grant:e1v1
+CASE|id=9018|kind=target|verdict=DENY|reason=empty_U_no_achieve_tag
+EVIDENCE|seq=84|prev=c132bd03|this=00343920|c9018:target:DENY:empty_U_no_achieve_tag
+CLIENT|REP|case=9018|label=DENY
+EVIDENCE|seq=85|prev=00343920|this=92a3dc59|harness_reset
+EVIDENCE|seq=86|prev=92a3dc59|this=485caadb|clock_set:2001
+EVIDENCE|seq=87|prev=485caadb|this=c6af75ec|cosign_grant:e7v1
+CASE|id=9019|kind=target|verdict=DENY|reason=expired_entrustment
+EVIDENCE|seq=88|prev=c6af75ec|this=1212105d|c9019:target:DENY:expired_entrustment
+CLIENT|REP|case=9019|label=DENY
+EVIDENCE|seq=89|prev=1212105d|this=5b44dfa3|harness_reset
+EVIDENCE|seq=90|prev=5b44dfa3|this=ca06cbfb|clock_set:1500
+EVIDENCE|seq=91|prev=ca06cbfb|this=a865cdb9|cosign_grant:e7v1
+CASE|id=9020|kind=target|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=92|prev=a865cdb9|this=eddcb1d5|c9020:target:DENY:forbidden_zone
+CLIENT|REP|case=9020|label=DENY
+EVIDENCE|seq=93|prev=eddcb1d5|this=0590c4c3|harness_reset
+EVIDENCE|seq=94|prev=0590c4c3|this=0d4fbe4c|clock_set:600
+EVIDENCE|seq=95|prev=0d4fbe4c|this=0eea3140|cosign_grant:e4v1
+CASE|id=9021|kind=target|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=96|prev=0eea3140|this=46f073e0|c9021:target:DENY:forbidden_zone
+CLIENT|REP|case=9021|label=DENY
+EVIDENCE|seq=97|prev=46f073e0|this=af58741d|harness_reset
+EVIDENCE|seq=98|prev=af58741d|this=693be637|clock_set:300
+EVIDENCE|seq=99|prev=693be637|this=09afed97|cosign_grant:e2v1
+CASE|id=9022|kind=target|verdict=DENY|reason=scope_drift_action
+EVIDENCE|seq=100|prev=09afed97|this=063d8eb3|c9022:target:DENY:scope_drift_action
+CLIENT|REP|case=9022|label=DENY
+EVIDENCE|seq=101|prev=063d8eb3|this=76a1b386|harness_reset
+EVIDENCE|seq=102|prev=76a1b386|this=8bb2e99b|clock_set:300
+CASE|id=9023|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=103|prev=8bb2e99b|this=aff038fa|c9023:target:DENY:no_human_cosign
+CLIENT|REP|case=9023|label=DENY
+EVIDENCE|seq=104|prev=aff038fa|this=9c17473a|harness_reset
+EVIDENCE|seq=105|prev=9c17473a|this=080036f9|clock_set:150
+EVIDENCE|seq=106|prev=080036f9|this=87442ec7|cosign_grant:e1v1
+EVIDENCE|seq=107|prev=87442ec7|this=b802d819|cosign_revoke:all
+EVIDENCE|seq=108|prev=b802d819|this=88bcdb88|cosign_grant:e2v1
+CASE|id=9024|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=109|prev=88bcdb88|this=977185d0|c9024:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=9024|label=DENY
+EVIDENCE|seq=110|prev=977185d0|this=a081e7e4|harness_reset
+EVIDENCE|seq=111|prev=a081e7e4|this=93453f5f|clock_set:150
+EVIDENCE|seq=112|prev=93453f5f|this=00861099|cosign_grant:e3v2
+CASE|id=9025|kind=target|verdict=DENY|reason=scope_drift_level
+EVIDENCE|seq=113|prev=00861099|this=2f4269e2|c9025:target:DENY:scope_drift_level
+CLIENT|REP|case=9025|label=DENY
+EVIDENCE|seq=114|prev=2f4269e2|this=37fafd4b|harness_reset
+EVIDENCE|seq=115|prev=37fafd4b|this=eb721fcd|clock_set:300
+EVIDENCE|seq=116|prev=eb721fcd|this=3704390e|cosign_grant:e6v3
+CASE|id=9026|kind=target|verdict=DENY|reason=scope_drift_level
+EVIDENCE|seq=117|prev=3704390e|this=60171ab2|c9026:target:DENY:scope_drift_level
+CLIENT|REP|case=9026|label=DENY
+EVIDENCE|seq=118|prev=60171ab2|this=cbc9d9b8|harness_reset
+EVIDENCE|seq=119|prev=cbc9d9b8|this=c90201a6|clock_set:150
+EVIDENCE|seq=120|prev=c90201a6|this=958b7e08|cosign_grant:e1v1
+CASE|id=9027|kind=target|verdict=DENY|reason=role_forbidden
+EVIDENCE|seq=121|prev=958b7e08|this=810135b8|c9027:target:DENY:role_forbidden
+CLIENT|REP|case=9027|label=DENY
+EVIDENCE|seq=122|prev=810135b8|this=4aa25532|harness_reset
+EVIDENCE|seq=123|prev=4aa25532|this=9a462e33|clock_set:300
+EVIDENCE|seq=124|prev=9a462e33|this=6b1d10ff|cosign_grant:e5v1
+CASE|id=9028|kind=target|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=125|prev=6b1d10ff|this=5ab2b65c|c9028:target:DENY:forbidden_zone
+CLIENT|REP|case=9028|label=DENY
+EVIDENCE|seq=126|prev=5ab2b65c|this=e223042f|harness_reset
+EVIDENCE|seq=127|prev=e223042f|this=c42960be|clock_set:300
+EVIDENCE|seq=128|prev=c42960be|this=2dd4e35d|cosign_grant:e5v1
+CASE|id=9029|kind=target|verdict=DENY|reason=scope_drift_level
+EVIDENCE|seq=129|prev=2dd4e35d|this=73ddfcc2|c9029:target:DENY:scope_drift_level
+CLIENT|REP|case=9029|label=DENY
+EVIDENCE|seq=130|prev=73ddfcc2|this=14a86ddf|harness_reset
+EVIDENCE|seq=131|prev=14a86ddf|this=72518648|clock_set:300
+EVIDENCE|seq=132|prev=72518648|this=072449bf|cosign_grant:e5v1
+CASE|id=9030|kind=target|verdict=DENY|reason=invalid_range
+EVIDENCE|seq=133|prev=072449bf|this=003c820e|c9030:target:DENY:invalid_range
+CLIENT|REP|case=9030|label=DENY
+EVIDENCE|seq=134|prev=003c820e|this=5157f811|harness_reset
+EVIDENCE|seq=135|prev=5157f811|this=3af0e7fc|clock_set:150
+EVIDENCE|seq=136|prev=3af0e7fc|this=e6d68cd5|cosign_grant:e1v1
+SETUP|id=9031|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=137|prev=e6d68cd5|this=c5e6569d|c9031:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+EVIDENCE|seq=138|prev=c5e6569d|this=e2c2a841|clock_set:201
+CASE|id=9031|kind=target|verdict=DENY|reason=expired_entrustment
+EVIDENCE|seq=139|prev=e2c2a841|this=2ead00df|c9031:target:DENY:expired_entrustment
+CLIENT|REP|case=9031|label=DENY
+EVIDENCE|seq=140|prev=2ead00df|this=39a10c33|harness_reset
+EVIDENCE|seq=141|prev=39a10c33|this=2f064972|clock_set:150
+EVIDENCE|seq=142|prev=2f064972|this=d78ad560|cosign_grant:e1v1
+EVIDENCE|seq=143|prev=d78ad560|this=a991cb0d|cosign_revoke:all
+CASE|id=9032|kind=target|verdict=DENY|reason=no_human_cosign
+EVIDENCE|seq=144|prev=a991cb0d|this=cb07256a|c9032:target:DENY:no_human_cosign
+CLIENT|REP|case=9032|label=DENY
+EVIDENCE|seq=145|prev=cb07256a|this=7414f329|harness_reset
+EVIDENCE|seq=146|prev=7414f329|this=6149893c|clock_set:150
+EVIDENCE|seq=147|prev=6149893c|this=383ae1fa|cosign_grant:e1v1
+CASE|id=9033|kind=target|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=148|prev=383ae1fa|this=5184a99d|c9033:target:DENY:forbidden_zone
+CLIENT|REP|case=9033|label=DENY
+EVIDENCE|seq=149|prev=5184a99d|this=1e284247|harness_reset
+EVIDENCE|seq=150|prev=1e284247|this=d0e1d1a5|clock_set:150
+EVIDENCE|seq=151|prev=d0e1d1a5|this=fb606028|cosign_grant:e9v1
+CASE|id=9034|kind=target|verdict=DENY|reason=unknown_ticket
+EVIDENCE|seq=152|prev=fb606028|this=a5b77e8b|c9034:target:DENY:unknown_ticket
+CLIENT|REP|case=9034|label=DENY
+EVIDENCE|seq=153|prev=a5b77e8b|this=aae01cbb|harness_reset
+EVIDENCE|seq=154|prev=aae01cbb|this=b95aba7b|clock_set:150
+EVIDENCE|seq=155|prev=b95aba7b|this=8fca7ae9|cosign_grant:e1v1
+SETUP|id=9035|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=156|prev=8fca7ae9|this=6c155f71|c9035:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=9035|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=157|prev=6c155f71|this=f557c663|c9035:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9035|label=ALLOW_SIM
+EVIDENCE|seq=158|prev=f557c663|this=522d28d6|harness_reset
+EVIDENCE|seq=159|prev=522d28d6|this=19b843b0|clock_set:200
+EVIDENCE|seq=160|prev=19b843b0|this=6b56bf7a|cosign_grant:e1v1
+SETUP|id=9036|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=161|prev=6b56bf7a|this=4ea2bc87|c9036:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+SETUP|id=9036|kind=setup|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=162|prev=4ea2bc87|this=61a50d2b|c9036:setup:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CASE|id=9036|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=163|prev=61a50d2b|this=9f1bbf35|c9036:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9036|label=ALLOW_SIM
+EVIDENCE|seq=164|prev=9f1bbf35|this=93fe5d09|harness_reset
+EVIDENCE|seq=165|prev=93fe5d09|this=b3190c56|clock_set:150
+EVIDENCE|seq=166|prev=b3190c56|this=eb7332c0|cosign_grant:e1v1
+EVIDENCE|seq=167|prev=eb7332c0|this=a710422d|cosign_revoke_nomatch:e2v1
+CASE|id=9037|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=168|prev=a710422d|this=4cb77f73|c9037:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9037|label=ALLOW_SIM
+EVIDENCE|seq=169|prev=4cb77f73|this=e7753e33|harness_reset
+EVIDENCE|seq=170|prev=e7753e33|this=236c3ea3|clock_set:150
+EVIDENCE|seq=171|prev=236c3ea3|this=49296b95|cosign_grant:e1v1
+CASE|id=9038|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=172|prev=49296b95|this=77a8e7a6|c9038:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9038|label=ALLOW_SIM
+EVIDENCE|seq=173|prev=77a8e7a6|this=49fdf3ea|harness_reset
+EVIDENCE|seq=174|prev=49fdf3ea|this=7ae2724f|clock_set:150
+EVIDENCE|seq=175|prev=7ae2724f|this=a6a0bd3a|cosign_grant:e1v1
+CASE|id=9039|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=176|prev=a6a0bd3a|this=6d4fbbfe|c9039:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9039|label=ALLOW_SIM
+EVIDENCE|seq=177|prev=6d4fbbfe|this=fd3af941|harness_reset
+EVIDENCE|seq=178|prev=fd3af941|this=da296a01|clock_set:150
+EVIDENCE|seq=179|prev=da296a01|this=bfdaec86|cosign_grant:e8v1
+CASE|id=9040|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=180|prev=bfdaec86|this=f5649dd4|c9040:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9040|label=ALLOW_SIM
+EVIDENCE|seq=181|prev=f5649dd4|this=5c79393c|harness_reset
+EVIDENCE|seq=182|prev=5c79393c|this=ddda0295|clock_set:300
+EVIDENCE|seq=183|prev=ddda0295|this=e6da44df|cosign_grant:e1v1
+EVIDENCE|seq=184|prev=e6da44df|this=13e93ecc|cosign_grant:e2v1
+EVIDENCE|seq=185|prev=13e93ecc|this=0091ff22|cosign_grant:e3v2
+EVIDENCE|seq=186|prev=0091ff22|this=1d293df3|cosign_grant:e4v1
+EVIDENCE|seq=187|prev=1d293df3|this=2098a44d|cosign_table_full:e5v1
+CASE|id=9041|kind=target|verdict=DENY|reason=cosign_binding_mismatch
+EVIDENCE|seq=188|prev=2098a44d|this=39b7c31e|c9041:target:DENY:cosign_binding_mismatch
+CLIENT|REP|case=9041|label=DENY
+EVIDENCE|seq=189|prev=39b7c31e|this=b2905469|harness_reset
+EVIDENCE|seq=190|prev=b2905469|this=24143e14|clock_set:50
+EVIDENCE|seq=191|prev=24143e14|this=97adeb3f|cosign_grant:e5v1
+CASE|id=9042|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=192|prev=97adeb3f|this=e576ff6b|c9042:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9042|label=ALLOW_SIM
+EVIDENCE|seq=193|prev=e576ff6b|this=dbf57b71|harness_reset
+EVIDENCE|seq=194|prev=dbf57b71|this=a17af714|clock_set:2000
+EVIDENCE|seq=195|prev=a17af714|this=6441a81b|cosign_grant:e7v1
+CASE|id=9043|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=196|prev=6441a81b|this=c894b854|c9043:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9043|label=ALLOW_SIM
+EVIDENCE|seq=197|prev=c894b854|this=cb1efb74|harness_reset
+EVIDENCE|seq=198|prev=cb1efb74|this=df54d56a|clock_set:150
+EVIDENCE|seq=199|prev=df54d56a|this=b88d9d7b|cosign_grant:e3v1
+EVIDENCE|seq=200|prev=b88d9d7b|this=54daee88|cosign_grant:e3v2
+CASE|id=9044|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=201|prev=54daee88|this=88fc5f20|c9044:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9044|label=ALLOW_SIM
+EVIDENCE|seq=202|prev=88fc5f20|this=5a0dad8a|harness_reset
+EVIDENCE|seq=203|prev=5a0dad8a|this=2a6c743c|clock_set:10
+EVIDENCE|seq=204|prev=2a6c743c|this=ed7087ed|cosign_grant:e4v1
+EVIDENCE|seq=205|prev=ed7087ed|this=62cbefb8|clock_set:950
+EVIDENCE|seq=206|prev=62cbefb8|this=869cfe1f|clock_set:700
+CASE|id=9045|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=207|prev=869cfe1f|this=3b71b8b0|c9045:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9045|label=ALLOW_SIM
+EVIDENCE|seq=208|prev=3b71b8b0|this=bda2ce1b|harness_reset
+EVIDENCE|seq=209|prev=bda2ce1b|this=c7bbdfe1|clock_set:600
+EVIDENCE|seq=210|prev=c7bbdfe1|this=7180482f|cosign_grant:e4v1
+CASE|id=9046|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=211|prev=7180482f|this=0e06f6dc|c9046:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9046|label=ALLOW_SIM
+EVIDENCE|seq=212|prev=0e06f6dc|this=296fc559|harness_reset
+EVIDENCE|seq=213|prev=296fc559|this=5d1d2537|clock_set:150
+EVIDENCE|seq=214|prev=5d1d2537|this=dbe25790|cosign_grant:e1v1
+SETUP|id=9047|kind=setup|verdict=DENY|reason=forbidden_zone
+EVIDENCE|seq=215|prev=dbe25790|this=7d478684|c9047:setup:DENY:forbidden_zone
+CASE|id=9047|kind=target|verdict=ALLOW_SIM|reason=ok
+EVIDENCE|seq=216|prev=7d478684|this=b82f9e28|c9047:target:ALLOW_SIM:ok
+GATE|NOTE|sim_only; delivery!=achievement; non-clinical
+CLIENT|REP|case=9047|label=ALLOW_SIM
+GATE|CHAIN|tip=b82f9e28|len=216
+GATE|INFO|corpus_done
+CLIENT|INFO|CORPUS_DONE|n=47
+qemu-system-aarch64: terminating on signal 15 from pid 337444 (bash)
+RUN|END|status=done|elapsed_s=2

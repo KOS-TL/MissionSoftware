@@ -1,0 +1,9433 @@
+{
+ "cases": [
+  {
+   "case_id": 5001,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/7v1",
+   "note": "d=17",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 983,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 589,
+     "nonce": 7001163,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5002,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/4v1",
+   "note": "d=3",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 903,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 457,
+     "nonce": 7001078,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 9
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5003,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/3v2",
+   "note": "d=5",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 95,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 107,
+     "nonce": 7001051,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5004,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/8v1",
+   "note": "bound=5v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 61,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 125,
+     "nonce": 7001205,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5005,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/6v3",
+   "note": "d=19",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 619,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 118,
+     "nonce": 7001130,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5006,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/7v1",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1191,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 325,
+     "nonce": 7001168,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5007,
+   "category": "SPV-version",
+   "element": "version",
+   "ent_ref": "6v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-V1",
+   "name": "SPV-version/stale_bound_old/6v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-V1"
+   ],
+   "oracle_clause": "S-V1",
+   "oracle_reason": "stale_entrustment_version",
+   "rule": "stale_bound_old",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 293,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 67,
+     "nonce": 7001154,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 10
+    }
+   ],
+   "subtype": "stale_bound_old"
+  },
+  {
+   "case_id": 5008,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 163,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 120,
+     "nonce": 7001017,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5009,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/6v3",
+   "note": "level=948",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 580,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 948,
+     "nonce": 7001141,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5010,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "5v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/5v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 128,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 564,
+     "nonce": 7001126,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5011,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/1v1",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 149,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 222,
+     "nonce": 7001007,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5012,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/1v1",
+   "note": "level=626",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 103,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 626,
+     "nonce": 7001012,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5013,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/5v1",
+   "note": "level=710",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 390,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 710,
+     "nonce": 7001115,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5014,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/6v3",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 199,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 145,
+     "nonce": 7001129,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5015,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/7v1",
+   "note": "level=979",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1094,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 979,
+     "nonce": 7001172,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5016,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "4v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/4v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 813,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 289,
+     "nonce": 7001100,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5017,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/1v1",
+   "note": "d=10",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 210,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 231,
+     "nonce": 7001003,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5018,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 600,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 4,
+     "nonce": 7001133,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5019,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/1v1",
+   "note": "z=8",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 192,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 118,
+     "nonce": 7001009,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5020,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/5v1",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 610,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 353,
+     "nonce": 7001108,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5021,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "1v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/1v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 154,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 98,
+     "nonce": 7001023,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5022,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 713,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 134,
+     "nonce": 7001091,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 10
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5023,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 936,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 151,
+     "nonce": 7001123,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5024,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 80,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 8,
+     "kind": "target",
+     "level": 123,
+     "nonce": 7001208,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 81,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5025,
+   "category": "LEGAL-accountability",
+   "element": "accountability",
+   "ent_ref": "4v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-accountability/LEGAL_advisor_recommend/4v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_advisor_recommend",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 611,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 4,
+     "kind": "target",
+     "level": 176,
+     "nonce": 7001093,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "LEGAL_advisor_recommend"
+  },
+  {
+   "case_id": 5026,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/8v1",
+   "note": "z=11",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 106,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 138,
+     "nonce": 7001195,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5027,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/4v1",
+   "note": "level=813",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 539,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 813,
+     "nonce": 7001089,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 10
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5028,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/3v2",
+   "note": "level=273",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 215,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 273,
+     "nonce": 7001060,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5029,
+   "category": "SPV-version",
+   "element": "version",
+   "ent_ref": "6v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-V1",
+   "name": "SPV-version/stale_bound_old/6v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-V1"
+   ],
+   "oracle_clause": "S-V1",
+   "oracle_reason": "stale_entrustment_version",
+   "rule": "stale_bound_old",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 301,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 79,
+     "nonce": 7001157,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 9
+    }
+   ],
+   "subtype": "stale_bound_old"
+  },
+  {
+   "case_id": 5030,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/7v1",
+   "note": "z=11",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1103,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 558,
+     "nonce": 7001170,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5031,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 166,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 65,
+     "nonce": 7001071,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5032,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/8v1",
+   "note": "d=8",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 158,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 81,
+     "nonce": 7001187,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5033,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "1v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/1v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 100,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 49,
+     "nonce": 7001005,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5034,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/8v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 49,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 37,
+     "nonce": 7001186,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5035,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 898,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 5,
+     "kind": "target",
+     "level": 350,
+     "nonce": 7001124,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5036,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/2v1",
+   "note": "d=34",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 116,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 213,
+     "nonce": 7001028,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5037,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/2v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 401,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 302,
+     "nonce": 7001025,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5038,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/4v1",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 515,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 405,
+     "nonce": 7001083,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5039,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 123,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 16,
+     "nonce": 7001200,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5040,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "7v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/7v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 2000,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 400,
+     "nonce": 7001165,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5041,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1076,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 651,
+     "nonce": 7001177,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5042,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/6v3",
+   "note": "z=6",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 430,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 43,
+     "nonce": 7001139,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 6
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5043,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 507,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 4,
+     "ent": 6,
+     "kind": "target",
+     "level": 29,
+     "nonce": 7001151,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 249,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5044,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/4v1",
+   "note": "z=1",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 877,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 306,
+     "nonce": 7001086,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5045,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "2v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/2v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 188,
+     "nonce": 7001029,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5046,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/7v1",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1042,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 336,
+     "nonce": 7001167,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5047,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 838,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 5,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 329,
+     "nonce": 7001121,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 0
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5048,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 153,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 52,
+     "nonce": 7001020,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5049,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/4v1",
+   "note": "z=0",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 768,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 665,
+     "nonce": 7001082,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 0
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5050,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/3v2",
+   "note": "level=201",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 121,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 201,
+     "nonce": 7001059,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5051,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/7v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1225,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 900,
+     "nonce": 7001173,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5052,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/2v1",
+   "note": "z=11",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 244,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 251,
+     "nonce": 7001034,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5053,
+   "category": "SPV-version",
+   "element": "version",
+   "ent_ref": "6v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-version/bound_current_ref_old/6v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C2",
+    "S-V1"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "bound_current_ref_old",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 293,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 67,
+     "nonce": 7001155,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 10
+    }
+   ],
+   "subtype": "bound_current_ref_old"
+  },
+  {
+   "case_id": 5054,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "2v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/2v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 400,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 45,
+     "nonce": 7001030,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5055,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "8v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/8v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 121,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 57,
+     "nonce": 7001210,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5056,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "8v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/8v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 13,
+     "nonce": 7001190,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5057,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 293,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 200,
+     "nonce": 7001061,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5058,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 398,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 299,
+     "nonce": 7001118,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 0
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5059,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 504,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 605,
+     "nonce": 7001092,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5060,
+   "category": "LEGAL-accountability",
+   "element": "accountability",
+   "ent_ref": "8v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-accountability/LEGAL_advisor_recommend/8v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_advisor_recommend",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 67,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 8,
+     "kind": "target",
+     "level": 36,
+     "nonce": 7001202,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_advisor_recommend"
+  },
+  {
+   "case_id": 5061,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "2v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/2v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 349,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 219,
+     "nonce": 7001047,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5062,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S3",
+   "name": "SPV-scope/action_not_allowed/2v1",
+   "note": "QUERY_STATUS",
+   "oracle_all_clauses": [
+    "S-S3"
+   ],
+   "oracle_clause": "S-S3",
+   "oracle_reason": "scope_drift_action",
+   "rule": "action_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 278,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 3,
+     "ent": 2,
+     "kind": "target",
+     "level": 7,
+     "nonce": 7001039,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "action_not_allowed"
+  },
+  {
+   "case_id": 5063,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 122,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 8,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 45,
+     "nonce": 7001204,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5064,
+   "category": "LEGAL-version",
+   "element": "version",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-version/LEGAL_rebind_current/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_rebind_current",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 301,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "ent": 6,
+     "op": "REVOKE",
+     "ver": 2
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 79,
+     "nonce": 7001159,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_rebind_current"
+  },
+  {
+   "case_id": 5065,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/4v1",
+   "note": "d=3",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 497,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 558,
+     "nonce": 7001079,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5066,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S3",
+   "name": "SPV-scope/action_not_allowed/7v1",
+   "note": "RECOMMEND",
+   "oracle_all_clauses": [
+    "S-S3"
+   ],
+   "oracle_clause": "S-S3",
+   "oracle_reason": "scope_drift_action",
+   "rule": "action_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1827,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 7,
+     "kind": "target",
+     "level": 412,
+     "nonce": 7001174,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "action_not_allowed"
+  },
+  {
+   "case_id": 5067,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "4v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/4v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 900,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 229,
+     "nonce": 7001081,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5068,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 50,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 136,
+     "nonce": 7001206,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5069,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 154,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 15,
+     "nonce": 7001015,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5070,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/6v3",
+   "note": "z=3",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 282,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 30,
+     "nonce": 7001138,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 3
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5071,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/2v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 382,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 2,
+     "kind": "target",
+     "level": 338,
+     "nonce": 7001044,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5072,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 100,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 1,
+     "nonce": 7001052,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5073,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 899,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 388,
+     "nonce": 7001094,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5074,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/4v1",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 664,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 676,
+     "nonce": 7001085,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5075,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/6v3",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 601,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 229,
+     "nonce": 7001128,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5076,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/5v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 568,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 600,
+     "nonce": 7001116,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5077,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/3v2",
+   "note": "z=4",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 241,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 66,
+     "nonce": 7001057,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 4
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5078,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 188,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 565,
+     "nonce": 7001120,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5079,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/1v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 201,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 33,
+     "nonce": 7001001,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5080,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/2v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 281,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 2,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 488,
+     "nonce": 7001042,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5081,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 182,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 122,
+     "nonce": 7001068,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5082,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/5v1",
+   "note": "z=13",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 986,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 548,
+     "nonce": 7001109,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5083,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S3",
+   "name": "SPV-scope/action_not_allowed/5v1",
+   "note": "RECOMMEND",
+   "oracle_all_clauses": [
+    "S-S3"
+   ],
+   "oracle_clause": "S-S3",
+   "oracle_reason": "scope_drift_action",
+   "rule": "action_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 311,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 5,
+     "kind": "target",
+     "level": 347,
+     "nonce": 7001117,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "action_not_allowed"
+  },
+  {
+   "case_id": 5084,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/8v1",
+   "note": "level=556",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 83,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 556,
+     "nonce": 7001198,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5085,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/5v1",
+   "note": "bound=1v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 466,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 390,
+     "nonce": 7001122,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 0
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5086,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/5v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 49,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 139,
+     "nonce": 7001103,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5087,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/3v2",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 301,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 94,
+     "nonce": 7001048,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5088,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/8v1",
+   "note": "z=5",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 82,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 17,
+     "nonce": 7001192,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5089,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/1v1",
+   "note": "z=11",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 175,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 53,
+     "nonce": 7001010,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5090,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 144,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 1,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 113,
+     "nonce": 7001018,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5091,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 232,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 4,
+     "ent": 6,
+     "kind": "target",
+     "level": 249,
+     "nonce": 7001150,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5092,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/4v1",
+   "note": "z=13",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 564,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 218,
+     "nonce": 7001087,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5093,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S3",
+   "name": "SPV-scope/action_not_allowed/2v1",
+   "note": "ENABLE_SIM",
+   "oracle_all_clauses": [
+    "S-S3"
+   ],
+   "oracle_clause": "S-S3",
+   "oracle_reason": "scope_drift_action",
+   "rule": "action_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 315,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 2,
+     "kind": "target",
+     "level": 87,
+     "nonce": 7001038,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "action_not_allowed"
+  },
+  {
+   "case_id": 5094,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/5v1",
+   "note": "z=8",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 186,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 174,
+     "nonce": 7001112,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5095,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/6v3",
+   "note": "z=14",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 411,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 30,
+     "nonce": 7001136,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 14
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5096,
+   "category": "SPV-version",
+   "element": "version",
+   "ent_ref": "3v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-V1",
+   "name": "SPV-version/stale_bound_old/3v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-V1"
+   ],
+   "oracle_clause": "S-V1",
+   "oracle_reason": "stale_entrustment_version",
+   "rule": "stale_bound_old",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 157,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 6,
+     "nonce": 7001073,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "stale_bound_old"
+  },
+  {
+   "case_id": 5097,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "5v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/5v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 50,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 99,
+     "nonce": 7001106,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5098,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/1v1",
+   "note": "d=10",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 90,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 195,
+     "nonce": 7001004,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5099,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1888,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 747,
+     "nonce": 7001176,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5100,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1074,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 565,
+     "nonce": 7001175,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5101,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/6v3",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 514,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 172,
+     "nonce": 7001134,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5102,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/3v2",
+   "note": "d=5",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 305,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 125,
+     "nonce": 7001050,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5103,
+   "category": "SPV-version",
+   "element": "version",
+   "ent_ref": "3v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-version/bound_current_ref_old/3v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C2",
+    "S-V1"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "bound_current_ref_old",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 157,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 6,
+     "nonce": 7001074,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "bound_current_ref_old"
+  },
+  {
+   "case_id": 5104,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/2v1",
+   "note": "d=34",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 434,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 381,
+     "nonce": 7001027,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5105,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/7v1",
+   "note": "level=901",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1592,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 901,
+     "nonce": 7001171,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5106,
+   "category": "LEGAL-accountability",
+   "element": "accountability",
+   "ent_ref": "1v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-accountability/LEGAL_advisor_recommend/1v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_advisor_recommend",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 167,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 1,
+     "kind": "target",
+     "level": 225,
+     "nonce": 7001016,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "LEGAL_advisor_recommend"
+  },
+  {
+   "case_id": 5107,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/3v2",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 253,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 8,
+     "nonce": 7001054,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5108,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 83,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 102,
+     "nonce": 7001203,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5109,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1521,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 7,
+     "kind": "target",
+     "level": 178,
+     "nonce": 7001182,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 244,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5110,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "7v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/7v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1841,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 313,
+     "nonce": 7001184,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5111,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/7v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 2001,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 84,
+     "nonce": 7001160,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5112,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/7v1",
+   "note": "bound=8v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1367,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 481,
+     "nonce": 7001179,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5113,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/5v1",
+   "note": "d=22",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1022,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 440,
+     "nonce": 7001104,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5114,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 329,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 81,
+     "nonce": 7001144,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5115,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 328,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 201,
+     "nonce": 7001152,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5116,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/3v2",
+   "note": "z=5",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 108,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 173,
+     "nonce": 7001058,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 5
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5117,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/4v1",
+   "note": "level=801",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 656,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 801,
+     "nonce": 7001088,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5118,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "5v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/5v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1000,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 389,
+     "nonce": 7001107,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5119,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/6v3",
+   "note": "bound=5v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 363,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 101,
+     "nonce": 7001148,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5120,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 477,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 141,
+     "nonce": 7001143,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5121,
+   "category": "LEGAL-version",
+   "element": "version",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-version/LEGAL_rebind_current/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_rebind_current",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 157,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 3,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 6,
+     "nonce": 7001075,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "LEGAL_rebind_current"
+  },
+  {
+   "case_id": 5122,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1513,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 7,
+     "kind": "target",
+     "level": 79,
+     "nonce": 7001181,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5123,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/2v1",
+   "note": "level=501",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 157,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 501,
+     "nonce": 7001035,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5124,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/7v1",
+   "note": "d=17",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 2017,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 93,
+     "nonce": 7001162,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5125,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 198,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 4,
+     "ent": 3,
+     "kind": "target",
+     "level": 49,
+     "nonce": 7001070,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 88,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5126,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "8v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/8v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 78,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 87,
+     "nonce": 7001209,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5127,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/2v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 330,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 500,
+     "nonce": 7001037,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5128,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/2v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 290,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 2,
+     "kind": "target",
+     "level": 197,
+     "nonce": 7001045,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 156,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5129,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 138,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 149,
+     "nonce": 7001201,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5130,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/3v2",
+   "note": "bound=7v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 175,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 180,
+     "nonce": 7001067,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5131,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 259,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 89,
+     "nonce": 7001063,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 2
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5132,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/1v1",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 177,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 2,
+     "nonce": 7001008,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5133,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "1v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/1v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 200,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 15,
+     "nonce": 7001006,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5134,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 360,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 17,
+     "nonce": 7001149,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5135,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/3v2",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 99,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 130,
+     "nonce": 7001049,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 2
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5136,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/1v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 99,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 61,
+     "nonce": 7001002,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5137,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "7v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/7v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1183,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 145,
+     "nonce": 7001183,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5138,
+   "category": "LEGAL-accountability",
+   "element": "accountability",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-accountability/LEGAL_advisor_recommend/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_advisor_recommend",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 174,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 2,
+     "ent": 3,
+     "kind": "target",
+     "level": 43,
+     "nonce": 7001064,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "LEGAL_advisor_recommend"
+  },
+  {
+   "case_id": 5139,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 286,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 156,
+     "nonce": 7001072,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 2
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5140,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/4v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 901,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 150,
+     "nonce": 7001076,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5141,
+   "category": "LEGAL-accountability",
+   "element": "accountability",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-accountability/LEGAL_advisor_recommend/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_advisor_recommend",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 251,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 2,
+     "ent": 6,
+     "kind": "target",
+     "level": 167,
+     "nonce": 7001145,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_advisor_recommend"
+  },
+  {
+   "case_id": 5142,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/5v1",
+   "note": "d=22",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 28,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 273,
+     "nonce": 7001105,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5143,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/6v3",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 220,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 49,
+     "nonce": 7001137,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5144,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/8v1",
+   "note": "z=3",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 141,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 64,
+     "nonce": 7001191,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5145,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/2v1",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 262,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 340,
+     "nonce": 7001031,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5146,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/3v2",
+   "note": "z=8",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 158,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 163,
+     "nonce": 7001055,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 8
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5147,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 167,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 5,
+     "kind": "target",
+     "level": 388,
+     "nonce": 7001125,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 158,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5148,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/2v1",
+   "note": "z=2",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 365,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 202,
+     "nonce": 7001033,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5149,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/5v1",
+   "note": "z=12",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 220,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 552,
+     "nonce": 7001113,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5150,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/4v1",
+   "note": "z=12",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 845,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 590,
+     "nonce": 7001084,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5151,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/7v1",
+   "note": "z=5",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1251,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 343,
+     "nonce": 7001169,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5152,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/5v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1001,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 577,
+     "nonce": 7001102,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5153,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/5v1",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 290,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 67,
+     "nonce": 7001111,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5154,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 840,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 4,
+     "kind": "target",
+     "level": 304,
+     "nonce": 7001098,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5155,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 163,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 29,
+     "nonce": 7001062,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5156,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/5v1",
+   "note": "level=601",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 324,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 601,
+     "nonce": 7001114,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5157,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 123,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 1,
+     "kind": "target",
+     "level": 152,
+     "nonce": 7001021,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5158,
+   "category": "SPV-version",
+   "element": "version",
+   "ent_ref": "6v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-version/bound_current_ref_old/6v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C2",
+    "S-V1"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "bound_current_ref_old",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 301,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 79,
+     "nonce": 7001158,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 9
+    }
+   ],
+   "subtype": "bound_current_ref_old"
+  },
+  {
+   "case_id": 5159,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/2v1",
+   "note": "level=876",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 161,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 876,
+     "nonce": 7001036,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5160,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/8v1",
+   "note": "d=8",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 42,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 46,
+     "nonce": 7001188,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5161,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 129,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 4,
+     "ent": 3,
+     "kind": "target",
+     "level": 80,
+     "nonce": 7001069,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5162,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/2v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 149,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 246,
+     "nonce": 7001026,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5163,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/7v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 999,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 92,
+     "nonce": 7001161,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5164,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 143,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "ent": 3,
+     "op": "REVOKE",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 166,
+     "nonce": 7001066,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5165,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "1v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/1v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 138,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 256,
+     "nonce": 7001024,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5166,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/6v3",
+   "note": "z=11",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 207,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 24,
+     "nonce": 7001135,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 11
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5167,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/1v1",
+   "note": "level=301",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 103,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 301,
+     "nonce": 7001011,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5168,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/6v3",
+   "note": "level=251",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 323,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 251,
+     "nonce": 7001140,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5169,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/8v1",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 105,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 141,
+     "nonce": 7001194,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5170,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T1",
+   "name": "SPV-time/after_t_end/8v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_reason": "expired_entrustment",
+   "rule": "after_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 151,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 33,
+     "nonce": 7001185,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "after_t_end"
+  },
+  {
+   "case_id": 5171,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 758,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 4,
+     "kind": "target",
+     "level": 334,
+     "nonce": 7001099,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 128,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5172,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "4v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/4v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 652,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 800,
+     "nonce": 7001090,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5173,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "7v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/7v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1000,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 348,
+     "nonce": 7001164,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5174,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "4v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/4v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 509,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 206,
+     "nonce": 7001101,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5175,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "5v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/5v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 279,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 84,
+     "nonce": 7001127,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5176,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-R1",
+   "name": "SPV-accountability/advisor_role_enable/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_reason": "role_forbidden",
+   "rule": "advisor_role_enable",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 148,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 111,
+     "nonce": 7001014,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "advisor_role_enable"
+  },
+  {
+   "case_id": 5177,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 362,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 7,
+     "nonce": 7001146,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5178,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/3v2",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 145,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 141,
+     "nonce": 7001056,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5179,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/5v1",
+   "note": "z=14",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 546,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 546,
+     "nonce": 7001110,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5180,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "3v2",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/3v2",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 140,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 136,
+     "nonce": 7001065,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5181,
+   "category": "LEGAL-accountability",
+   "element": "accountability",
+   "ent_ref": "2v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-accountability/LEGAL_advisor_recommend/2v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_advisor_recommend",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 347,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 277,
+     "nonce": 7001040,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_advisor_recommend"
+  },
+  {
+   "case_id": 5182,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "2v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/2v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 350,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 266,
+     "nonce": 7001046,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5183,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 599,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 107,
+     "nonce": 7001097,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5184,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/6v3",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 205,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "ent": 6,
+     "op": "REVOKE",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 186,
+     "nonce": 7001147,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5185,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 200,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 212,
+     "nonce": 7001132,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5186,
+   "category": "LEGAL-version",
+   "element": "version",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-version/LEGAL_rebind_current/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_rebind_current",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 293,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 6,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 67,
+     "nonce": 7001156,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "LEGAL_rebind_current"
+  },
+  {
+   "case_id": 5187,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/2v1",
+   "note": "z=15",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 280,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 56,
+     "nonce": 7001032,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5188,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U2",
+   "name": "SPV-evidence/claim_u_nonzero/1v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U2"
+   ],
+   "oracle_clause": "S-U2",
+   "oracle_reason": "achievement_not_claimable",
+   "rule": "claim_u_nonzero",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 115,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 1,
+     "kind": "target",
+     "level": 257,
+     "nonce": 7001022,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 191,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "claim_u_nonzero"
+  },
+  {
+   "case_id": 5189,
+   "category": "LEGAL-legal",
+   "element": "legal",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-legal/LEGAL_nominal/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_nominal",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 516,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 170,
+     "nonce": 7001153,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "LEGAL_nominal"
+  },
+  {
+   "case_id": 5190,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "5v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-P1",
+   "name": "SPV-accountability/advisor_origin_laundered/5v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-P1"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_reason": "advisor_cannot_enable",
+   "rule": "advisor_origin_laundered",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 290,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 501,
+     "nonce": 7001119,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "advisor_origin_laundered"
+  },
+  {
+   "case_id": 5191,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "8v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/8v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 50,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 111,
+     "nonce": 7001189,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 6
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5192,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/8v1",
+   "note": "z=7",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 137,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 115,
+     "nonce": 7001193,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5193,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/enable_u0/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "enable_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1883,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 104,
+     "nonce": 7001180,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 12
+    }
+   ],
+   "subtype": "enable_u0"
+  },
+  {
+   "case_id": 5194,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/2v1",
+   "note": "bound=8v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 297,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 236,
+     "nonce": 7001043,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 5
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5195,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/4v1",
+   "note": "bound=2v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 793,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 606,
+     "nonce": 7001096,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5196,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "6v3",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/6v3",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 422,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 250,
+     "nonce": 7001142,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5197,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/8v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 53,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 150,
+     "nonce": 7001199,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  },
+  {
+   "case_id": 5198,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/7v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1010,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 7,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 769,
+     "nonce": 7001178,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5199,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/4v1",
+   "note": "d=1",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 499,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 737,
+     "nonce": 7001077,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5200,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "4v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_start/4v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 500,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 646,
+     "nonce": 7001080,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 9
+    }
+   ],
+   "subtype": "LEGAL_at_t_start"
+  },
+  {
+   "case_id": 5201,
+   "category": "LEGAL-time",
+   "element": "time",
+   "ent_ref": "3v2",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-time/LEGAL_at_t_end/3v2",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_at_t_end",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 118,
+     "nonce": 7001053,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 3
+    }
+   ],
+   "subtype": "LEGAL_at_t_end"
+  },
+  {
+   "case_id": 5202,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S2",
+   "name": "SPV-scope/level_over_max/8v1",
+   "note": "level=151",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_reason": "scope_drift_level",
+   "rule": "level_over_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 93,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 151,
+     "nonce": 7001197,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "level_over_max"
+  },
+  {
+   "case_id": 5203,
+   "category": "SPV-evidence",
+   "element": "evidence",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-U1",
+   "name": "SPV-evidence/claim_u0/8v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rule": "claim_u0",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 90,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 8,
+     "kind": "target",
+     "level": 58,
+     "nonce": 7001207,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "claim_u0"
+  },
+  {
+   "case_id": 5204,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "2v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/no_cosign/2v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "no_cosign",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 385,
+     "op": "CLOCK"
+    },
+    {
+     "action": 2,
+     "ent": 2,
+     "kind": "target",
+     "level": 208,
+     "nonce": 7001041,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "no_cosign"
+  },
+  {
+   "case_id": 5205,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "4v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C1",
+   "name": "SPV-accountability/cosign_revoked/4v1",
+   "note": "",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_reason": "no_human_cosign",
+   "rule": "cosign_revoked",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 602,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 4,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 102,
+     "nonce": 7001095,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 10
+    }
+   ],
+   "subtype": "cosign_revoked"
+  },
+  {
+   "case_id": 5206,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "7v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-Z1",
+   "name": "SPV-scope/zone_forbidden/7v1",
+   "note": "z=3",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_reason": "forbidden_zone",
+   "rule": "zone_forbidden",
+   "single_point_pure": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1989,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 315,
+     "nonce": 7001166,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "zone_forbidden"
+  },
+  {
+   "case_id": 5207,
+   "category": "SPV-time",
+   "element": "time",
+   "ent_ref": "6v3",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-T2",
+   "name": "SPV-time/before_t_start/6v3",
+   "note": "d=19",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rule": "before_t_start",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 181,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 28,
+     "nonce": 7001131,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 10
+    }
+   ],
+   "subtype": "before_t_start"
+  },
+  {
+   "case_id": 5208,
+   "category": "SPV-scope",
+   "element": "scope",
+   "ent_ref": "8v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-S1",
+   "name": "SPV-scope/zone_not_allowed/8v1",
+   "note": "z=14",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_reason": "scope_drift_zone",
+   "rule": "zone_not_allowed",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 108,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 3,
+     "nonce": 7001196,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "zone_not_allowed"
+  },
+  {
+   "case_id": 5209,
+   "category": "SPV-accountability",
+   "element": "accountability",
+   "ent_ref": "1v1",
+   "gt": "MUST_DENY",
+   "intended_clause": "S-C2",
+   "name": "SPV-accountability/cosign_bound_other/1v1",
+   "note": "bound=8v1",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rule": "cosign_bound_other",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 158,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 12,
+     "nonce": 7001019,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "cosign_bound_other"
+  },
+  {
+   "case_id": 5210,
+   "category": "LEGAL-scope",
+   "element": "scope",
+   "ent_ref": "1v1",
+   "gt": "MAY_PERMIT",
+   "intended_clause": "",
+   "name": "LEGAL-scope/LEGAL_level_eq_max/1v1",
+   "note": "",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_reason": "ok",
+   "rule": "LEGAL_level_eq_max",
+   "single_point_pure": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 169,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 300,
+     "nonce": 7001013,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "LEGAL_level_eq_max"
+  }
+ ],
+ "corpus_id": "spv-proto-1",
+ "corpus_set": "student_spv_proto",
+ "draft_notice": "\u793a\u610f\u6027\u539f\u578b\u8bed\u6599\uff1a\u4ec5\u7528\u4e8e\u53ef\u884c\u6027\u81ea\u6d4b\uff0c\u975e\u9884\u6ce8\u518c\u3001\u975e\u72ec\u7acb\u3001\u4e0d\u5f97\u5e76\u5165\u4f5c\u8005\u8bed\u6599\u6216\u7559\u51fa\u8bed\u6599\u3002",
+ "entrustments_sha256": "1412203e37bd798dacb83d07deca7e6adf865cd191a1d851c2fc6ea19e2cf502",
+ "generator": "spv_gen.py v0.1-proto",
+ "schema": "mission-se-corpus/v1",
+ "seed": 1,
+ "selfcheck": {
+  "impure": 36,
+  "intended_mismatch": []
+ }
+}

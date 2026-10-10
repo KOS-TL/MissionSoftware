@@ -1,0 +1,38 @@
+# EXPERIMENTAL, manual only: build and run the S1 demo (DEMO_PROFILE=full) inside trustworthysystems/sel4
+# on a GitHub-hosted runner, then check the serial log (10 evidence events, tip=80488a97, len=10).
+# Never run on GitHub so far; the image (~1.1 GB) and SDK (~72 MB) are downloaded on every run.
+name: docker-demo (experimental)
+
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: "Docker image"
+        required: false
+        default: "trustworthysystems/sel4:latest"
+
+permissions:
+  contents: read
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      MISSION_IMAGE: ${{ github.event.inputs.image }}
+      MODE: docker
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and verify Microkit SDK 2.3.1
+        run: bash scripts/setup_sdk.sh
+      - name: Pull image and record digest
+        run: |
+          docker pull "$MISSION_IMAGE"
+          docker inspect --format '{{index .RepoDigests 0}}' "$MISSION_IMAGE"
+      - name: Run demo (full) and check log
+        run: bash scripts/run_demo.sh full
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: demo-full-log
+          path: mission-shell/build_logs/demo_full.log

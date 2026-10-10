@@ -1,0 +1,28 @@
+{
+  "schema": "mission-se-entrustments/v1",
+  "notice": "非临床·仅仿真。区号与强度均为无物理含义的仿真字段。本表为实验装置的一部分，种子无关（所有种子共用同一托付表）。",
+  "zones": 16,
+  "sim_level_device_max": 1000,
+  "u_mask_valid": 255,
+  "ent_ver_min": 1,
+  "actions": {"ENABLE_SIM": 1, "RECOMMEND": 2, "QUERY_STATUS": 3, "CLAIM_ACHIEVE": 4},
+  "roles": {"OPERATOR": 1, "ADVISOR": 2},
+  "site_policy": {
+    "note": "B+ 使用的全局（非按托付）领域规则：站点运行时间窗 = 全表 [min t_start, max t_end]；站点禁区 = 每条托付都禁止的区（本表中为 7 与 15）。",
+    "window": [50, 2000],
+    "forbidden_zones": [7, 15]
+  },
+  "entrustments": [
+    {"id": 1, "ver": 1, "t_start": 100, "t_end": 200,  "allowed_zones": [1, 2, 3],             "forbidden_zones": [7, 15],         "sim_level_max": 300, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": false},
+    {"id": 2, "ver": 1, "t_start": 150, "t_end": 400,  "allowed_zones": [4, 5],                "forbidden_zones": [7, 15],         "sim_level_max": 500, "allowed_actions": ["RECOMMEND"],                                "superseded": false},
+    {"id": 3, "ver": 1, "t_start": 100, "t_end": 300,  "allowed_zones": [1, 2, 3, 6],          "forbidden_zones": [7, 8, 15],      "sim_level_max": 300, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": true},
+    {"id": 3, "ver": 2, "t_start": 100, "t_end": 300,  "allowed_zones": [1, 2, 3, 6],          "forbidden_zones": [7, 8, 15],      "sim_level_max": 200, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": false},
+    {"id": 4, "ver": 1, "t_start": 500, "t_end": 900,  "allowed_zones": [8, 9, 10, 11],        "forbidden_zones": [0, 7, 12, 15],  "sim_level_max": 800, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": false},
+    {"id": 5, "ver": 1, "t_start": 50,  "t_end": 1000, "allowed_zones": [0, 1, 2, 3, 4, 5, 6], "forbidden_zones": [7, 13, 14, 15], "sim_level_max": 600, "allowed_actions": ["ENABLE_SIM", "QUERY_STATUS"],              "superseded": false},
+    {"id": 6, "ver": 1, "t_start": 200, "t_end": 600,  "allowed_zones": [9, 10, 14],           "forbidden_zones": [7, 11, 15],     "sim_level_max": 400, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": true},
+    {"id": 6, "ver": 2, "t_start": 200, "t_end": 600,  "allowed_zones": [9, 10, 14],           "forbidden_zones": [7, 11, 15],     "sim_level_max": 350, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": true},
+    {"id": 6, "ver": 3, "t_start": 200, "t_end": 600,  "allowed_zones": [9, 10],               "forbidden_zones": [7, 11, 14, 15], "sim_level_max": 250, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": false},
+    {"id": 7, "ver": 1, "t_start": 1000, "t_end": 2000, "allowed_zones": [12, 13, 14],         "forbidden_zones": [3, 7, 15],      "sim_level_max": 900, "allowed_actions": ["ENABLE_SIM", "QUERY_STATUS"],              "superseded": false},
+    {"id": 8, "ver": 1, "t_start": 50,  "t_end": 150,  "allowed_zones": [2, 4, 6, 8],          "forbidden_zones": [3, 5, 7, 15],   "sim_level_max": 150, "allowed_actions": ["ENABLE_SIM", "RECOMMEND", "QUERY_STATUS"], "superseded": false}
+  ]
+}

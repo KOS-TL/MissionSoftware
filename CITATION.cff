@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "如果使用了本仓库的代码、数据或文档，请按以下信息引用。If you use this repository, please cite it as below."
+title: "MissionSoftware: Mission Software Engineering — a Microkit mission shell and controlled-experiment pipeline"
+type: software
+authors:
+  - family-names: "陈"
+    given-names: "鹏"
+    alias: "Chen Peng"
+version: "0.1.0"
+date-released: "2026-10-10"
+repository-code: "https://github.com/KOS-TL/MissionSoftware"
+url: "https://github.com/KOS-TL/MissionSoftware"
+abstract: >-
+  A mission-constrained shell on seL4 Microkit (gatekeeper + client protection domains) and a
+  pre-registered controlled-experiment pipeline comparing traditional-process and mission-layer gates.
+  Explicit entrustment AND current action still aligned with it AND falsifiable checks; delivery is not achievement.
+  All experiment results are environment self-checks on an author-written corpus, not confirmatory evidence.
+keywords:
+  - mission software engineering
+  - seL4
+  - Microkit
+  - controlled experiment
+  - pre-registration

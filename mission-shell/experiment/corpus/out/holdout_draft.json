@@ -1,0 +1,2213 @@
+{
+ "cases": [
+  {
+   "case_id": 9001,
+   "category": "H_DENY",
+   "description": "E5 \u5df2\u8fc7\u671f 1 \u4e14\u76ee\u6807\u533a\u4e3a E5 \u7981\u533a\uff08\u591a\u91cd\u8fdd\u53cd\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-001",
+   "oracle_all_clauses": [
+    "S-T1",
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "expired_entrustment",
+   "rationale": "\u65f6\u95f4\u7a97\u5916\u4e14\u7981\u533a",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1001,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 10,
+     "nonce": 4000007,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9002,
+   "category": "H_DENY",
+   "description": "\u64cd\u4f5c\u5458\u8f6c\u8ff0\u987e\u95ee\u610f\u89c1\u53bb\u58f0\u79f0\u8fbe\u6210",
+   "gt": "MUST_DENY",
+   "name": "H-002",
+   "oracle_all_clauses": [
+    "S-P1",
+    "S-U2"
+   ],
+   "oracle_clause": "S-P1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "advisor_cannot_enable",
+   "rationale": "\u6765\u6e90\u4e3a\u987e\u95ee\u7684\u4f7f\u80fd\u7c7b\u52a8\u4f5c\uff1b\u4e14\u8fbe\u6210\u4e0d\u53ef\u58f0\u79f0",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000014,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 3,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9003,
+   "category": "H_DENY",
+   "description": "\u540c\u4e00\u6258\u4ed8\u6388\u4e88\u4e24\u6b21\u3001\u64a4\u9500\u4e00\u6b21\u540e\u8bf7\u6c42",
+   "gt": "MUST_DENY",
+   "name": "H-003",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "no_human_cosign",
+   "rationale": "\u5171\u7b7e\u4e3a\u96c6\u5408\u8bed\u4e49\uff1b\u4eba\u5df2\u64a4\u56de",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 1,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000021,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9004,
+   "category": "H_DENY",
+   "description": "\u5f15\u7528\u88ab\u53d6\u4ee3\u7684\u4e2d\u95f4\u7248\u672c E6v2\uff0c\u5171\u7b7e\u4e5f\u7ed1 v2",
+   "gt": "MUST_DENY",
+   "name": "H-004",
+   "oracle_all_clauses": [
+    "S-V1"
+   ],
+   "oracle_clause": "S-V1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "stale_entrustment_version",
+   "rationale": "\u5f15\u7528\u5df2\u88ab\u53d6\u4ee3\u7684\u7248\u672c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 300,
+     "nonce": 4000028,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 14
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9005,
+   "category": "H_DENY",
+   "description": "E6v3 \u5f53\u524d\u7248\uff1a\u533a 14 \u5728\u65e7\u7248\u5141\u8bb8\u3001\u65b0\u7248\u7981\u6b62",
+   "gt": "MUST_DENY",
+   "name": "H-005",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "forbidden_zone",
+   "rationale": "\u5f53\u524d\u7248\u672c\u7981\u533a",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000035,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 14
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9006,
+   "category": "H_DENY",
+   "description": "E4 \u751f\u6548\u524d 1 \u4e2a\u65f6\u523b",
+   "gt": "MUST_DENY",
+   "name": "H-006",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rationale": "\u6258\u4ed8\u672a\u751f\u6548",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 499,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000042,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 9
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9007,
+   "category": "H_DENY",
+   "description": "\u5171\u7b7e\u4e0e\u8bf7\u6c42\u90fd\u6307\u5411\u4e0d\u5b58\u5728\u7684\u7248\u672c E1v2",
+   "gt": "MUST_DENY",
+   "name": "H-007",
+   "oracle_all_clauses": [
+    "S-E0"
+   ],
+   "oracle_clause": "S-E0",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "unknown_entrustment_version",
+   "rationale": "\u6258\u4ed8\u7248\u672c\u4e0d\u5b58\u5728\uff08\u5de5\u5355\u53f7\u5b58\u5728\uff09",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000049,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9008,
+   "category": "H_DENY",
+   "description": "\u5171\u7b7e\u4e0e\u8bf7\u6c42\u90fd\u6307\u5411\u4e0d\u5b58\u5728\u7684\u7248\u672c E3v9",
+   "gt": "MUST_DENY",
+   "name": "H-008",
+   "oracle_all_clauses": [
+    "S-E0"
+   ],
+   "oracle_clause": "S-E0",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "unknown_entrustment_version",
+   "rationale": "\u6258\u4ed8\u7248\u672c\u4e0d\u5b58\u5728",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 9
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000056,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 9,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9009,
+   "category": "H_DENY",
+   "description": "\u903b\u8f91\u65f6\u949f\u56de\u62e8\u5230 E8 \u751f\u6548\u524d",
+   "gt": "MUST_DENY",
+   "name": "H-009",
+   "oracle_all_clauses": [
+    "S-T2"
+   ],
+   "oracle_clause": "S-T2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "entrustment_not_yet_valid",
+   "rationale": "\u6258\u4ed8\u672a\u751f\u6548\uff08\u65f6\u949f\u56de\u62e8\uff09",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "now": 40,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 50,
+     "nonce": 4000063,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9010,
+   "category": "H_DENY",
+   "description": "\u501f\u7528\u53e6\u4e00\u5df2\u5171\u7b7e\u6258\u4ed8\u7684\u533a",
+   "gt": "MUST_DENY",
+   "name": "H-010",
+   "oracle_all_clauses": [
+    "S-S1"
+   ],
+   "oracle_clause": "S-S1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_zone",
+   "rationale": "\u533a\u4e0d\u5728\u6240\u5f15\u7528\u6258\u4ed8\u8303\u56f4",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000070,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9011,
+   "category": "H_DENY",
+   "description": "\u501f\u7528\u53e6\u4e00\u5df2\u5171\u7b7e\u6258\u4ed8\u7684\u5f3a\u5ea6\u4e0a\u9650",
+   "gt": "MUST_DENY",
+   "name": "H-011",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_level",
+   "rationale": "\u5f3a\u5ea6\u8d85\u51fa\u6240\u5f15\u7528\u6258\u4ed8",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 500,
+     "nonce": 4000077,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9012,
+   "category": "H_DENY",
+   "description": "\u501f\u7528\u53e6\u4e00\u5df2\u5171\u7b7e\u6258\u4ed8\u7684\u52a8\u4f5c",
+   "gt": "MUST_DENY",
+   "name": "H-012",
+   "oracle_all_clauses": [
+    "S-S3"
+   ],
+   "oracle_clause": "S-S3",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_action",
+   "rationale": "E2 \u672a\u6258\u4ed8 ENABLE_SIM",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 200,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 2,
+     "kind": "target",
+     "level": 10,
+     "nonce": 4000084,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9013,
+   "category": "H_DENY",
+   "description": "\u53ea\u5171\u7b7e\u65e7\u7248 E3v1\uff0c\u5374\u6309\u5f53\u524d\u7248 E3v2 \u8bf7\u6c42",
+   "gt": "MUST_DENY",
+   "name": "H-013",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rationale": "\u5f53\u524d\u7248\u672c\u672a\u7ecf\u4eba\u5171\u7b7e",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000091,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9014,
+   "category": "H_DENY",
+   "description": "\u540c nonce \u4f46\u6539\u4e86\u5f3a\u5ea6",
+   "gt": "MUST_DENY",
+   "name": "H-014",
+   "oracle_all_clauses": [
+    "S-N1"
+   ],
+   "oracle_clause": "S-N1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "duplicate_nonce",
+   "rationale": "nonce \u91cd\u590d\uff08\u975e\u7cbe\u786e\u91cd\u653e\uff09",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 555,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 120,
+     "nonce": 555,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9015,
+   "category": "H_DENY",
+   "description": "\u64a4\u9500\u5e76\u91cd\u65b0\u5171\u7b7e\u540e\u91cd\u653e\u65e7 nonce",
+   "gt": "MUST_DENY",
+   "name": "H-015",
+   "oracle_all_clauses": [
+    "S-N1"
+   ],
+   "oracle_clause": "S-N1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "duplicate_nonce",
+   "rationale": "nonce \u91cd\u590d\u8de8\u8d8a\u5171\u7b7e\u5468\u671f",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 777,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    },
+    {
+     "ent": 0,
+     "op": "REVOKE",
+     "ver": 0
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 777,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9016,
+   "category": "H_DENY",
+   "description": "\u524d\u7f6e\u8bf7\u6c42\u88ab\u62d2\u4f46\u5df2\u7528\u6389 nonce\uff0c\u76ee\u6807\u590d\u7528\u8be5 nonce",
+   "gt": "MUST_DENY",
+   "name": "H-016",
+   "oracle_all_clauses": [
+    "S-N1"
+   ],
+   "oracle_clause": "S-N1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "duplicate_nonce",
+   "rationale": "nonce \u4e00\u7ecf\u51fa\u73b0\u5373\u89c6\u4e3a\u5df2\u7528",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 888,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 888,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9017,
+   "category": "H_DENY",
+   "description": "\u987e\u95ee\u8eab\u4efd\u76f4\u63a5\u58f0\u79f0\u8fbe\u6210",
+   "gt": "MUST_DENY",
+   "name": "H-017",
+   "oracle_all_clauses": [
+    "S-R1",
+    "S-P1",
+    "S-U2"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "role_forbidden",
+   "rationale": "\u89d2\u8272\u65e0\u6743",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 4,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000098,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9018,
+   "category": "H_DENY",
+   "description": "\u4f7f\u80fd\u4e14\u58f0\u79f0 U \u4e3a\u7a7a\uff08\u533a\u4e3a\u6700\u9ad8\u5408\u6cd5\u533a\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-018",
+   "oracle_all_clauses": [
+    "S-U1"
+   ],
+   "oracle_clause": "S-U1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "empty_U_no_achieve_tag",
+   "rationale": "U \u975e\u7a7a\u8981\u6c42",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000105,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9019,
+   "category": "H_DENY",
+   "description": "E7 \u8fc7\u671f 1\uff08\u540c\u65f6\u8d8a\u51fa\u7ad9\u70b9\u8fd0\u884c\u7a97\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-019",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "expired_entrustment",
+   "rationale": "\u6258\u4ed8\u8fc7\u671f",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 2001,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000112,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 13
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9020,
+   "category": "H_DENY",
+   "description": "E7 \u81ea\u8eab\u7981\u533a 3\uff08\u975e\u7ad9\u70b9\u7981\u533a\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-020",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "forbidden_zone",
+   "rationale": "\u6258\u4ed8\u7981\u533a",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 1500,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 7,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000119,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9021,
+   "category": "H_DENY",
+   "description": "E4 \u7981\u533a 0\uff08\u8be5\u533a\u5728 E5 \u4e2d\u662f\u5141\u8bb8\u533a\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-021",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "forbidden_zone",
+   "rationale": "\u6258\u4ed8\u7981\u533a",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 600,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000126,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 0
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9022,
+   "category": "H_DENY",
+   "description": "\u5bf9\u53ea\u6258\u4ed8 RECOMMEND \u7684 E2 \u8bf7\u6c42 ENABLE\uff08\u5f3a\u5ea6 0\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-022",
+   "oracle_all_clauses": [
+    "S-S3"
+   ],
+   "oracle_clause": "S-S3",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_action",
+   "rationale": "\u52a8\u4f5c\u8d8a\u754c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 2,
+     "kind": "target",
+     "level": 0,
+     "nonce": 4000133,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 4
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9023,
+   "category": "H_DENY",
+   "description": "\u65e0\u5171\u7b7e\u7684\u53ea\u8bfb\u67e5\u8be2",
+   "gt": "MUST_DENY",
+   "name": "H-023",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "no_human_cosign",
+   "rationale": "\u89c4\u683c \u00a74\uff1aS-C1 \u9002\u7528\u4e8e\u5168\u90e8\u52a8\u4f5c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "action": 3,
+     "ent": 5,
+     "kind": "target",
+     "level": 0,
+     "nonce": 4000140,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 0,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9024,
+   "category": "H_DENY",
+   "description": "\u6388\u4e88\u540e\u53c8\u5207\u6362\u5230\u53e6\u4e00\u6258\u4ed8\uff08\u64a4\u9500\u5168\u90e8\uff09\u518d\u8bf7\u6c42\u539f\u6258\u4ed8",
+   "gt": "MUST_DENY",
+   "name": "H-024",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rationale": "\u5171\u7b7e\u7ed1\u5b9a\u4e0d\u7b26",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 0,
+     "op": "REVOKE",
+     "ver": 0
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000147,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9025,
+   "category": "H_DENY",
+   "description": "\u5f53\u524d\u7248 E3v2 \u4f46\u5f3a\u5ea6 250\uff08\u65e7\u7248\u5141\u8bb8\u3001\u65b0\u7248\u4e0d\u5141\u8bb8\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-025",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_level",
+   "rationale": "\u5f3a\u5ea6\u8d85\u51fa\u5f53\u524d\u7248\u672c\u4e0a\u9650",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 250,
+     "nonce": 4000154,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9026,
+   "category": "H_DENY",
+   "description": "\u5f53\u524d\u7248 E6v3 \u4f46\u5f3a\u5ea6 300\uff08v2 \u5141\u8bb8\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-026",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_level",
+   "rationale": "\u5f3a\u5ea6\u8d85\u51fa\u5f53\u524d\u7248\u672c\u4e0a\u9650",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 6,
+     "op": "GRANT",
+     "ver": 3
+    },
+    {
+     "action": 1,
+     "ent": 6,
+     "kind": "target",
+     "level": 300,
+     "nonce": 4000161,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 3,
+     "zone": 9
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9027,
+   "category": "H_DENY",
+   "description": "\u89d2\u8272\u4e3a\u987e\u95ee\u3001\u6765\u6e90\u6807\u4e3a\u64cd\u4f5c\u5458\u7684\u4f7f\u80fd",
+   "gt": "MUST_DENY",
+   "name": "H-027",
+   "oracle_all_clauses": [
+    "S-R1"
+   ],
+   "oracle_clause": "S-R1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "role_forbidden",
+   "rationale": "\u89d2\u8272\u65e0\u6743",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000168,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9028,
+   "category": "H_DENY",
+   "description": "\u7ad9\u70b9\u7981\u533a 15 \u4e0a\u7684\u67e5\u8be2",
+   "gt": "MUST_DENY",
+   "name": "H-028",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "forbidden_zone",
+   "rationale": "\u7981\u533a\uff08\u7ad9\u70b9\u7ea7\uff09",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 3,
+     "ent": 5,
+     "kind": "target",
+     "level": 0,
+     "nonce": 4000175,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 15
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9029,
+   "category": "H_DENY",
+   "description": "\u5f3a\u5ea6 1000\uff08\u8bbe\u5907\u8303\u56f4\u5185\u3001\u8d85\u51fa E5 \u4e0a\u9650 600\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-029",
+   "oracle_all_clauses": [
+    "S-S2"
+   ],
+   "oracle_clause": "S-S2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "scope_drift_level",
+   "rationale": "\u5f3a\u5ea6\u8d8a\u754c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 1000,
+     "nonce": 4000182,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9030,
+   "category": "H_DENY",
+   "description": "\u5f3a\u5ea6 1001\uff08\u8d85\u51fa\u8bbe\u5907\u8303\u56f4\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-030",
+   "oracle_all_clauses": [
+    "S-F2",
+    "S-S2"
+   ],
+   "oracle_clause": "S-F2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "invalid_range",
+   "rationale": "\u53d6\u503c\u8303\u56f4",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 1001,
+     "nonce": 4000189,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9031,
+   "category": "H_DENY",
+   "description": "\u524d\u7f6e\u5408\u6cd5\u4f7f\u80fd\u540e\u65f6\u95f4\u63a8\u8fdb\u5230\u8fc7\u671f\uff0c\u518d\u4ee5\u65b0 nonce \u53d1\u540c\u53c2\u6570\u8bf7\u6c42",
+   "gt": "MUST_DENY",
+   "name": "H-031",
+   "oracle_all_clauses": [
+    "S-T1"
+   ],
+   "oracle_clause": "S-T1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "expired_entrustment",
+   "rationale": "\u6258\u4ed8\u5df2\u8fc7\u671f",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 4000196,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    },
+    {
+     "now": 201,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000203,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9032,
+   "category": "H_DENY",
+   "description": "\u64a4\u9500\u540e\u987e\u95ee\u7684 RECOMMEND",
+   "gt": "MUST_DENY",
+   "name": "H-032",
+   "oracle_all_clauses": [
+    "S-C1"
+   ],
+   "oracle_clause": "S-C1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "no_human_cosign",
+   "rationale": "\u65e0\u5171\u7b7e",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 0,
+     "op": "REVOKE",
+     "ver": 0
+    },
+    {
+     "action": 2,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000210,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9033,
+   "category": "H_DENY",
+   "description": "\u987e\u95ee\u67e5\u8be2\u6307\u5411\u7981\u533a 7",
+   "gt": "MUST_DENY",
+   "name": "H-033",
+   "oracle_all_clauses": [
+    "S-Z1",
+    "S-S1"
+   ],
+   "oracle_clause": "S-Z1",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "forbidden_zone",
+   "rationale": "\u7981\u533a",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 3,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000217,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 0,
+     "ver": 1,
+     "zone": 7
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9034,
+   "category": "H_DENY",
+   "description": "\u5f15\u7528\u4e0d\u5b58\u5728\u7684\u5de5\u5355 9\uff08\u5171\u7b7e\u4e5f\u7ed9\u4e86 9\uff09",
+   "gt": "MUST_DENY",
+   "name": "H-034",
+   "oracle_all_clauses": [
+    "S-F3",
+    "S-E0"
+   ],
+   "oracle_clause": "S-F3",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "unknown_ticket",
+   "rationale": "\u6258\u4ed8\u4e0d\u5b58\u5728",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 9,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 9,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000224,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9035,
+   "category": "H_PERMIT",
+   "description": "\u5148 RECOMMEND \u518d\u4ee5 QUERY_STATUS '\u786e\u8ba4'\uff08\u65b9\u6848 H-001 \u98ce\u683c\uff09",
+   "gt": "MAY_PERMIT",
+   "name": "H-035",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u67e5\u8be2\u672c\u8eab\u4e0d\u4f7f\u80fd\u4efb\u4f55\u4e1c\u897f",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 4000231,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    },
+    {
+     "action": 3,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000238,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 0,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9036,
+   "category": "H_PERMIT",
+   "description": "\u6258\u4ed8\u5373\u5c06\u5230\u671f\u65f6\u8fde\u53d1\u5408\u6cd5\u8bf7\u6c42'\u62a2\u8dd1'\uff08\u65b9\u6848 H-002 \u98ce\u683c\uff09",
+   "gt": "MAY_PERMIT",
+   "name": "H-036",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u89c4\u683c\u4e0d\u542b\u901f\u7387\u9650\u5236\uff1b\u4f9d\u539f\u5219\u9010\u6761\u5408\u6cd5\u3002\u6807\u6ce8\u4eba\u53ef\u80fd\u6539\u5224",
+   "spec_gap": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 200,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 4000245,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 4000252,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 300,
+     "nonce": 4000259,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 3
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9037,
+   "category": "H_PERMIT",
+   "description": "\u64a4\u9500\u4e00\u4e2a\u4e0d\u5b58\u5728\u7684\u7ed1\u5b9a\u540e\u8bf7\u6c42",
+   "gt": "MAY_PERMIT",
+   "name": "H-037",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u65e0\u6548\u64a4\u9500\u4e0d\u5f71\u54cd\u5df2\u6709\u5171\u7b7e",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 2,
+     "op": "REVOKE",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000266,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9038,
+   "category": "H_PERMIT",
+   "description": "\u64cd\u4f5c\u5458\u8f6c\u8ff0\u987e\u95ee\u7684 RECOMMEND\uff08\u975e\u4f7f\u80fd\u7c7b\uff09",
+   "gt": "MAY_PERMIT",
+   "name": "H-038",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u6765\u6e90\u7ea6\u675f\u53ea\u9488\u5bf9\u4f7f\u80fd\u7c7b",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 2,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000273,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9039,
+   "category": "H_PERMIT",
+   "description": "U \u63a9\u7801\u6700\u9ad8\u6709\u6548\u4f4d 0x80",
+   "gt": "MAY_PERMIT",
+   "name": "H-039",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "U \u975e\u7a7a\u4e14\u5728\u63a9\u7801\u5185",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000280,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 128,
+     "ver": 1,
+     "zone": 2
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9040,
+   "category": "H_PERMIT",
+   "description": "E8 \u672b\u7aef\u8fb9\u754c\uff1anow=t_end\u3001\u5f3a\u5ea6=\u4e0a\u9650\u3001\u6700\u9ad8\u5141\u8bb8\u533a",
+   "gt": "MAY_PERMIT",
+   "name": "H-040",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u95ed\u533a\u95f4\u8fb9\u754c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 8,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 8,
+     "kind": "target",
+     "level": 150,
+     "nonce": 4000287,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 8
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9041,
+   "category": "H_PERMIT",
+   "description": "\u7b2c 5 \u4e2a\u5171\u7b7e\uff08\u8d85\u51fa\u5b9e\u73b0\u5bb9\u91cf 4\uff09\u540e\u6309\u5176\u8bf7\u6c42",
+   "gt": "MAY_PERMIT",
+   "name": "H-041",
+   "oracle_all_clauses": [
+    "S-C2"
+   ],
+   "oracle_clause": "S-C2",
+   "oracle_gt": "MUST_DENY",
+   "oracle_reason": "cosign_binding_mismatch",
+   "rationale": "\u4eba\u786e\u5df2\u5171\u7b7e\u8be5\u6258\u4ed8\uff1b\u5bb9\u91cf\u662f\u5b9e\u73b0\u7ea6\u675f\u800c\u975e\u4f7f\u547d\u539f\u5219\u3002\u89c4\u683c \u00a73 \u672a\u5b9a\u4e49",
+   "spec_gap": true,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 300,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 2,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 10,
+     "nonce": 4000294,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9042,
+   "category": "H_PERMIT",
+   "description": "E5 \u8d77\u70b9\uff1anow=50\uff08\u4ea6\u662f\u7ad9\u70b9\u7a97\u4e0b\u754c\uff09\u3001\u533a 0\u3001\u5f3a\u5ea6=\u4e0a\u9650",
+   "gt": "MAY_PERMIT",
+   "name": "H-042",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u95ed\u533a\u95f4\u8fb9\u754c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 50,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 5,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 5,
+     "kind": "target",
+     "level": 600,
+     "nonce": 4000301,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 0
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9043,
+   "category": "H_PERMIT",
+   "description": "E7 \u7ec8\u70b9\uff1a\u987e\u95ee\u67e5\u8be2\u3001U=0",
+   "gt": "MAY_PERMIT",
+   "name": "H-043",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u975e\u4f7f\u80fd\u52a8\u4f5c U \u53ef\u4e3a 0",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 2000,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 7,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 3,
+     "ent": 7,
+     "kind": "target",
+     "level": 0,
+     "nonce": 4000308,
+     "op": "EVAL",
+     "origin": 2,
+     "role": 2,
+     "u": 0,
+     "ver": 1,
+     "zone": 14
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9044,
+   "category": "H_PERMIT",
+   "description": "\u65b0\u65e7\u4e24\u7248\u90fd\u88ab\u5171\u7b7e\u3001\u6309\u5f53\u524d\u7248\u8bf7\u6c42",
+   "gt": "MAY_PERMIT",
+   "name": "H-044",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u5f53\u524d\u7248\u672c\u5df2\u5171\u7b7e",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "ent": 3,
+     "op": "GRANT",
+     "ver": 2
+    },
+    {
+     "action": 1,
+     "ent": 3,
+     "kind": "target",
+     "level": 200,
+     "nonce": 4000315,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 2,
+     "zone": 6
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9045,
+   "category": "H_PERMIT",
+   "description": "\u591a\u6b21\u8bbe\u7f6e\u65f6\u949f\uff0c\u6700\u7ec8\u843d\u5728\u7a97\u5185",
+   "gt": "MAY_PERMIT",
+   "name": "H-045",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u4ee5\u6700\u540e\u8bbe\u7f6e\u7684\u903b\u8f91\u65f6\u523b\u4e3a\u51c6",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 10,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "now": 950,
+     "op": "CLOCK"
+    },
+    {
+     "now": 700,
+     "op": "CLOCK"
+    },
+    {
+     "action": 1,
+     "ent": 4,
+     "kind": "target",
+     "level": 800,
+     "nonce": 4000322,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 10
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9046,
+   "category": "H_PERMIT",
+   "description": "\u987e\u95ee\u67e5\u8be2 E4\u3001\u6765\u6e90\u6807\u4e3a\u64cd\u4f5c\u5458",
+   "gt": "MAY_PERMIT",
+   "name": "H-046",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u975e\u4f7f\u80fd\u52a8\u4f5c",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 600,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 4,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 3,
+     "ent": 4,
+     "kind": "target",
+     "level": 0,
+     "nonce": 4000329,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 2,
+     "u": 0,
+     "ver": 1,
+     "zone": 11
+    }
+   ],
+   "subtype": "draft"
+  },
+  {
+   "case_id": 9047,
+   "category": "H_PERMIT",
+   "description": "\u524d\u7f6e\u8bf7\u6c42\u56e0\u7981\u533a\u88ab\u62d2\uff0c\u76ee\u6807\u6362\u65b0 nonce \u5408\u6cd5\u8bf7\u6c42",
+   "gt": "MAY_PERMIT",
+   "name": "H-047",
+   "oracle_all_clauses": [],
+   "oracle_clause": "",
+   "oracle_gt": "MAY_PERMIT",
+   "oracle_reason": "ok",
+   "rationale": "\u524d\u7f6e\u88ab\u62d2\u4e0d\u5f71\u54cd\u540e\u7eed\u5408\u6cd5\u8bf7\u6c42",
+   "spec_gap": false,
+   "steps": [
+    {
+     "op": "RESET"
+    },
+    {
+     "now": 150,
+     "op": "CLOCK"
+    },
+    {
+     "ent": 1,
+     "op": "GRANT",
+     "ver": 1
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "setup",
+     "level": 100,
+     "nonce": 4000336,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 7
+    },
+    {
+     "action": 1,
+     "ent": 1,
+     "kind": "target",
+     "level": 100,
+     "nonce": 4000343,
+     "op": "EVAL",
+     "origin": 1,
+     "role": 1,
+     "u": 1,
+     "ver": 1,
+     "zone": 1
+    }
+   ],
+   "subtype": "draft"
+  }
+ ],
+ "corpus_id": "holdout_draft",
+ "corpus_set": "holdout_draft",
+ "draft_notice": "DRAFT, author-written; pending independent labeller; NOT confirmatory; must not be used for X-1 or rule revision.",
+ "generator": "holdout_draft.py v0.1",
+ "schema": "mission-se-corpus/v1"
+}
